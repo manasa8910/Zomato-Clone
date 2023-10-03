@@ -15,9 +15,3 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-.btm-form {
-    background: url(https://b.zmtcdn.com/contact-us-form-bgfcdedcf4a3df21e53e77114327898f831627911153.webp) no-repeat;
-    background-size: cover;
-    background-position: bottom;
-}
