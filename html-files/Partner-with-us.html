@@ -13,35 +13,38 @@
 </head>
 <body>
     <header class="relative w-full bg-slate-50 pb-10 z-[1]">
-        <div class="absolute w-full h-[450px] overflow-hidden z-[-1]">
+        <div class="absolute w-full h-[500px] sm:h-[450px] overflow-hidden z-[-1]">
             <img loading="lazy" class="object-cover object-bottom h-full w-full" src="https://b.zmtcdn.com/mx-onboarding-hero87f77501659a5656cad54d98e72bf0d81627911821.webp" alt="header background image">
         </div>
         <nav class=" text-white flex items-center max-w-[900px] mx-auto px-2 z-[2]">
             <div class="mr-auto py-3">
                 <img class=" w-[6.5rem] sm:w-[7.5rem]"src="https://b.zmtcdn.com/web/merchant/advertize/3d432595dac7d2bda0b4cc41f6afe6ef1564646824.png" alt="zomato business logo">
             </div>
-            <div class="hidden sm:flex gap-[20px] text-lg">
+            <div class="hidden sm:flex gap-[20px] text-md md:text-lg">
                 <a class="my-auto" href="#">Advertise</a>
                 <button class="border-[1px] border-white rounded-md px-6 py-[5px] text-sm hover:bg-white hover:text-black hover:font-medium">Login</button>
                 <button class="px-5 py-[5px] bg-blue-500 hover:bg-blue-600 rounded-md text-sm">Create Account</button>
             </div>
+            <div class="sm:hidden ">
+                <i class="fa-solid fa-bars fa-xl cursor-pointer" style="color: #ffffff;"></i>
+            </div>
         </nav>
-        <div class="text-white max-w-[900px] mx-auto sm:pl-12 md:pl-24 mt-10 overflow-visible px-5 text-center md:text-left">
+        <div class="text-white max-w-[800px] mx-auto mt-10 overflow-visible px-5 text-center lg:text-left">
             <h1 class="text-[1.5rem] md:text-[1.8rem] lg:text-[2.3rem] font-semibold">Partner with Zomato <h1>
             <h1 class="text-[1.5rem] md:text-[1.8rem] lg:text-[2.3rem] font-semibold">at 0% commission for the 1st month!</h1>
-            <p class="md:text-md lg:text-lg mt-4 py-2">And get ads worth INR 1500. Valid for new restaurant partners in select cities.</p>
+            <p class="text-sm md:text-md lg:text-lg mt-4 py-2">And get ads worth INR 1500. Valid for new restaurant partners in select cities.</p>
             <div>
-                <div class="mt-3 overflow-visible flex flex-col sm:flex-row gap-y-[10px] mx-auto">
-                    <button class="md:min-w-[300px] lg:min-w-[350px] max-w-full px-2 py-3 mr-2 bg-blue-500 hover:bg-blue-600 rounded-md text-md">Register your restaurant</button>
-                    <button class="md:min-w-[300px] lg:min-w-[350px] max-w-full px-2 py-3 mr-2 bg-white text-black hover:bg-slate-200 rounded-md text-md">Login to view your existing restaurants</button>
+                <div class="mt-3 overflow-visible flex flex-col md:flex-row gap-y-[10px] mx-auto">
+                    <button class="w-full px-2 py-3 mr-2 bg-blue-500 hover:bg-blue-600 rounded-md text-sm md:text-md lg:text-lg">Register your restaurant</button>
+                    <button class="w-full px-2 py-3 mr-2 bg-white text-black hover:bg-slate-200 rounded-md text-sm md:text-md lg:text-lg">Login to view your existing restaurants</button>
                 </div>
-                <p class="text-[0.9rem] mt-2">Need help? Please email us at merchantonboarding@zomato.com</p>
+                <p class="text-[0.8rem] md:text-[0.9rem] mt-2">Need help? Please email us at merchantonboarding@zomato.com</p>
             </div>
         </div>
         <div class="max-w-[550px] md:max-w-[650px] lg:max-w-[720px] bg-white mt-16 rounded-lg mx-auto p-9 text-center shadow">
-            <h2 class=" text-[1.4rem] md:text-[1.9rem] font-medium mb-2">Get started with online ordering</h2>
+            <h2 class="text-[1.4rem] md:text-[1.9rem] font-medium mb-2">Get started with online ordering</h2>
             <p class="text-sm md:text-[1.1rem] text-slate-600 mb-5">Please keep the documents ready for a smooth signup</p>
-            <div class="flex md:flex-row flex-col flex-wrap p-1 font-medium md:text-[1.1rem]">
+            <div class="flex md:flex-row flex-col flex-wrap p-1 font-medium md:text-[1.1rem] text-left">
                 <div class="flex items-center gap-x-[10px] py-4 min-w-[50%]">
                     <div class="h-4 w-4 rounded-full bg-green-500 flex justify-center items-center">
                         <i class="fa-solid fa-check fa-2xs" style="color: #ffffff;"></i>
@@ -85,17 +88,17 @@
         <!-- why partner with zomato  -->
         <section class="bg-white max-w-[900px] mx-auto text-center mt-28 px-3 mb-28">
             <div>
-                <h2 class="text-[2.2rem] font-medium my-5">Why should you partner with Zomato?</h2>
-                <p class="text-[1.2rem] text-slate-600 my-6">Zomato enables you to get 60% more revenue, 10x new customers and boost your brand visibility by providing insights to improve your business.</p>
+                <h2 class="text-[1.5rem] md:text-[1.8rem] lg:text-[2.1rem] font-medium my-5">Why should you partner with Zomato?</h2>
+                <p class="text-[1rem] sm:text-[1.1rem] md:text-[1.2rem] text-slate-600 my-6">Zomato enables you to get 60% more revenue, 10x new customers and boost your brand visibility by providing insights to improve your business.</p>
             </div>
-            <div class="flex flex-col lg:flex-row mt-20 justify-around gap-y-[25px]">
+            <div class="flex flex-col lg:flex-row mt-20 justify-around gap-x-[15px] gap-y-[25px] py-2">
                 <div class="flex items-center gap-x-[25px] mx-auto min-w-[300px] py-5 px-8 rounded-lg shadow-md hover:shadow-xl cursor-pointer">
                     <div class="h-full my-auto flex items-center">
                         <img class="w-9" src="https://b.zmtcdn.com/merchant-onboarding/d2bcadb70abdd99811cceda4cc757f5a1600670711.png" alt="earth image">
                     </div>
                     <div class="flex flex-col text-left">
-                        <h3 class="text-2xl font-medium text-blue-500">1000+ cities</h3>
-                        <p class="text-left text-[18px] text-slate-600">in India</p>
+                        <h3 class="text-xl md:text-2xl font-medium text-blue-500">1000+ cities</h3>
+                        <p class="text-[16px] md:text-[18px] text-slate-600">in India</p>
                     </div>
                 </div>
                 <div class="flex items-center gap-x-[25px] mx-auto min-w-[300px] py-5 px-8 rounded-lg shadow-md hover:shadow-xl cursor-pointer">
@@ -103,8 +106,8 @@
                         <img class="w-9" src="https://b.zmtcdn.com/merchant-onboarding/77b29f40bd0fb6c74c78695b07cdee901600670728.png" alt="earth image">
                     </div>
                     <div class="flex flex-col text-left">
-                        <h3 class="text-2xl font-medium text-blue-500">3 lakh+</h3>
-                        <p class="text-[18px] text-slate-600">restaurants listing</p>
+                        <h3 class="text-xl md:text-2xl font-medium text-blue-500">3 lakh+</h3>
+                        <p class="text-[16px] md:text-[18px] text-slate-600">restaurants listing</p>
                     </div>
                 </div>
                 <div class="flex items-center gap-x-[25px] mx-auto min-w-[300px] py-5 px-8 rounded-lg shadow-md hover:shadow-xl cursor-pointer">
@@ -112,20 +115,20 @@
                         <img class="w-9" src="https://b.zmtcdn.com/merchant-onboarding/e2b1283698fb6d3532c2df0c22a11fca1600670743.png" alt="earth image">
                     </div>
                     <div class="flex flex-col text-left">
-                        <h3 class="text-2xl font-medium text-blue-500">5.0 crore+</h3>
-                        <p class="text-[18px] text-slate-600">monthly orders</p>
+                        <h3 class="text-xl md:text-2xl font-medium text-blue-500">5.0 crore+</h3>
+                        <p class="text-[16px] md:text-[18px] text-slate-600">monthly orders</p>
                     </div>
                 </div>
             </div>
         </section>
         <!-- how it works  -->
         <section class="relative">
-            <div class="hidden sm:block absolute z-[-1]">
+            <div class="absolute z-[-1]">
                 <img src="https://b.zmtcdn.com/merchant-onboarding/f57794be6408563354c463c702ab45b91600672364.png" alt="background-img">
             </div>
             <div class="max-w-[900px] mx-auto text-center pt-20 mb-20 z-10">
                 <div class="">
-                    <h1 class="text-[2.1rem] font-medium">How it works?</h1>
+                    <h1 class="text-[1.5rem] md:text-[1.8rem] lg:text-[2.1rem] font-medium">How it works?</h1>
                     <div class="mt-12 px-2 flex md:flex-row flex-col md:gap-x-[15px] lg:gap-x-[30px]">
                         <div class="py-8 bg-white rounded shadow hover:shadow-xl">
                             <div class="w-full">
@@ -164,17 +167,17 @@
         <!-- already have your restaurant listed  -->
         <section class="bg-slate-100">
             <div class="max-w-[900px] mx-auto">
-                <div class="text-center py-24">
-                    <h2 class="text-[2.1rem] font-medium">Already have your restaurant listed?</h2>
-                    <p class="text-[1.2rem] text-slate-500 my-6">Search here and claim the ownership of your restaurant</p>
+                <div class="text-center py-24 px-3">
+                    <h2 class="text-[1.5rem] md:text-[1.8rem] lg:text-[2.1rem] font-medium">Already have your restaurant listed?</h2>
+                    <p class="text-[1rem] sm:text-[1.1rem] md:text-[1.2rem] text-slate-500 my-6">Search here and claim the ownership of your restaurant</p>
                     <div class="flex bg-white rounded-xl overflow-hidden">
-                        <div class="p-3">
+                        <div class="p-3 hidden sm:block">
                             <i class="fa-solid fa-location-dot fa-sm pr-1" style="color: #c7c7c7;"></i>
-                            <input class="w-[170px] outline-none" type="text" placeholder="Delhi NCR">
+                            <input class="max-w-[100px] md:max-w-[160px] outline-none text-sm md:text-[1rem]" type="text" placeholder="Delhi NCR">
                             <i class="fa-solid fa-caret-down fa-sm" style="color: #c7c7c7;"></i>
                         </div>
-                        <div class="w-[2px] h-6 bg-slate-300 my-auto"></div>
-                        <input class="flex flex-grow pl-5 outline-none" type="text" placeholder="Search for your restaurant, eg. Greenland Cafe">
+                        <div class="w-[1px] h-6 bg-slate-300 my-auto hidden sm:block"></div>
+                        <input class="p-3 flex flex-grow pl-5 outline-none text-sm md:text-[1rem]" type="text" placeholder="Search for your restaurant, eg. Greenland Cafe">
                     </div>
                 </div>
             </div>
@@ -182,16 +185,16 @@
         <!-- our products -->
         <section class="">
             <div class="max-w-[900px] mx-auto py-20">
-                <h2 class="text-[2.2rem] text-center font-medium">Our products</h2>
+                <h2 class="text-[1.5rem] md:text-[1.8rem] lg:text-[2.1rem] text-center font-medium">Our products</h2>
                 <div class="first-carousel owl-carousel owl-theme mt-10">
                     <div class="item mx-1 shadow-md">
-                        <div>
+                        <div class="">
                             <img src="https://b.zmtcdn.com/merchant-onboarding/be4f70ca22a3b31a84b3cf8ed811f0281600769259.png" alt="card image">
                         </div>
-                        <p class="pt-5 px-5 text-[1.5rem] font-medium">Listings</p>
-                        <p class="pl-5 pt-2 text-slate-500">A free app that allows you to manage your Zomato listing directly from your smartphone</p>
+                        <p class="pt-5 px-5 text-[1.2rem] md:text-[1.5rem] font-medium">Listings</p>
+                        <p class="pl-5 pt-2 text-slate-500 text-[0.9rem] sm:text-[1rem]">A free app that allows you to manage your Zomato listing directly from your smartphone</p>
                         <div class="mx-5 mt-4 flex items-center gap-x-[10px]">
-                            <a class="text-blue-500 text-lg" href="#">Learn more</a>
+                            <a class="text-blue-500 text-md md:text-lg" href="#">Learn more</a>
                             <i class="fa-solid fa-caret-right fa-md text-blue-500 pt-[3px]"></i>
                         </div>
                     </div>
@@ -199,10 +202,10 @@
                         <div>
                             <img src="https://b.zmtcdn.com/merchant-onboarding/2c7dd621a502cde6f5051fc6d411b8881600769171.png" alt="card image">
                         </div>
-                        <p class="pt-5 px-5 text-[1.5rem] font-medium">Online Ordering</p>
-                        <p class="pl-5 pt-2 text-slate-500">Start taking orders online from millions of users near you and deliver with Zomato...</p>
+                        <p class="pt-5 px-5 text-[1.2rem] md:text-[1.5rem] font-medium">Online Ordering</p>
+                        <p class="pl-5 pt-2 text-slate-500 text-[0.9rem] sm:text-[1rem]">Start taking orders online from millions of users near you and deliver with Zomato...</p>
                         <div class="mx-5 mt-4 flex items-center gap-x-[10px]">
-                            <a class="text-blue-500 text-lg" href="#">Learn more</a>
+                            <a class="text-blue-500 text-md md:text-lg" href="#">Learn more</a>
                             <i class="fa-solid fa-caret-right fa-md text-blue-500 pt-[3px]"></i>
                         </div>
                     </div>
@@ -210,10 +213,10 @@
                         <div>
                             <img src="https://www.zomato.com/partner-with-us/static/media/ZomatoAdvertise.31195a83.svg" alt="card image">
                         </div>
-                        <p class="pt-5 px-5 text-[1.5rem] font-medium">Advertise</p>
-                        <p class="pl-5 pt-2 text-slate-500">For every marketing dollar spent, Zomato returns over 8x the investment...</p>
+                        <p class="pt-5 px-5 text-[1.2rem] md:text-[1.5rem] font-medium">Advertise</p>
+                        <p class="pl-5 pt-2 text-slate-500 text-[0.9rem] sm:text-[1rem]">For every marketing dollar spent, Zomato returns over 8x the investment...</p>
                         <div class="mx-5 mt-4 flex items-center gap-x-[10px]">
-                            <a class="text-blue-500 text-lg" href="#">Learn more</a>
+                            <a class="text-blue-500 text-md md:text-lg" href="#">Learn more</a>
                             <i class="fa-solid fa-caret-right fa-md text-blue-500 pt-[3px]"></i>
                         </div>
                     </div>
@@ -245,23 +248,23 @@
         <!-- our happy partners -->
         <section class="bg-slate-100">
             <div class="max-w-[900px] mx-auto">
-                <h2 class="text-[2.2rem] text-center font-medium">Our happy partners</h2>
-                <div class="second-carousel owl-carousel owl-theme">
+                <h2 class="pt-5 text-[1.5rem] md:text-[1.8rem] lg:text-[2.1rem] text-center font-medium">Our happy partners</h2>
+                <div class="second-carousel owl-carousel owl-theme mt-10">
                     <!-- 1st card -->
-                    <div class="item flex md:flex-row flex-col relative sm:mx-16">
-                        <div class="relative w-[300px] h-[250px]">
+                    <div class="item flex md:flex-row flex-col relative mx-5 sm:mx-16">
+                        <div class="relative w-[300px] h-[250px] mx-auto">
                             <div class="absolute top-0 overflow-visible">
                                 <img src="https://b.zmtcdn.com/merchant-onboarding/9baa012d14c167b0a313d46cefb667051600688642.png" alt="card image">
                             </div>
                         </div>
-                        <div class="absolute top-[100px] left-[35px]">
+                        <div class="absolute md:top-[32%] top-[20%] left-[35%] md:left-[5%]">
                             <img src="https://www.zomato.com/partner-with-us/static/media/Tushar.6bc47b8a.png" alt="card profile image">
                         </div>
-                        <div class="pl-[80px] pt-16">
-                            <p class="text-[1.1rem] text-slate-600">Zomato delivery fleet saves considerable effort on our part resulting in more fulfilled orders for us. Also, it has now become much easier for customers to discover our brand on Zomato.</p>
+                        <div class="md:pl-[100px] pt-10 md:pt-16">
+                            <p class="text-[1rem] sm:text-[1.1rem] md:text-[1.2rem] text-slate-600">Zomato delivery fleet saves considerable effort on our part resulting in more fulfilled orders for us. Also, it has now become much easier for customers to discover our brand on Zomato.</p>
                             <div class="mt-3">
-                                <p class="text-[1.1rem] text-blue-500 font-medium">Tushar</p>
-                                <p class="text-[1.1rem] font-medium">Owner - Concept Shawarma , Delhi NCR</p>
+                                <p class="text-[1rem] sm:text-[1.1rem] md:text-[1.2rem] text-blue-500 font-medium">Tushar</p>
+                                <p class="text-[1rem] sm:text-[1.1rem] md:text-[1.2rem] font-medium">Owner - Concept Shawarma , Delhi NCR</p>
                             </div>
                         </div>
                     </div>
@@ -307,7 +310,7 @@
         <!-- what you get on sign up -->
         <section>
             <div class="max-w-[900px] mx-auto mt-28 mb-12 px-2">
-                <h2 class="text-[1.5rem] sm:text-[1.8rem] lg:text-[2.2rem] md:text-left text-center font-medium">What do you get on sign-up</h2>
+                <h2 class="text-[1.5rem] md:text-[1.8rem] lg:text-[2.1rem] md:text-left text-center font-medium">What do you get on sign-up</h2>
                 <p class="my-8 sm:text-[1.1rem] lg:text-[1.2rem] text-slate-500 md:text-left text-center ">Zomato Partner Platform helps you take your business to new heights instantly with no hassle and 100% transparency!</p>
                 <div class="flex md:flex-row flex-col">
                     <div class="my-10 flex flex-col md:max-w-[50%] gap-y-12">  <!-- left side -->
@@ -402,35 +405,35 @@
                 <div class=" py-10 md:py-20 md:w-[50%] mx-5">
                     <form action="" class="bg-white p-7 rounded-lg shadow-lg">
                         <div class="relative mb-4 border border-slate-300 rounded-md">
-                            <input type="text" class="text-md sm:text-lg p-3 w-full rounded-md outline-none" placeholder="Restaurant name*">
+                            <input type="text" class="text-sm sm:text-md lg:text-lg p-3 w-full rounded-md outline-none" placeholder="Restaurant name*">
                             <!-- <label class="hidden absolute top-3 left-3 text-slate-400 text-md">Restaurant name*</label> -->
                         </div>
                         <div class="relative mb-4 flex items-center border border-slate-300 rounded-md">
-                            <input type="text" class="text-md sm:text-lg p-3 w-full rounded-md outline-none" placeholder="Restaurant location">
+                            <input type="text" class="text-sm sm:text-md lg:text-lg p-3 w-full rounded-md outline-none" placeholder="Restaurant location">
                             <!-- <label class="hidden absolute top-3 left-3 text-slate-400 text-md">Restaurant location*</label> -->
-                            <i class="fa-solid fa-magnifying-glass fa-md text-slate-400 mr-3"></i>
+                            <i class="fa-solid fa-magnifying-glass fa-sm sm:fa-md text-slate-400 mr-3"></i>
                         </div>
                         <div class="relative mb-4 border border-slate-300 rounded-md">
-                            <input type="text" class="text-md sm:text-lg p-3 w-full rounded-md outline-none" placeholder="Restaurant contact number">
+                            <input type="text" class="text-sm sm:text-md lg:text-lg p-3 w-full rounded-md outline-none" placeholder="Restaurant contact number">
                             <!-- <label class="hidden absolute top-3 left-3 text-slate-400 text-md">Restaurant name*</label> -->
                         </div>
                         <div class="relative mb-4 border border-slate-300 rounded-md">
-                            <input type="text" class="text-md sm:text-lg p-3 w-full rounded-md outline-none" placeholder="What do you like about the restaurant?">
+                            <input type="text" class="text-sm sm:text-md lg:text-lg p-3 w-full rounded-md outline-none" placeholder="What do you like about the restaurant?">
                             <!-- <label class="hidden absolute top-3 left-3 text-slate-400 text-md">Restaurant name*</label> -->
                         </div>
-                        <button class="text-white bg-blue-500 w-full py-3 rounded-lg mb-4">Submit</button>
-                        <p class="text-[0.9rem] text-center">Restaurant owners can <span class="text-blue-500">add restaurant from here</span></p>
+                        <button class="text-white bg-blue-500 w-full py-3 rounded-lg mb-4 text-[0.8rem] sm:text-[0.9rem]">Submit</button>
+                        <p class="text-[0.8rem] sm:text-[0.9rem] text-center">Restaurant owners can <span class="text-blue-500">add restaurant from here</span></p>
                     </form>
                 </div>
             </div>
         </section>
         <!-- footer  -->
-        <footer class="mt-20 max-w-[900px] mx-auto">
-            <div class="flex h-max mx-3">
-                <div class="mr-auto my-auto">
+        <footer class="mt-20 max-w-[95%] lg:max-w-[1125px] mx-auto">
+            <div class="flex flex-col sm:flex-row h-max mx-3 gap-y-5">
+                <div class="mr-auto my-auto mx-auto sm:mx-0">
                     <img class="w-28 md:w-36" src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png?fit=around|198:42&crop=198:42;*,*" alt="zomato img">
                 </div>
-                <div class="flex gap-x-5 items-center">
+                <div class="flex gap-x-5 items-center mx-auto sm:mr-0 text-sm sm:text-md">
                     <div class="flex items-center gap-x-[10px] border border-slate-400 px-2 py-2 rounded">
                         <div class="flex items-center gap-[10px] mr-auto"><img class="w-6" src="https://b.zmtcdn.com/images/flags_z10/in.png?output-format=webp" alt="indian flag"> India</div>
                         <i class="fa-solid fa-angle-down fa-xs mt-[2px]"></i>
@@ -441,8 +444,8 @@
                     </div>
                 </div>
             </div>
-            <div class="my-[50px] flex lg:flex-row flex-col gap-y-10 justify-between md:mr-10 mx-3">
-                <div class=" text-sm flex flex-col gap-[5px] text-slate-500">
+            <div class="my-[50px] flex gap-y-10 justify-between flex-wrap md:mr-10 px-3 mx-auto">
+                <div class=" text-sm flex flex-col gap-[5px] text-slate-500 min-w-[200px]">
                     <h3 class="uppercase tracking-[0.2rem] font-[500] mb-2 text-black">About Zomato</h3>
                     <a href="#">Who We Are</a>
                     <a href="#">Blog</a>
@@ -452,7 +455,7 @@
                     <a href="#">Press Kit</a>
                     <a href="#">Contact Us</a>
                 </div>
-                <div class=" text-sm flex flex-col gap-[5px] text-slate-500">
+                <div class=" text-sm flex flex-col gap-[5px] text-slate-500 w-[200px]">
                     <h3 class="uppercase tracking-[0.2rem] font-[500] mb-2 text-black">ZOMAVERSE</h3>
                     <a href="#">Zomato</a>
                     <a href="#">Blinkit</a>
@@ -461,24 +464,24 @@
                     <a href="#">Zomaland</a>
                 </div>
                 <div class="flex flex-col gap-y-[30px]">
-                    <div class=" text-sm flex flex-col gap-[5px] text-slate-500">
+                    <div class=" text-sm flex flex-col gap-[5px] text-slate-500 w-[200px]">
                         <h3 class="uppercase tracking-[0.2rem] font-[500] mb-2 text-black">FOR RESTAURANTS</h3>
                         <a href="#">Partner With Us</a>
                         <a href="#">App For You</a>
                     </div>
-                    <div class=" text-sm flex flex-col gap-[5px] text-slate-500">
+                    <div class=" text-sm flex flex-col gap-[5px] text-slate-500 w-[200px]">
                         <h3 class="uppercase tracking-[0.2rem] font-[500] mb-2 text-black">FOR ENTERPRISES</h3>
                         <a href="#">Zomato For Enterprise</a>
                     </div>
                 </div>
-                <div class=" text-sm flex flex-col gap-[5px] text-slate-500">
+                <div class=" text-sm flex flex-col gap-[5px] text-slate-500 w-[200px]">
                     <h3 class="uppercase tracking-[0.2rem] font-[500] mb-2 text-black">LEARN MORE</h3>
                     <a href="#">Privacy</a>
                     <a href="#">Security</a>
                     <a href="#">Terms</a>
                     <a href="#">Sitemap</a>
                 </div>
-                <div class=" text-sm flex flex-col gap-[5px] text-slate-500">
+                <div class=" text-sm flex flex-col gap-[5px] text-slate-500 w-[200px]">
                     <h3 class="uppercase tracking-[0.2rem] font-[500] mb-2 text-black">Social Links</h3>
                     <div class="flex gap-x-[10px]">
                         <div class="rounded-full bg-black w-6 h-6 flex justify-center items-center">
@@ -518,7 +521,7 @@
             margin:10,
             nav:true,
             responsive:{
-                1000:{
+                0:{
                     items:1
                 }
             }
