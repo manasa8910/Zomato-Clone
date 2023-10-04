@@ -192,17 +192,17 @@
             </div>
 
             <div class="flex gap-2 justify-center items-center">
-              <button class="bg-green-700 text-white h-6 px-1 rounded-md w-1/2">
+              <button
+                class="bg-green-700 flex justify-center text-white h-7 rounded-md px-2"
+              >
                 4.3 &#9733;
               </button>
-              <div>
-                <p
-                  class="text-xs font-medium md:text-base leading-[11px] md:leading-4"
-                >
+              <div class="">
+                <p class="text-xs font-medium md:text-sm leading-[11px]">
                   2327
                 </p>
                 <p
-                  class="font-extralight text-xs text-gray-600 border-b-[1px] border-dashed border-gray-500 leading-[11px] md:leading-4"
+                  class="text-xs border-b-[1px] border-dashed border-gray-500 md:w-max"
                 >
                   Delivery Reviews
                 </p>
@@ -230,7 +230,7 @@
       </section>
 
       <!--Buttons-->
-      <section class="flex gap-2 mb-3 md:mb-0">
+      <section class="flex gap-2 mt-1 mb-3 md:mb-0">
         <button
           class="flex gap-2 py-1 px-2 rounded-md justify-center items-center border-[1px] border-gray-400 cursor-pointer hover:bg-gray-100 ease-in-out duration-300"
         >
@@ -252,7 +252,7 @@
       </section>
 
       <!--Horizontal Navigation-->
-      <section class="hidden md:block sticky top-[132px] bg-white pt-2 z-50">
+      <section class="hidden md:block sticky top-[123px] bg-white pt-2 z-50">
         <div
           class="flex flex-row text-gray-500 text-lg my-3 border-b-2 sticky top-0"
         >
@@ -1715,7 +1715,9 @@
             </section>
 
             <!--Menu-->
-            <section class="flex flex-col w-full min-w-[20%] px-5 gap-5">
+            <section
+              class="flex flex-col w-full min-w-[20%] px-0 md:px-5 gap-5"
+            >
               <!--header-->
               <section class="flex flex-col w-full">
                 <div class="flex h-12 justify-between mt-2">
@@ -6617,7 +6619,109 @@
         </section>
 
         <!--Book a Table-->
-        <section id="tab6" class="overflow-hidden hidden"></section>
+        <section id="tab6" class="hidden">
+          <section class="flex gap-10">
+            <!--Form-->
+            <section class="px-3 md:mx-0 w-full">
+              <form action="" class="bg-white">
+                <p class="py-2 font-medium text-lg">
+                  Please select your booking details
+                </p>
+                <div class="flex gap-2">
+                  <div
+                    class="flex justify-between items-center w-full mb-4 border border-slate-300 rounded-md"
+                  >
+                    <input
+                      type="text"
+                      class="text-sm sm:text-md lg:text-lg p-3 w-full rounded-md outline-none"
+                      placeholder="Select Date"
+                    />
+                    <img
+                      class="h-3 m-2"
+                      src="sources/drop-down-arrow.png"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="flex justify-between items-center w-full mb-4 border border-slate-300 rounded-md"
+                  >
+                    <input
+                      type="text"
+                      class="text-sm sm:text-md lg:text-lg p-3 w-full rounded-md outline-none"
+                      placeholder="Select Guests"
+                    />
+                    <img
+                      class="h-3 m-2"
+                      src="sources/drop-down-arrow.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+
+                <p class="py-2 font-medium text-lg">Enter guest details</p>
+                <div class="flex gap-2">
+                  <div class="w-full mb-4 border border-slate-300 rounded-md">
+                    <input
+                      type="text"
+                      class="text-sm sm:text-md lg:text-lg p-3 w-full rounded-md outline-none"
+                      placeholder="First name"
+                    />
+                  </div>
+                  <div class="w-full mb-4 border border-slate-300 rounded-md">
+                    <input
+                      type="text"
+                      class="text-sm sm:text-md lg:text-lg p-3 w-full rounded-md outline-none"
+                      placeholder="Last name"
+                    />
+                  </div>
+                </div>
+                <div class="flex gap-2">
+                  <div class="w-full mb-4 border border-slate-300 rounded-md">
+                    <input
+                      type="text"
+                      class="text-sm sm:text-md lg:text-lg p-3 w-full rounded-md outline-none"
+                      placeholder="Email"
+                    />
+                  </div>
+                  <div class="w-[50%] mb-4 border border-slate-300 rounded-md">
+                    <div
+                      class="font-medium text-sm sm:text-md lg:text-lg p-3 w-full rounded-md outline-none"
+                    >
+                      91
+                    </div>
+                  </div>
+                  <div class="w-[50%] mb-4 border border-slate-300 rounded-md">
+                    <input
+                      type="text"
+                      class="text-sm sm:text-md lg:text-lg p-3 w-full rounded-md outline-none"
+                      placeholder="Phone"
+                    />
+                  </div>
+                </div>
+
+                <p class="py-2 font-medium text-lg">Additional requests</p>
+
+                <div class="h-24 mb-4 border border-slate-300 rounded-md"></div>
+
+                <button
+                  class="text-white bg-red-500 hover:bg-red-600 w-full py-3 rounded-lg mb-4 text-[0.8rem] sm:text-[0.9rem]"
+                >
+                  Book
+                </button>
+              </form>
+            </section>
+            <!--Banner-->
+            <section
+              class="hidden md:block drop-shadow-[2px_2px_20px_rgba(0,0,0,0.1)] rounded-lg bg-white max-w-[33%] p-5 h-min sticky top-[220px] right-0"
+            >
+              <p class="font-semibold text-2xl">Get the App!</p>
+              <p class="my-3">
+                Reserve tables & manage your reservations right from your phone!
+              </p>
+              <img src="sources/banner.png" alt="" />
+            </section>
+          </section>
+        </section>
       </section>
       <div class="border-t-2 border-gray-100"></div>
     </main>
