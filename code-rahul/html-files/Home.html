@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato-Clone-Home || HTML-CSS Learning</title>
+    <!-- personal css link  -->
+    <link rel="stylesheet" href="../css-files/main.css">
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- tailwind cdn  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="home-header h-[85vh] w-full flex flex-col">
+        <nav class="hidden sm:flex gap-[40px] justify-end text-white w-full sm:max-w-4xl mx-auto text-md md:text-lg p-6 pr-3">
+            <a class="hover:underline underline-offset-8 hover:animate-pulse" href="./Partner-with-us.html">Add restaurent</a>
+            <a class="hover:underline underline-offset-8 hover:animate-pulse" href="./Login.html">Login</a>
+            <a class="hover:underline underline-offset-8 hover:animate-pulse" href="./Signup.html">Sign up</a>
+        </nav>
+        <div class="sm:hidden ">
+            <i class="fa-solid fa-bars fa-xl ml-4 mt-7 cursor-pointer" style="color: #ffffff;"></i>
+        </div>
+        <div class="text-white w-full mx-auto text-center mt-[10rem] sm:mt-[7rem]">
+            <img class="w-56 sm:w-60 md:w-64 lg:w-72 mx-auto hover:animate-bounce cursor-pointer" src="https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png" alt="zomato logo">
+            <p class="text-[1.3rem] sm:text-[1.5rem] md:text-[1.8rem] lg:text-[2.1rem] sm:max-w-xl mx-auto mt-[2rem] font-normal">Find the best restaurants, cafés and bars in India</p>
+        </div>
+    </header>
+    <main class="mt-10 max-w-[1125px] mx-auto px-2">
+        <!-- order online cards  -->
+        <div class="flex flex-col sm:flex-row justify-between gap-x-3 my-16 md:mb-20">
+            <div class=" overflow-hidden shadow rounded-lg hover:scale-105 ease-in-out duration-300 cursor-pointer">
+                <div class="max-h-[170px] overflow-hidden w-full">
+                    <img class="h-[200px] w-full object-cover object-top" src="../assets-rahul/food-2.jpg" alt="card image">
+                </div>
+                <div class="p-5">
+                    <p class="text-[0.9rem] sm:text-[1rem] md:text-[1.1rem] lg:text-[1.2rem] font-medium">Order Online</p>
+                    <p class="text-[0.8rem] md:text-[0.95rem] lg:text-[1.05rem] text-gray-600">Stay home and order to your doorstep</p>
+                </div>
+            </div>
+
+            <div class=" overflow-hidden shadow rounded-lg hover:scale-105 ease-in-out duration-300 cursor-pointer">
+                <div class="max-h-[170px] overflow-hidden w-full">
+                    <img class="h-[200px] w-full object-cover" src="../assets-rahul/food-1.jpg" alt="card image">
+                </div>
+                <div class="p-5">
+                    <p class="text-[0.9rem] sm:text-[1rem] md:text-[1.1rem] lg:text-[1.2rem] font-medium">Dining</p>
+                    <p class="text-[0.8rem] md:text-[0.95rem] lg:text-[1.05rem] text-gray-600">View the city's favourite dining venues</p>
+                </div>
+            </div>
+
+            <div class=" overflow-hidden shadow rounded-lg hover:scale-105 ease-in-out duration-300 cursor-pointer">
+                <div class="max-h-[170px] overflow-hidden w-full">
+                    <img class="h-[200px] w-full object-cover" src="../assets-rahul/club.jpg" alt="card image">
+                </div>
+                <div class="p-5">
+                    <p class="text-[0.9rem] sm:text-[1rem] md:text-[1.1rem] lg:text-[1.2rem] font-medium">Nightlife and Clubs</p>
+                    <p class="text-[0.8rem] md:text-[0.95rem] lg:text-[1.05rem] text-gray-600">Explore the city's top nightlife outlets</p>
+                </div>
+            </div>
+        </div>
+        <!-- cities heading  -->
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-3 text-xl sm:text-2xl md:text-3xl lg:text-4xl">
+            <h2 class="items-center text-center">Popular locations in</h2>
+            <div class="flex items-center gap-[10px] font-medium"><img class="w-10 sm:w-12 md:w-14" src="https://b.zmtcdn.com/images/flags_z10/in.png?output-format=webp" alt="indian flag"> India</div>
+        </div>
+        <p class=" mt-10 text-slate-500 max-w-[900px] text-md sm:text-lg md:text-xl mx-auto text-center">From swanky upscale restaurants to the cosiest hidden gems serving the most incredible food, Zomato covers it all. Explore menus, and millions of restaurant photos and reviews from users just like you, to find your next great meal.</p>
+        <!-- cities  -->
+        <div id="all-restaurants-cards" class="flex sm:flex-row flex-wrap justify-between gap-y-[20px] md:gap-y-[40px] mt-20 text-md sm:text-lg relative h-[420px] overflow-hidden">
+            <a href="../../delivery-easwaran/index.html" class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Agra Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </a>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Ahemdabad Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Varanasi Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Bengaluru Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Allahabad Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Ajmer Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Amritsar Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Aurangabad Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Amravati Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Udaipur Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Alappuzhua Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <!-- see more button-->
+            <div id="showMore" onclick="display()" class=" p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <div class="mx-auto flex items-center justify-center w-max">
+                    <p class="mr-2">see more</p>
+                    <i class="fa-solid fa-angle-down fa-xs mt-1" style="color: #000000;"></i>
+                </div>
+            </div>
+            <!-- Extra cards -->
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Ratlam Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Bhopal Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Bhubaneshwar Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Chandigarh Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Chennai Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Coimbatore Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Cuttak Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Darjeeling Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Dehradun Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Delhi NCR Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Dharamshala Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Gangtok Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Goa Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Gorakhpur Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Guntur Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Guwahati Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Gwalior Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Haridwar Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Hyderabad Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Indore Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Jabalpur Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Jaipur Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Jhalandar Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Jammu Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Jamnagar Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Jamshedpur Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Jhansi Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Jodhpur Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Junagadh Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Kanpur Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Khajuraho Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Khamgaon Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Kharagpur Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Kochi Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Kolhapur Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Kolkata Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Kota Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Lucknow Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Ludhiana Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Madurai Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Manali Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Manglore Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Manipal Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Meerut Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Mumbai Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Mussoorie Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Mysore Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Nagpur Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Nainital Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Nashik Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Neemrana Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Ooty Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Palakkad Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Patiala Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Patna Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Puducherry Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Pune Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Pushkar Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Raipur Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Rajkot Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Ranchi Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Rishikesh Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Salem Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Shimla Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Siliguri Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Srinagar Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Surat Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Thrissur Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class=" flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Tirupati Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <div class="flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <p class="mr-auto">Trichy Restaurants</p>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </div>
+            <!-- see less button-->
+            <div id="showLess" onclick="hide()" class="hidden p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:bg-gray-200 ">
+                <div class="mx-auto flex items-center justify-center w-max">
+                    <p class="mr-2">see less</p>
+                    <i class="fa-solid fa-angle-up fa-xs hover:bg-white" style="color: #000000;"></i>
+                </div>
+            </div>
+        </div>
+        <!-- all countries -->
+        <h2 class="text-2xl md:text-3xl lg:text-4xl font-medium mt-20 text-center">All Countries</h2>
+        <div class="flex sm:flex-row flex-wrap justify-between gap-y-[20px] md:gap-y-[40px] mt-20 text-lg relative">
+            <a href="./Home.html" class="flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <div class="flex items-center gap-[10px] mr-auto"><img class="w-12" src="https://b.zmtcdn.com/images/flags_z10/in.png?output-format=webp" alt="flag"> India</div>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </a>
+            <a href="./Goodbye.html" class="flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <div class="flex items-center gap-[10px] mr-auto"><img class="w-12" src="https://b.zmtcdn.com/images/flags_z10/au.png?output-format=webp" alt="flag"> Australia</div>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </a>
+            <a href="./Goodbye.html" class="flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <div class="flex items-center gap-[10px] mr-auto"><img class="w-12" src="https://b.zmtcdn.com/images/flags_z10/br.png?output-format=webp" alt="flag">Brasil</div>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </a>
+            <a href="./Goodbye.html" class="flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <div class="flex items-center gap-[10px] mr-auto"><img class="w-12" src="https://b.zmtcdn.com/images/flags_z10/ca.png?output-format=webp" alt="flag">Canada</div>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </a>
+            <a href="./Goodbye.html" class="flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <div class="flex items-center gap-[10px] mr-auto"><img class="w-12" src="https://b.zmtcdn.com/images/flags_z10/cl.png?output-format=webp" alt="flag">Chile</div>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </a>
+            <a href="./Goodbye.html" class="flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <div class="flex items-center gap-[10px] mr-auto"><img class="w-12" src="https://b.zmtcdn.com/images/flags_z10/cz.png?output-format=webp" alt="flag">Czech Republic</div>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </a>
+            <a href="./Home.html" class="flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <div class="flex items-center gap-[10px] mr-auto"><img class="w-12" src="https://b.zmtcdn.com/images/flags_z10/id.png?output-format=webp" alt="flag">Indonesia</div>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </a>
+            <a href="./Goodbye.html" class="flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <div class="flex items-center gap-[10px] mr-auto"><img class="w-12" src="https://b.zmtcdn.com/images/flags_z10/ie.png?output-format=webp" alt="flag">Ireland</div>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </a>
+            <a href="./Goodbye.html" class="flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <div class="flex items-center gap-[10px] mr-auto"><img class="w-12" src="https://b.zmtcdn.com/images/flags_z10/it.png?output-format=webp" alt=" flag">Italy</div>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </a>
+            <a href="./Goodbye.html" class="flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <div class="flex items-center gap-[10px] mr-auto"><img class="w-12" src="https://b.zmtcdn.com/images/flags_z10/lb.png?output-format=webp" alt=" flag">Lebanon</div>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </a>
+            <a href="./Goodbye.html" class="flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <div class="flex items-center gap-[10px] mr-auto"><img class="w-12" src="https://b.zmtcdn.com/images/flags_z10/my.png?output-format=webp" alt=" flag">Malaysia</div>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </a>
+            <a href="./Goodbye.html" class="flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <div class="flex items-center gap-[10px] mr-auto"><img class="w-12" src="https://b.zmtcdn.com/images/flags_z10/nz.png?output-format=webp" alt=" flag">New Zealand</div>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </a>
+            <a href="./Home.html" class="flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <div class="flex items-center gap-[10px] mr-auto"><img class="w-12" src="https://b.zmtcdn.com/images/flags_z10/ph.png?output-format=webp" alt=" flag">Philippines</div>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </a>
+            <a href="./Goodbye.html" class="flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <div class="flex items-center gap-[10px] mr-auto"><img class="w-12" src="https://b.zmtcdn.com/images/flags_z10/pl.png?output-format=webp" alt=" flag">Poland</div>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </a>
+            <a href="./Goodbye.html" class="flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <div class="flex items-center gap-[10px] mr-auto"><img class="w-12" src="https://b.zmtcdn.com/images/flags_z10/pt.png?output-format=webp" alt=" flag">Portugal</div>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </a>
+            <a href="./Goodbye.html" class="flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <div class="flex items-center gap-[10px] mr-auto"><img class="w-12" src="https://b.zmtcdn.com/images/flags_z10/qa.png?output-format=webp" alt=" flag">Qatar</div>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </a>
+            <a href="./Goodbye.html" class="flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <div class="flex items-center gap-[10px] mr-auto"><img class="w-12" src="https://b.zmtcdn.com/images/flags_z10/sg.png?output-format=webp" alt=" flag">Singapore</div>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </a>
+            <a href="./Goodbye.html" class="flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <div class="flex items-center gap-[10px] mr-auto"><img class="w-12" src="https://b.zmtcdn.com/images/flags_z10/sk.png?output-format=webp" alt=" flag">Slovakia</div>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </a>
+            <a href="./Home.html" class="flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <div class="flex items-center gap-[10px] mr-auto"><img class="w-12" src="https://b.zmtcdn.com/images/flags_z10/za.png?output-format=webp" alt=" flag">South Africa</div>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </a>
+            <a href="./Goodbye.html" class="flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <div class="flex items-center gap-[10px] mr-auto"><img class="w-12" src="https://b.zmtcdn.com/images/flags_z10/lk.png?output-format=webp" alt=" flag">Sri Lanka</div>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </a>
+            <a href="./Goodbye.html" class="flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <div class="flex items-center gap-[10px] mr-auto"><img class="w-12" src="https://b.zmtcdn.com/images/flags_z10/tr.png?output-format=webp" alt=" flag">Turkey</div>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </a>
+            <a href="./Goodbye.html" class="flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <div class="flex items-center gap-[10px] mr-auto"><img class="w-12" src="https://b.zmtcdn.com/images/flags_z10/ae.png?output-format=webp" alt=" flag">UAE</div>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </a>
+            <a href="./Goodbye.html" class="flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <div class="flex items-center gap-[10px] mr-auto"><img class="w-12" src="https://b.zmtcdn.com/images/flags_z10/gb.png?output-format=webp" alt=" flag">United Kingdom</div>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </a>
+            <a href="./Goodbye.html" class="flex items-center p-5 rounded-lg border-[1px] border-slate-200 shadow cursor-pointer w-full sm:max-w-[350px] mx-auto hover:shadow-lg">
+                <div class="flex items-center gap-[10px] mr-auto"><img class="w-12" src="https://b.zmtcdn.com/images/flags_z10/us.png?output-format=webp" alt="flag">United States</div>
+                <i class="fa-solid fa-angle-right fa-2xs"></i>
+            </a>
+        </div>
+    </main>
+    <!-- Zomato app -->
+    <section class="my-36 p-2">
+        <div class="flex md:flex-row flex-col mx-auto max-w-[800px]">
+            <div class="my-auto mx-auto">
+                <img class="w-72 md:w-96 mt-16" src="https://b.zmtcdn.com/data/o2_assets/f773629053b24263e69f601925790f301680693809.png" alt="phone app image">
+            </div>
+            <div class="md:m-10 mr-0">
+                <h2 class="text-[1.5rem] md:text-[2rem] lg:text-[2.5rem] font-medium mb-5">Get the Zomato app</h2>
+                <p class="text-[0.9rem] md:text-[1rem] lg:text-[1.1rem] text-gray-500">We will send you a link, open it on your phone to download the app</p>
+                <div class="flex gap-x-10 mt-5">
+                    <div class="flex items-center gap-x-2">
+                        <input class="w-4 h-4 md:w-5 md:h-5" type="radio" checked>
+                        <label class="text-sm md:text-md">Email</label>
+                    </div>
+                    <div class="flex items-center gap-x-2">
+                        <input class="w-4 h-4 md:w-5 md:h-5" type="radio">
+                        <label class="text-sm md:text-md">Phone</label>
+                    </div>
+                </div>
+                <div class="mt-5 flex">
+                    <input class="w-full pl-3 border border-gray-300 rounded-lg md:text-md text-sm" type="text" placeholder="Email">
+                    <button class="bg-rose-500 p-3 text-white rounded-lg w-[230px] ml-2 text-[0.8rem] md:text-[1rem]">Share App Link</button>
+                </div>
+                <p class="mt-10 text-sm text-gray-400">Download app from</p>
+                <div class="flex mt-3 gap-x-5">
+                    <img class="w-36" src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png" alt="Apple store img">
+                    <img class="w-36" src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png" alt="google play store img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer  -->
+    <footer class="mt-20 max-w-[95%] lg:max-w-[1125px] mx-auto">
+        <div class="flex flex-col sm:flex-row h-max mx-3 gap-y-5">
+            <div class="mr-auto my-auto mx-auto sm:mx-0">
+                <img class="w-28 md:w-36" src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png?fit=around|198:42&crop=198:42;*,*" alt="zomato img">
+            </div>
+            <div class="flex gap-x-5 items-center mx-auto sm:mr-0 text-sm sm:text-md">
+                <div class="flex items-center gap-x-[10px] border border-slate-400 px-2 py-2 rounded">
+                    <div class="flex items-center gap-[10px] mr-auto"><img class="w-6" src="https://b.zmtcdn.com/images/flags_z10/in.png?output-format=webp" alt="indian flag"> India</div>
+                    <i class="fa-solid fa-angle-down fa-xs mt-[2px]"></i>
+                </div>
+                <div class="flex items-center gap-x-[10px] border border-slate-400 px-2 py-2 rounded">
+                    <div class="flex items-center gap-[10px] mr-auto"><i class="fa-solid fa-globe fa-lg"></i> English</div>
+                    <i class="fa-solid fa-angle-down fa-xs mt-[2px]"></i>
+                </div>
+            </div>
+        </div>
+        <div class="my-[50px] flex gap-y-10 justify-between flex-wrap px-3 mx-auto">
+            <div class=" text-sm flex flex-col gap-[5px] text-slate-500 min-w-[200px]">
+                <h3 class="uppercase tracking-[0.2rem] font-[500] mb-2 text-black">About Zomato</h3>
+                <a href="../../code-tanishka/who we are.html">Who We Are</a>
+                <a href="#">Blog</a>
+                <a href="../../code-tanishka/work.html">Work With Us</a>
+                <a href="#">Investor Relations</a>
+                <a href="#">Report Fraud</a>
+                <a href="#">Press Kit</a>
+                <a href="./contact-us.html">Contact Us</a>
+            </div>
+            <div class=" text-sm flex flex-col gap-[5px] text-slate-500 w-[200px]">
+                <h3 class="uppercase tracking-[0.2rem] font-[500] mb-2 text-black">ZOMAVERSE</h3>
+                <a href="#">Zomato</a>
+                <a href="#">Blinkit</a>
+                <a href="#">Feeding India</a>
+                <a href="#">Hyperpure</a>
+                <a href="#">Zomaland</a>
+            </div>
+            <div class="flex flex-col gap-y-[30px]">
+                <div class=" text-sm flex flex-col gap-[5px] text-slate-500 w-[200px]">
+                    <h3 class="uppercase tracking-[0.2rem] font-[500] mb-2 text-black">FOR RESTAURANTS</h3>
+                    <a href="#">Partner With Us</a>
+                    <a href="#">App For You</a>
+                </div>
+                <div class=" text-sm flex flex-col gap-[5px] text-slate-500 w-[200px]">
+                    <h3 class="uppercase tracking-[0.2rem] font-[500] mb-2 text-black">FOR ENTERPRISES</h3>
+                    <a href="#">Zomato For Enterprise</a>
+                </div>
+            </div>
+            <div class=" text-sm flex flex-col gap-[5px] text-slate-500 w-[200px]">
+                <h3 class="uppercase tracking-[0.2rem] font-[500] mb-2 text-black">LEARN MORE</h3>
+                <a href="#">Privacy</a>
+                <a href="#">Security</a>
+                <a href="#">Terms</a>
+                <a href="#">Sitemap</a>
+            </div>
+            <div class=" text-sm flex flex-col gap-[5px] text-slate-500 w-[200px]">
+                <h3 class="uppercase tracking-[0.2rem] font-[500] mb-2 text-black">Social Links</h3>
+                <div class="flex gap-x-[10px]">
+                    <div class="rounded-full bg-black w-6 h-6 flex justify-center items-center">
+                        <i class="fa-brands fa-linkedin-in fa-md mt-[1px]" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="rounded-full bg-black w-6 h-6 flex justify-center items-center">
+                        <i class="fa-brands fa-instagram fa-md mt-[1px]" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="rounded-full bg-black w-6 h-6 flex justify-center items-center">
+                        <i class="fa-brands fa-twitter fa-md mt-[2px]" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="rounded-full bg-black w-6 h-6 flex justify-center items-center">
+                        <i class="fa-brands fa-youtube fa-md mt-[2px]" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="rounded-full bg-black w-6 h-6 flex justify-center items-center">
+                        <i class="fa-brands fa-facebook-f fa-md mt-[2px]" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-y-[15px] mt-5">
+                    <img class="w-36" src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png" alt="Apple store img">
+                    <img class="w-36" src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png" alt="google play store img">
+                </div>
+            </div>
+        </div>
+        <hr class="border-[1px] mx-3">
+        <p class="text-[0.8rem] text-slate-500 my-5 mb-8 mx-3">By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2023 © Zomato™ Ltd. All rights reserved.</p>
+    </footer>
+    <script>
+        function display() {
+            document.getElementById("all-restaurants-cards").style.height = "100%";
+            // hide show more button 
+            document.getElementById("showMore").style.display = "none";
+            // display show more button 
+            document.getElementById("showLess").style.display = "block";
+        }
+
+        function hide() {
+            document.getElementById("all-restaurants-cards").style.height = "420px";
+            // hide show less button 
+            document.getElementById("showLess").style.display = "none";
+            // display show more button
+            document.getElementById("showMore").style.display = "block";
+        }
+    </script>
+</body>
+</html>

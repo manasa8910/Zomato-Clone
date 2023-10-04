@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reviews</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;@200;300;400;500;700&family=Roboto:wght@100;@400;500;700&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      font-family: "Roboto", sans-serif;
+    }
+  </style>
+</head>
+
+<body class="mt-7 max-w-[96%] mx-auto">
+  <div class="text-2xl">The pizza Bakery Reviews</div>
+
+  <div class="flex justify-between my-3">
+    <button class="flex items-center gap-5">All Reviews
+      <svg xmlns="http://www.w3.org/2000/svg" fill="#B5B5B5" width="14" height="14" viewBox="0 0 20 20"
+        aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV">
+        <title>down-triangle</title>
+        <path d="M20 5.42l-10 10-10-10h20z"></path>
+      </svg>
+    </button>
+
+    <button class="flex justify-between gap-5 items-center">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="#4F4F4F" width="16" height="16" viewBox="0 0 20 20"
+        aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kMNrPk">
+        <title>instruction</title>
+        <path
+          d="M16.66 4.28v1.44c0 0.133-0.107 0.24-0.24 0.24v0h-12.84c-0.133 0-0.24-0.107-0.24-0.24v0-1.44c0-0.133 0.107-0.24 0.24-0.24v0h12.84c0.133 0 0.24 0.107 0.24 0.24v0zM14.52 9.040h-10.94c-0.133 0-0.24 0.107-0.24 0.24v0 1.44c0 0.133 0.107 0.24 0.24 0.24v0h10.94c0.133 0 0.24-0.107 0.24-0.24v0-1.44c0-0.133-0.107-0.24-0.24-0.24v0zM8.82 14.040h-5.24c-0.133 0-0.24 0.107-0.24 0.24v0 1.44c0 0.133 0.107 0.24 0.24 0.24v0h5.24c0.124-0.011 0.22-0.114 0.22-0.239 0-0 0-0.001 0-0.001v0-1.44c0-0 0-0.001 0-0.001 0-0.126-0.096-0.229-0.219-0.239l-0.001-0z">
+        </path>
+      </svg>
+      Newest First
+      <svg xmlns="http://www.w3.org/2000/svg" fill="#B5B5B5" width="14" height="14" viewBox="0 0 20 20"
+        aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kyPUnV">
+        <title>down-triangle</title>
+        <path d="M20 5.42l-10 10-10-10h20z"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="my-6">
+    <div class="flex flex-wrap justify-between py-2">
+      <div class="grid grid-cols-4 grid-rows-2 items-start w-52">
+        <img
+          src="https://b.zmtcdn.com/data/user_profile_pictures/450/26b57901ab01df9a9bfc84565a79d450.jpg?fit=around%7C100%3A100&crop=100%3A100%3B%2A%2C%2A"
+          class="rounded-full w-11 row-span-2" />
+        <p class="col-span-3">Abhay Shastry</p>
+        <p class="w-52 text-sm text-slate-400"> 41 reviews • 1 Follower</p>
+      </div>
+      <button class=" border p-3 border-orange-400 rounded-lg  text-orange-400">
+        Follow
+      </button>
+    </div>
+
+    <div class="flex gap-3 items-center py-2">
+      <button>
+        <div class="flex items-centers gap-2">
+          <div class="row-span-2 flex items-center bg-green-900 text-white font-bold rounded-md p-1 h-5 w-7 text-xs">
+            5
+            <svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" width="1rem" height="1rem" viewBox="0 0 20 20"
+              aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="h-2">
+              <title>star-fill</title>
+              <path
+                d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z">
+              </path>
+            </svg>
+          </div>
+        </div>
+
+      </button>
+
+      <p class="text-xs">DELIVERY</p>
+      <p class="text-xs tracking-wider text-slate-400">Yesterday</p>
+
+    </div>
+    <p class="text-slate-500 tracking-wider">This is now the best pizzeria in town. Sourdough pizza. Beats Brik Oven.
+      Certainly beats Toscanos by a long shot.
+
+    </p>
+
+    <div class="py-3">
+      <p class="text-slate-400">0 Votes for helpful, 1 Comment</p>
+    </div>
+
+    <div class="flex flex-wrap gap-14">
+      <button class="flex items-center gap-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#828282" width="16" height="16" viewBox="0 0 20 20"
+          aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kMNrPk">
+          <title>thumb-up</title>
+          <path
+            d="M19.3 7.5c-0.389-0.51-0.996-0.837-1.679-0.84h-3.581v-2.38c0.002-0.043 0.003-0.094 0.003-0.145 0-2.11-1.71-3.82-3.82-3.82-0.071 0-0.142 0.002-0.213 0.006l0.010-0c-0.001 0-0.003-0-0.004-0-0.369 0-0.674 0.278-0.715 0.637l-0 0.003c-0.275 1.592-0.602 2.946-1.005 4.266l0.065-0.246c-0.642 1.532-2.111 2.598-3.835 2.64l-0.005 0h-3.56c-0.53 0-0.96 0.43-0.96 0.96v0 10.24c0.011 0.522 0.437 0.94 0.96 0.94 0 0 0 0 0 0h3.32c0 0 0 0 0 0 0.523 0 0.949-0.418 0.96-0.939l0-0.001v-0.9c1.38 0.78 3.6 1.84 4.76 1.84h4.52c0.092 0.010 0.198 0.016 0.306 0.016 1.36 0 2.509-0.899 2.888-2.134l0.006-0.021c0.787-1.819 1.508-3.994 2.044-6.241l0.056-0.279c0.116-0.372 0.184-0.8 0.184-1.243 0-0.877-0.263-1.693-0.713-2.373l0.010 0.016zM3.82 18.34h-2.4v-9.3h2.4v9.3zM18.44 10.78c-0.58 2.469-1.28 4.591-2.141 6.628l0.101-0.268c-0.175 0.732-0.823 1.268-1.597 1.268-0.107 0-0.212-0.010-0.313-0.030l0.010 0.002h-4.5c-0.9 0-3.48-1.28-4.76-2.060v-7.32c2.048-0.31 3.719-1.668 4.466-3.502l0.014-0.038c0.328-1.003 0.634-2.242 0.855-3.509l0.025-0.171c1.156 0.207 2.022 1.204 2.022 2.404 0 0.034-0.001 0.067-0.002 0.101l0-0.005v3.1c0 0.398 0.322 0.72 0.72 0.72v0h4.28c0.228 0 0.431 0.109 0.559 0.278l0.001 0.002c0.253 0.427 0.403 0.942 0.403 1.491 0 0.325-0.052 0.637-0.149 0.93l0.006-0.021z">
+          </path>
+        </svg>
+
+        <section class="text-slate-500 font-light">Helpful</section>
+      </button>
+
+      <button class="flex items-center gap-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#828282" width="16" height="16" viewBox="0 0 20 20"
+          aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kMNrPk">
+          <title>chat</title>
+          <path
+            d="M19.8 17.26c-1.347-1.31-2.182-3.139-2.182-5.163 0-0.062 0.001-0.124 0.002-0.186l-0 0.009v-5.26c-0.089-2.78-2.364-5.001-5.158-5.001-0.029 0-0.058 0-0.087 0.001l0.004-0h-7.3c-0.018-0-0.039-0-0.060-0-2.766 0-5.009 2.236-5.020 4.999v6.681c0.022 2.755 2.261 4.98 5.020 4.98 0.021 0 0.042-0 0.063-0l-0.003 0h14.3c0.335-0.009 0.603-0.283 0.603-0.62 0-0.172-0.070-0.328-0.183-0.44l-0-0zM11.98 16.42h-6.9c-0.012 0-0.026 0-0.041 0-1.713 0-3.106-1.372-3.139-3.077l-0-0.003v-6.68c0.034-1.708 1.426-3.080 3.139-3.080 0.014 0 0.029 0 0.043 0l-0.002-0h7.3c0.025-0.001 0.055-0.001 0.085-0.001 1.738 0 3.158 1.359 3.255 3.073l0 0.009v5.26c-0.001 0.038-0.001 0.084-0.001 0.129 0 1.606 0.4 3.118 1.106 4.442l-0.025-0.051zM11.66 6.9h-6.42c-0.467 0.070-0.822 0.469-0.822 0.95s0.354 0.88 0.817 0.949l0.005 0.001h6.42c0.467-0.070 0.822-0.469 0.822-0.95s-0.354-0.88-0.817-0.949l-0.005-0.001zM11.66 10.96h-6.42c-0.467 0.070-0.822 0.469-0.822 0.95s0.354 0.88 0.817 0.949l0.005 0.001h6.42c0.467-0.070 0.822-0.469 0.822-0.95s-0.354-0.88-0.817-0.949l-0.005-0.001z">
+          </path>
+        </svg>
+
+        <section class="text-slate-500 font-light">Comment</section>
+      </button>
+
+      <button class="flex items-center gap-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#828282" width="16" height="16" viewBox="0 0 20 20"
+          aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kMNrPk">
+          <title>share</title>
+          <path
+            d="M0.72 19.94c-0.020 0-0.060 0-0.080 0s-0.060 0-0.080 0v0c-0.32-0.080-0.56-0.36-0.56-0.7 0 0 0 0 0-0.020v0c0-10.1 6.32-12.92 9.52-13.28v-4.34c0 0 0 0 0 0 0-0.38 0.32-0.7 0.72-0.7 0.18 0 0.36 0.060 0.48 0.18v0l9.060 8.32c0.14 0.14 0.22 0.34 0.22 0.54v0c0 0.2-0.1 0.4-0.24 0.52v0l-9.040 8.12c-0.12 0.1-0.3 0.18-0.46 0.18-0.12 0-0.22-0.040-0.32-0.080h0.020c-0.26-0.1-0.44-0.36-0.44-0.64v-4.3c-3.66 0.22-6.74 2.48-8.12 5.66l-0.020 0.060c-0.1 0.28-0.36 0.48-0.66 0.48v0zM10.24 12.32c0.4 0 0.72 0.32 0.72 0.72v0 3.4l7.26-6.5-7.26-6.66v3.32c0 0.4-0.32 0.72-0.72 0.72v0c-2.18 0-7.48 1.7-8.58 9 2.060-2.46 5.14-4 8.56-4 0.020 0 0.020 0 0.020 0v0z">
+          </path>
+        </svg>
+
+        <section class="text-slate-500 font-light">Share</section>
+      </button>
+    </div>
+
+
+  </div>
+  <hr />
+
+  <div class="my-6">
+    <div class="flex flex-wrap justify-between py-2">
+      <div class="grid grid-cols-4 grid-rows-2 items-start w-52">
+        <img
+          src="https://b.zmtcdn.com/data/user_profile_pictures/9e0/31fb000d4d9b45741ef2f4bac43839e0.jpg?fit=around%7C100%3A100&crop=100%3A100%3B%2A%2C%2A"
+          class="rounded-full w-11 row-span-2" />
+        <p class="col-span-3">Joanna Cymbalista</p>
+        <p class="w-52 text-sm text-slate-400"> 16 reviews • 0 Followers</p>
+      </div>
+      <button class=" border p-3 border-orange-400 rounded-lg  text-orange-400">
+        Follow
+      </button>
+    </div>
+
+    <div class="flex gap-3 items-center py-2">
+      <button>
+        <div class="flex items-centers gap-2">
+          <div class="row-span-2 flex items-center bg-green-900 text-white font-bold rounded-md p-1 h-5 w-7 text-xs">
+            5
+            <svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" width="1rem" height="1rem" viewBox="0 0 20 20"
+              aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="h-2">
+              <title>star-fill</title>
+              <path
+                d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z">
+              </path>
+            </svg>
+          </div>
+        </div>
+
+      </button>
+
+      <p class="text-xs">DELIVERY</p>
+      <p class="text-xs tracking-wider text-slate-400">7 days ago</p>
+
+    </div>
+
+
+    <div class="py-3">
+      <p class="text-slate-400">0 Votes for helpful, 1 Comment</p>
+    </div>
+
+    <div class="flex flex-wrap gap-14">
+      <button class="flex items-center gap-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#828282" width="16" height="16" viewBox="0 0 20 20"
+          aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kMNrPk">
+          <title>thumb-up</title>
+          <path
+            d="M19.3 7.5c-0.389-0.51-0.996-0.837-1.679-0.84h-3.581v-2.38c0.002-0.043 0.003-0.094 0.003-0.145 0-2.11-1.71-3.82-3.82-3.82-0.071 0-0.142 0.002-0.213 0.006l0.010-0c-0.001 0-0.003-0-0.004-0-0.369 0-0.674 0.278-0.715 0.637l-0 0.003c-0.275 1.592-0.602 2.946-1.005 4.266l0.065-0.246c-0.642 1.532-2.111 2.598-3.835 2.64l-0.005 0h-3.56c-0.53 0-0.96 0.43-0.96 0.96v0 10.24c0.011 0.522 0.437 0.94 0.96 0.94 0 0 0 0 0 0h3.32c0 0 0 0 0 0 0.523 0 0.949-0.418 0.96-0.939l0-0.001v-0.9c1.38 0.78 3.6 1.84 4.76 1.84h4.52c0.092 0.010 0.198 0.016 0.306 0.016 1.36 0 2.509-0.899 2.888-2.134l0.006-0.021c0.787-1.819 1.508-3.994 2.044-6.241l0.056-0.279c0.116-0.372 0.184-0.8 0.184-1.243 0-0.877-0.263-1.693-0.713-2.373l0.010 0.016zM3.82 18.34h-2.4v-9.3h2.4v9.3zM18.44 10.78c-0.58 2.469-1.28 4.591-2.141 6.628l0.101-0.268c-0.175 0.732-0.823 1.268-1.597 1.268-0.107 0-0.212-0.010-0.313-0.030l0.010 0.002h-4.5c-0.9 0-3.48-1.28-4.76-2.060v-7.32c2.048-0.31 3.719-1.668 4.466-3.502l0.014-0.038c0.328-1.003 0.634-2.242 0.855-3.509l0.025-0.171c1.156 0.207 2.022 1.204 2.022 2.404 0 0.034-0.001 0.067-0.002 0.101l0-0.005v3.1c0 0.398 0.322 0.72 0.72 0.72v0h4.28c0.228 0 0.431 0.109 0.559 0.278l0.001 0.002c0.253 0.427 0.403 0.942 0.403 1.491 0 0.325-0.052 0.637-0.149 0.93l0.006-0.021z">
+          </path>
+        </svg>
+
+        <section class="text-slate-500 font-light">Helpful</section>
+      </button>
+
+      <button class="flex items-center gap-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#828282" width="16" height="16" viewBox="0 0 20 20"
+          aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kMNrPk">
+          <title>chat</title>
+          <path
+            d="M19.8 17.26c-1.347-1.31-2.182-3.139-2.182-5.163 0-0.062 0.001-0.124 0.002-0.186l-0 0.009v-5.26c-0.089-2.78-2.364-5.001-5.158-5.001-0.029 0-0.058 0-0.087 0.001l0.004-0h-7.3c-0.018-0-0.039-0-0.060-0-2.766 0-5.009 2.236-5.020 4.999v6.681c0.022 2.755 2.261 4.98 5.020 4.98 0.021 0 0.042-0 0.063-0l-0.003 0h14.3c0.335-0.009 0.603-0.283 0.603-0.62 0-0.172-0.070-0.328-0.183-0.44l-0-0zM11.98 16.42h-6.9c-0.012 0-0.026 0-0.041 0-1.713 0-3.106-1.372-3.139-3.077l-0-0.003v-6.68c0.034-1.708 1.426-3.080 3.139-3.080 0.014 0 0.029 0 0.043 0l-0.002-0h7.3c0.025-0.001 0.055-0.001 0.085-0.001 1.738 0 3.158 1.359 3.255 3.073l0 0.009v5.26c-0.001 0.038-0.001 0.084-0.001 0.129 0 1.606 0.4 3.118 1.106 4.442l-0.025-0.051zM11.66 6.9h-6.42c-0.467 0.070-0.822 0.469-0.822 0.95s0.354 0.88 0.817 0.949l0.005 0.001h6.42c0.467-0.070 0.822-0.469 0.822-0.95s-0.354-0.88-0.817-0.949l-0.005-0.001zM11.66 10.96h-6.42c-0.467 0.070-0.822 0.469-0.822 0.95s0.354 0.88 0.817 0.949l0.005 0.001h6.42c0.467-0.070 0.822-0.469 0.822-0.95s-0.354-0.88-0.817-0.949l-0.005-0.001z">
+          </path>
+        </svg>
+
+        <section class="text-slate-500 font-light">Comment</section>
+      </button>
+
+      <button class="flex items-center gap-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#828282" width="16" height="16" viewBox="0 0 20 20"
+          aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kMNrPk">
+          <title>share</title>
+          <path
+            d="M0.72 19.94c-0.020 0-0.060 0-0.080 0s-0.060 0-0.080 0v0c-0.32-0.080-0.56-0.36-0.56-0.7 0 0 0 0 0-0.020v0c0-10.1 6.32-12.92 9.52-13.28v-4.34c0 0 0 0 0 0 0-0.38 0.32-0.7 0.72-0.7 0.18 0 0.36 0.060 0.48 0.18v0l9.060 8.32c0.14 0.14 0.22 0.34 0.22 0.54v0c0 0.2-0.1 0.4-0.24 0.52v0l-9.040 8.12c-0.12 0.1-0.3 0.18-0.46 0.18-0.12 0-0.22-0.040-0.32-0.080h0.020c-0.26-0.1-0.44-0.36-0.44-0.64v-4.3c-3.66 0.22-6.74 2.48-8.12 5.66l-0.020 0.060c-0.1 0.28-0.36 0.48-0.66 0.48v0zM10.24 12.32c0.4 0 0.72 0.32 0.72 0.72v0 3.4l7.26-6.5-7.26-6.66v3.32c0 0.4-0.32 0.72-0.72 0.72v0c-2.18 0-7.48 1.7-8.58 9 2.060-2.46 5.14-4 8.56-4 0.020 0 0.020 0 0.020 0v0z">
+          </path>
+        </svg>
+
+        <section class="text-slate-500 font-light">Share</section>
+      </button>
+    </div>
+
+
+  </div>
+  <hr />
+  <div class="my-6">
+    <div class="flex flex-wrap justify-between py-2">
+      <div class="grid grid-cols-4 grid-rows-2 items-start w-52">
+        <img
+          src="https://b.zmtcdn.com/web/assets/2267aec184e096c98c46a1565a5563661664945464.png?fit=around%7C100%3A100&crop=100%3A100%3B%2A%2C%2A"
+          class="rounded-full w-11 row-span-2" />
+        <p class="col-span-3">Sandeep Shetty</p>
+        <p class="w-52 text-sm text-slate-400"> 28 reviews • 1 Followers</p>
+      </div>
+      <button class=" border p-3 border-orange-400 rounded-lg  text-orange-400">
+        Follow
+      </button>
+    </div>
+
+    <div class="flex gap-3 items-center py-2">
+      <button>
+        <div class="flex items-centers gap-2">
+          <div class="row-span-2 flex items-center bg-green-900 text-white font-bold rounded-md p-1 h-5 w-7 text-xs">
+            5
+            <svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" width="1rem" height="1rem" viewBox="0 0 20 20"
+              aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="h-2">
+              <title>star-fill</title>
+              <path
+                d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z">
+              </path>
+            </svg>
+          </div>
+        </div>
+
+      </button>
+
+      <p class="text-xs">DELIVERY</p>
+      <p class="text-xs tracking-wider text-slate-400">10 days ago</p>
+
+    </div>
+
+
+    <div class="py-3">
+      <p class="text-slate-400">0 Votes for helpful, 1 Comment</p>
+    </div>
+
+    <div class="flex flex-wrap gap-14">
+      <button class="flex items-center gap-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#828282" width="16" height="16" viewBox="0 0 20 20"
+          aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kMNrPk">
+          <title>thumb-up</title>
+          <path
+            d="M19.3 7.5c-0.389-0.51-0.996-0.837-1.679-0.84h-3.581v-2.38c0.002-0.043 0.003-0.094 0.003-0.145 0-2.11-1.71-3.82-3.82-3.82-0.071 0-0.142 0.002-0.213 0.006l0.010-0c-0.001 0-0.003-0-0.004-0-0.369 0-0.674 0.278-0.715 0.637l-0 0.003c-0.275 1.592-0.602 2.946-1.005 4.266l0.065-0.246c-0.642 1.532-2.111 2.598-3.835 2.64l-0.005 0h-3.56c-0.53 0-0.96 0.43-0.96 0.96v0 10.24c0.011 0.522 0.437 0.94 0.96 0.94 0 0 0 0 0 0h3.32c0 0 0 0 0 0 0.523 0 0.949-0.418 0.96-0.939l0-0.001v-0.9c1.38 0.78 3.6 1.84 4.76 1.84h4.52c0.092 0.010 0.198 0.016 0.306 0.016 1.36 0 2.509-0.899 2.888-2.134l0.006-0.021c0.787-1.819 1.508-3.994 2.044-6.241l0.056-0.279c0.116-0.372 0.184-0.8 0.184-1.243 0-0.877-0.263-1.693-0.713-2.373l0.010 0.016zM3.82 18.34h-2.4v-9.3h2.4v9.3zM18.44 10.78c-0.58 2.469-1.28 4.591-2.141 6.628l0.101-0.268c-0.175 0.732-0.823 1.268-1.597 1.268-0.107 0-0.212-0.010-0.313-0.030l0.010 0.002h-4.5c-0.9 0-3.48-1.28-4.76-2.060v-7.32c2.048-0.31 3.719-1.668 4.466-3.502l0.014-0.038c0.328-1.003 0.634-2.242 0.855-3.509l0.025-0.171c1.156 0.207 2.022 1.204 2.022 2.404 0 0.034-0.001 0.067-0.002 0.101l0-0.005v3.1c0 0.398 0.322 0.72 0.72 0.72v0h4.28c0.228 0 0.431 0.109 0.559 0.278l0.001 0.002c0.253 0.427 0.403 0.942 0.403 1.491 0 0.325-0.052 0.637-0.149 0.93l0.006-0.021z">
+          </path>
+        </svg>
+
+        <section class="text-slate-500 font-light">Helpful</section>
+      </button>
+
+      <button class="flex items-center gap-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#828282" width="16" height="16" viewBox="0 0 20 20"
+          aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kMNrPk">
+          <title>chat</title>
+          <path
+            d="M19.8 17.26c-1.347-1.31-2.182-3.139-2.182-5.163 0-0.062 0.001-0.124 0.002-0.186l-0 0.009v-5.26c-0.089-2.78-2.364-5.001-5.158-5.001-0.029 0-0.058 0-0.087 0.001l0.004-0h-7.3c-0.018-0-0.039-0-0.060-0-2.766 0-5.009 2.236-5.020 4.999v6.681c0.022 2.755 2.261 4.98 5.020 4.98 0.021 0 0.042-0 0.063-0l-0.003 0h14.3c0.335-0.009 0.603-0.283 0.603-0.62 0-0.172-0.070-0.328-0.183-0.44l-0-0zM11.98 16.42h-6.9c-0.012 0-0.026 0-0.041 0-1.713 0-3.106-1.372-3.139-3.077l-0-0.003v-6.68c0.034-1.708 1.426-3.080 3.139-3.080 0.014 0 0.029 0 0.043 0l-0.002-0h7.3c0.025-0.001 0.055-0.001 0.085-0.001 1.738 0 3.158 1.359 3.255 3.073l0 0.009v5.26c-0.001 0.038-0.001 0.084-0.001 0.129 0 1.606 0.4 3.118 1.106 4.442l-0.025-0.051zM11.66 6.9h-6.42c-0.467 0.070-0.822 0.469-0.822 0.95s0.354 0.88 0.817 0.949l0.005 0.001h6.42c0.467-0.070 0.822-0.469 0.822-0.95s-0.354-0.88-0.817-0.949l-0.005-0.001zM11.66 10.96h-6.42c-0.467 0.070-0.822 0.469-0.822 0.95s0.354 0.88 0.817 0.949l0.005 0.001h6.42c0.467-0.070 0.822-0.469 0.822-0.95s-0.354-0.88-0.817-0.949l-0.005-0.001z">
+          </path>
+        </svg>
+
+        <section class="text-slate-500 font-light">Comment</section>
+      </button>
+
+      <button class="flex items-center gap-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#828282" width="16" height="16" viewBox="0 0 20 20"
+          aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kMNrPk">
+          <title>share</title>
+          <path
+            d="M0.72 19.94c-0.020 0-0.060 0-0.080 0s-0.060 0-0.080 0v0c-0.32-0.080-0.56-0.36-0.56-0.7 0 0 0 0 0-0.020v0c0-10.1 6.32-12.92 9.52-13.28v-4.34c0 0 0 0 0 0 0-0.38 0.32-0.7 0.72-0.7 0.18 0 0.36 0.060 0.48 0.18v0l9.060 8.32c0.14 0.14 0.22 0.34 0.22 0.54v0c0 0.2-0.1 0.4-0.24 0.52v0l-9.040 8.12c-0.12 0.1-0.3 0.18-0.46 0.18-0.12 0-0.22-0.040-0.32-0.080h0.020c-0.26-0.1-0.44-0.36-0.44-0.64v-4.3c-3.66 0.22-6.74 2.48-8.12 5.66l-0.020 0.060c-0.1 0.28-0.36 0.48-0.66 0.48v0zM10.24 12.32c0.4 0 0.72 0.32 0.72 0.72v0 3.4l7.26-6.5-7.26-6.66v3.32c0 0.4-0.32 0.72-0.72 0.72v0c-2.18 0-7.48 1.7-8.58 9 2.060-2.46 5.14-4 8.56-4 0.020 0 0.020 0 0.020 0v0z">
+          </path>
+        </svg>
+
+        <section class="text-slate-500 font-light">Share</section>
+      </button>
+    </div>
+
+
+  </div>
+  <hr />
+  <div class="my-6">
+    <div class="flex flex-wrap justify-between py-2">
+      <div class="grid grid-cols-4 grid-rows-2 items-start w-52">
+        <img
+          src="https://b.zmtcdn.com/web/assets/2267aec184e096c98c46a1565a5563661664945464.png?fit=around%7C100%3A100&crop=100%3A100%3B%2A%2C%2A"
+          class="rounded-full w-11 row-span-2" />
+        <p class="col-span-3">Adwita</p>
+        <p class="w-52 text-sm text-slate-400"> 16 reviews • 0 Followers</p>
+      </div>
+      <button class=" border p-3 border-orange-400 rounded-lg  text-orange-400">
+        Follow
+      </button>
+    </div>
+
+    <div class="flex gap-3 items-center py-2">
+      <button>
+        <div class="flex items-centers gap-2">
+          <div class="row-span-2 flex items-center bg-green-900 text-white font-bold rounded-md p-1 h-5 w-7 text-xs">
+            5
+            <svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" width="1rem" height="1rem" viewBox="0 0 20 20"
+              aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="h-2">
+              <title>star-fill</title>
+              <path
+                d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z">
+              </path>
+            </svg>
+          </div>
+        </div>
+
+      </button>
+
+      <p class="text-xs">DELIVERY</p>
+      <p class="text-xs tracking-wider text-slate-400">10 days ago</p>
+
+    </div>
+
+
+    <div class="py-3">
+      <p class="text-slate-400">0 Votes for helpful, 1 Comment</p>
+    </div>
+
+    <div class="flex flex-wrap gap-14">
+      <button class="flex items-center gap-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#828282" width="16" height="16" viewBox="0 0 20 20"
+          aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kMNrPk">
+          <title>thumb-up</title>
+          <path
+            d="M19.3 7.5c-0.389-0.51-0.996-0.837-1.679-0.84h-3.581v-2.38c0.002-0.043 0.003-0.094 0.003-0.145 0-2.11-1.71-3.82-3.82-3.82-0.071 0-0.142 0.002-0.213 0.006l0.010-0c-0.001 0-0.003-0-0.004-0-0.369 0-0.674 0.278-0.715 0.637l-0 0.003c-0.275 1.592-0.602 2.946-1.005 4.266l0.065-0.246c-0.642 1.532-2.111 2.598-3.835 2.64l-0.005 0h-3.56c-0.53 0-0.96 0.43-0.96 0.96v0 10.24c0.011 0.522 0.437 0.94 0.96 0.94 0 0 0 0 0 0h3.32c0 0 0 0 0 0 0.523 0 0.949-0.418 0.96-0.939l0-0.001v-0.9c1.38 0.78 3.6 1.84 4.76 1.84h4.52c0.092 0.010 0.198 0.016 0.306 0.016 1.36 0 2.509-0.899 2.888-2.134l0.006-0.021c0.787-1.819 1.508-3.994 2.044-6.241l0.056-0.279c0.116-0.372 0.184-0.8 0.184-1.243 0-0.877-0.263-1.693-0.713-2.373l0.010 0.016zM3.82 18.34h-2.4v-9.3h2.4v9.3zM18.44 10.78c-0.58 2.469-1.28 4.591-2.141 6.628l0.101-0.268c-0.175 0.732-0.823 1.268-1.597 1.268-0.107 0-0.212-0.010-0.313-0.030l0.010 0.002h-4.5c-0.9 0-3.48-1.28-4.76-2.060v-7.32c2.048-0.31 3.719-1.668 4.466-3.502l0.014-0.038c0.328-1.003 0.634-2.242 0.855-3.509l0.025-0.171c1.156 0.207 2.022 1.204 2.022 2.404 0 0.034-0.001 0.067-0.002 0.101l0-0.005v3.1c0 0.398 0.322 0.72 0.72 0.72v0h4.28c0.228 0 0.431 0.109 0.559 0.278l0.001 0.002c0.253 0.427 0.403 0.942 0.403 1.491 0 0.325-0.052 0.637-0.149 0.93l0.006-0.021z">
+          </path>
+        </svg>
+
+        <section class="text-slate-500 font-light">Helpful</section>
+      </button>
+
+      <button class="flex items-center gap-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#828282" width="16" height="16" viewBox="0 0 20 20"
+          aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kMNrPk">
+          <title>chat</title>
+          <path
+            d="M19.8 17.26c-1.347-1.31-2.182-3.139-2.182-5.163 0-0.062 0.001-0.124 0.002-0.186l-0 0.009v-5.26c-0.089-2.78-2.364-5.001-5.158-5.001-0.029 0-0.058 0-0.087 0.001l0.004-0h-7.3c-0.018-0-0.039-0-0.060-0-2.766 0-5.009 2.236-5.020 4.999v6.681c0.022 2.755 2.261 4.98 5.020 4.98 0.021 0 0.042-0 0.063-0l-0.003 0h14.3c0.335-0.009 0.603-0.283 0.603-0.62 0-0.172-0.070-0.328-0.183-0.44l-0-0zM11.98 16.42h-6.9c-0.012 0-0.026 0-0.041 0-1.713 0-3.106-1.372-3.139-3.077l-0-0.003v-6.68c0.034-1.708 1.426-3.080 3.139-3.080 0.014 0 0.029 0 0.043 0l-0.002-0h7.3c0.025-0.001 0.055-0.001 0.085-0.001 1.738 0 3.158 1.359 3.255 3.073l0 0.009v5.26c-0.001 0.038-0.001 0.084-0.001 0.129 0 1.606 0.4 3.118 1.106 4.442l-0.025-0.051zM11.66 6.9h-6.42c-0.467 0.070-0.822 0.469-0.822 0.95s0.354 0.88 0.817 0.949l0.005 0.001h6.42c0.467-0.070 0.822-0.469 0.822-0.95s-0.354-0.88-0.817-0.949l-0.005-0.001zM11.66 10.96h-6.42c-0.467 0.070-0.822 0.469-0.822 0.95s0.354 0.88 0.817 0.949l0.005 0.001h6.42c0.467-0.070 0.822-0.469 0.822-0.95s-0.354-0.88-0.817-0.949l-0.005-0.001z">
+          </path>
+        </svg>
+
+        <section class="text-slate-500 font-light">Comment</section>
+      </button>
+
+      <button class="flex items-center gap-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#828282" width="16" height="16" viewBox="0 0 20 20"
+          aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kMNrPk">
+          <title>share</title>
+          <path
+            d="M0.72 19.94c-0.020 0-0.060 0-0.080 0s-0.060 0-0.080 0v0c-0.32-0.080-0.56-0.36-0.56-0.7 0 0 0 0 0-0.020v0c0-10.1 6.32-12.92 9.52-13.28v-4.34c0 0 0 0 0 0 0-0.38 0.32-0.7 0.72-0.7 0.18 0 0.36 0.060 0.48 0.18v0l9.060 8.32c0.14 0.14 0.22 0.34 0.22 0.54v0c0 0.2-0.1 0.4-0.24 0.52v0l-9.040 8.12c-0.12 0.1-0.3 0.18-0.46 0.18-0.12 0-0.22-0.040-0.32-0.080h0.020c-0.26-0.1-0.44-0.36-0.44-0.64v-4.3c-3.66 0.22-6.74 2.48-8.12 5.66l-0.020 0.060c-0.1 0.28-0.36 0.48-0.66 0.48v0zM10.24 12.32c0.4 0 0.72 0.32 0.72 0.72v0 3.4l7.26-6.5-7.26-6.66v3.32c0 0.4-0.32 0.72-0.72 0.72v0c-2.18 0-7.48 1.7-8.58 9 2.060-2.46 5.14-4 8.56-4 0.020 0 0.020 0 0.020 0v0z">
+          </path>
+        </svg>
+
+        <section class="text-slate-500 font-light">Share</section>
+      </button>
+    </div>
+
+
+  </div>
+  <hr />
+  <div class="my-6">
+    <div class="flex justify-between flex-wrap py-2">
+      <div class="grid grid-cols-4 grid-rows-2 items-start w-52">
+        <img
+          src="https://b.zmtcdn.com/data/user_profile_pictures/006/a9aac62d8d3bba97cd24f4a60541f006.jpg?fit=around%7C100%3A100&crop=100%3A100%3B%2A%2C%2A"
+          class="rounded-full w-11 row-span-2" />
+        <p class="col-span-3">Neepa M</p>
+        <p class="w-52 text-sm text-slate-400"> 9 reviews • 1 Followers</p>
+      </div>
+      <button class=" border p-3 border-orange-400 rounded-lg  text-orange-400">
+        Follow
+      </button>
+    </div>
+
+    <div class="flex gap-3 items-center py-2">
+      <button>
+        <div class="flex items-centers gap-2">
+          <div class="row-span-2 flex items-center bg-green-900 text-white font-bold rounded-md p-1 h-5 w-7 text-xs">
+            5
+            <svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" width="1rem" height="1rem" viewBox="0 0 20 20"
+              aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="h-2">
+              <title>star-fill</title>
+              <path
+                d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z">
+              </path>
+            </svg>
+          </div>
+        </div>
+
+      </button>
+
+      <p class="text-xs">DELIVERY</p>
+      <p class="text-xs tracking-wider text-slate-400">10 days ago</p>
+
+    </div>
+
+    <p class="text-slate-500 tracking-wider">Hope pizza was Maida free</p>
+    <div class="py-3">
+      <p class="text-slate-400">0 Votes for helpful, 1 Comment</p>
+    </div>
+
+    <div class="flex flex-wrap gap-14">
+      <button class="flex items-center gap-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#828282" width="16" height="16" viewBox="0 0 20 20"
+          aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kMNrPk">
+          <title>thumb-up</title>
+          <path
+            d="M19.3 7.5c-0.389-0.51-0.996-0.837-1.679-0.84h-3.581v-2.38c0.002-0.043 0.003-0.094 0.003-0.145 0-2.11-1.71-3.82-3.82-3.82-0.071 0-0.142 0.002-0.213 0.006l0.010-0c-0.001 0-0.003-0-0.004-0-0.369 0-0.674 0.278-0.715 0.637l-0 0.003c-0.275 1.592-0.602 2.946-1.005 4.266l0.065-0.246c-0.642 1.532-2.111 2.598-3.835 2.64l-0.005 0h-3.56c-0.53 0-0.96 0.43-0.96 0.96v0 10.24c0.011 0.522 0.437 0.94 0.96 0.94 0 0 0 0 0 0h3.32c0 0 0 0 0 0 0.523 0 0.949-0.418 0.96-0.939l0-0.001v-0.9c1.38 0.78 3.6 1.84 4.76 1.84h4.52c0.092 0.010 0.198 0.016 0.306 0.016 1.36 0 2.509-0.899 2.888-2.134l0.006-0.021c0.787-1.819 1.508-3.994 2.044-6.241l0.056-0.279c0.116-0.372 0.184-0.8 0.184-1.243 0-0.877-0.263-1.693-0.713-2.373l0.010 0.016zM3.82 18.34h-2.4v-9.3h2.4v9.3zM18.44 10.78c-0.58 2.469-1.28 4.591-2.141 6.628l0.101-0.268c-0.175 0.732-0.823 1.268-1.597 1.268-0.107 0-0.212-0.010-0.313-0.030l0.010 0.002h-4.5c-0.9 0-3.48-1.28-4.76-2.060v-7.32c2.048-0.31 3.719-1.668 4.466-3.502l0.014-0.038c0.328-1.003 0.634-2.242 0.855-3.509l0.025-0.171c1.156 0.207 2.022 1.204 2.022 2.404 0 0.034-0.001 0.067-0.002 0.101l0-0.005v3.1c0 0.398 0.322 0.72 0.72 0.72v0h4.28c0.228 0 0.431 0.109 0.559 0.278l0.001 0.002c0.253 0.427 0.403 0.942 0.403 1.491 0 0.325-0.052 0.637-0.149 0.93l0.006-0.021z">
+          </path>
+        </svg>
+
+        <section class="text-slate-500 font-light">Helpful</section>
+      </button>
+
+      <button class="flex items-center gap-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#828282" width="16" height="16" viewBox="0 0 20 20"
+          aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kMNrPk">
+          <title>chat</title>
+          <path
+            d="M19.8 17.26c-1.347-1.31-2.182-3.139-2.182-5.163 0-0.062 0.001-0.124 0.002-0.186l-0 0.009v-5.26c-0.089-2.78-2.364-5.001-5.158-5.001-0.029 0-0.058 0-0.087 0.001l0.004-0h-7.3c-0.018-0-0.039-0-0.060-0-2.766 0-5.009 2.236-5.020 4.999v6.681c0.022 2.755 2.261 4.98 5.020 4.98 0.021 0 0.042-0 0.063-0l-0.003 0h14.3c0.335-0.009 0.603-0.283 0.603-0.62 0-0.172-0.070-0.328-0.183-0.44l-0-0zM11.98 16.42h-6.9c-0.012 0-0.026 0-0.041 0-1.713 0-3.106-1.372-3.139-3.077l-0-0.003v-6.68c0.034-1.708 1.426-3.080 3.139-3.080 0.014 0 0.029 0 0.043 0l-0.002-0h7.3c0.025-0.001 0.055-0.001 0.085-0.001 1.738 0 3.158 1.359 3.255 3.073l0 0.009v5.26c-0.001 0.038-0.001 0.084-0.001 0.129 0 1.606 0.4 3.118 1.106 4.442l-0.025-0.051zM11.66 6.9h-6.42c-0.467 0.070-0.822 0.469-0.822 0.95s0.354 0.88 0.817 0.949l0.005 0.001h6.42c0.467-0.070 0.822-0.469 0.822-0.95s-0.354-0.88-0.817-0.949l-0.005-0.001zM11.66 10.96h-6.42c-0.467 0.070-0.822 0.469-0.822 0.95s0.354 0.88 0.817 0.949l0.005 0.001h6.42c0.467-0.070 0.822-0.469 0.822-0.95s-0.354-0.88-0.817-0.949l-0.005-0.001z">
+          </path>
+        </svg>
+
+        <section class="text-slate-500 font-light">Comment</section>
+      </button>
+
+      <button class="flex items-center gap-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#828282" width="16" height="16" viewBox="0 0 20 20"
+          aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 kMNrPk">
+          <title>share</title>
+          <path
+            d="M0.72 19.94c-0.020 0-0.060 0-0.080 0s-0.060 0-0.080 0v0c-0.32-0.080-0.56-0.36-0.56-0.7 0 0 0 0 0-0.020v0c0-10.1 6.32-12.92 9.52-13.28v-4.34c0 0 0 0 0 0 0-0.38 0.32-0.7 0.72-0.7 0.18 0 0.36 0.060 0.48 0.18v0l9.060 8.32c0.14 0.14 0.22 0.34 0.22 0.54v0c0 0.2-0.1 0.4-0.24 0.52v0l-9.040 8.12c-0.12 0.1-0.3 0.18-0.46 0.18-0.12 0-0.22-0.040-0.32-0.080h0.020c-0.26-0.1-0.44-0.36-0.44-0.64v-4.3c-3.66 0.22-6.74 2.48-8.12 5.66l-0.020 0.060c-0.1 0.28-0.36 0.48-0.66 0.48v0zM10.24 12.32c0.4 0 0.72 0.32 0.72 0.72v0 3.4l7.26-6.5-7.26-6.66v3.32c0 0.4-0.32 0.72-0.72 0.72v0c-2.18 0-7.48 1.7-8.58 9 2.060-2.46 5.14-4 8.56-4 0.020 0 0.020 0 0.020 0v0z">
+          </path>
+        </svg>
+
+        <section class="text-slate-500 font-light">Share</section>
+      </button>
+    </div>
+
+
+  </div>
+  <hr />
+
+
+  <!--next page opt-->
+  <div class="flex flex-wrap justify-end gap-2 my-5">
+    <a
+      href="https://www.zomato.com/bangalore/the-pizza-bakery-sanjay-nagar-bangalore/reviews?page=1&amp;sort=dd&amp;filter=reviews-dd"
+      >
+      <div class="border rounded-full w-8 h-8 bg-green-600 text-white flex items-center justify-center">1</div>
+    </a>
+    <a
+      href="https://www.zomato.com/bangalore/the-pizza-bakery-sanjay-nagar-bangalore/reviews?page=1&amp;sort=dd&amp;filter=reviews-dd"
+    >
+      <div class=" hover:border hover:rounded-full w-8 h-8 text-center hover:bg-emerald-200 flex items-center justify-center">2</div>
+    </a>
+    <a
+      href="https://www.zomato.com/bangalore/the-pizza-bakery-sanjay-nagar-bangalore/reviews?page=1&amp;sort=dd&amp;filter=reviews-dd"
+    >
+      <div class=" hover:border hover:rounded-full w-8 h-8 text-center hover:bg-emerald-200  flex items-center justify-center">3</div>
+    </a>
+    <a
+      href="https://www.zomato.com/bangalore/the-pizza-bakery-sanjay-nagar-bangalore/reviews?page=1&amp;sort=dd&amp;filter=reviews-dd"
+      >
+      <div class=" hover:border hover:rounded-full w-8 h-8 text-center  hover:bg-emerald-200  flex items-center justify-center">4</div>
+    </a>
+    <a
+      href="https://www.zomato.com/bangalore/the-pizza-bakery-sanjay-nagar-bangalore/reviews?page=1&amp;sort=dd&amp;filter=reviews-dd"
+      >
+      <div class=" hover:border hover:rounded-full w-8 h-8 text-center hover:bg-emerald-200  flex items-center justify-center">5</div>
+    </a>
+    <a
+      href="https://www.zomato.com/bangalore/the-pizza-bakery-sanjay-nagar-bangalore/reviews?page=2&amp;sort=dd&amp;filter=reviews-dd"
+      class="border-blue-500 border-2 rounded-full w-8 h-8 text-center  hover:bg-emerald-200 flex items-center justify-center"><i color="#1C1C1C" size="20"><svg
+          xmlns="http://www.w3.org/2000/svg" fill="#000000" width="20" height="20" viewBox="0 0 20 20"
+          aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 iRDDBk">
+          <title>chevron-right</title>
+          <path
+            d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z">
+          </path>
+        </svg></i>
+    </a>
+  </div>
+</body>
+
+</html>
