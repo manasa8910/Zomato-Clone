@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0%;
+    box-sizing: border-box;
+    padding: 0%;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.landing-page{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5) 57.17%, rgba(0, 0, 0, 0.46) 100%, rgba(0,0,0,0.3)),
+    url("./assetstanishka/sushi.png");
+    height: 134vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+p{
+    color: rgb(54,54,54);
+}
+.work{
+    background-image: url("https://b.zmtcdn.com/data/o2_assets/826e851c6f464964ee66c8a415903d881660110863.png");
+    height: 110vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ending{
+    background-image: url("https://b.zmtcdn.com/data/o2_assets/60a2ed05c65decc1afc09adc7ecc68c81659679957.png");
+    height:134vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

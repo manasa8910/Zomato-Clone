@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>who we are</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./style.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/8c3767e0a4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    'sm': '640px',
+                    // => @media (min-width: 640px) { ... }
+
+                    'md': '768px',
+                    // => @media (min-width: 768px) { ... }
+
+                    'lg': '1024px',
+                    // => @media (min-width: 1024px) { ... }
+
+                    'xl': '1280px',
+                    // => @media (min-width: 1280px) { ... }
+
+                    '2xl': '1536px',
+                    // => @media (min-width: 1536px) { ... }
+                },
+                extend: {
+                    screens: {
+                        'xs': { 'min': '320px', 'max': '630px' },
+                        // => @media (min-width: 992px) { ... }
+                    },
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                },
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="landing-page max-w-full  xs:h-screen">
+        <div class="flex sm:justify-around  max-w-full   xs:gap-28 xs:ml-[16px]">
+            <div class="pt-6 sm:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1.5em"
+                    viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <style>
+                        svg {
+                            fill: #fafcff
+                        }
+                    </style>
+                    <path
+                        d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                </svg>
+            </div>
+            <div class="pt-6">
+                <img src="https://b.zmtcdn.com/web_assets/ee34583804919f1d9d5a45a32db80a891604300478.png" alt="zomato"
+                    class="h-[20px] cursor-pointer">
+            </div>
+            <div class="pt-4 xs:hidden md:block">
+                <a class=" text-white text-lg px-3 cursor-pointer" href="">Home</a>
+                <a class="text-white px-3  text-lg border-b-2 pb-2.5 cursor-pointer " href="./who we are.html">Who We
+                    Are</a>
+                <a class="text-white px-3 text-lg cursor-pointer " href="./work.html">Work with us</a>
+            </div>
+        </div>
+        <div class="text-center xs:text-left xs:pl-4">
+            <h2
+                class="pt-[48%] text-white text-center text-[52px] font-medium pb-7 xs:text-[42px] xs:text-left  xs:font-medium xs:pt-[62%]">
+                Better food for more people</h2>
+            <a href="#carousel" class="text-white ">scroll for more</a>
+        </div>
+    </div>
+    <!-- --carousel-- -->
+    <div class="owl-carousel owl-theme  mx-[6%] mt-[10%] mr-[8%] w-[86%] xs:mx-[5%]" id="carousel">
+        <div class="item box-border object-cover">
+            <img src="https://b.zmtcdn.com/web_assets/7e2c9e22ffe284beaec828fb62c4bfef1563875343.jpeg?output-format=webp"
+                class="h-[110vh] rounded-2xl xs:h-72" />
+        </div>
+        <div class="item object-cover">
+            <img src="https://b.zmtcdn.com/web_assets/cfa63c11504ffe735afd3ef0383a06de1563875358.jpeg?output-format=webp"
+                class="h-[110vh] rounded-2xl xs:h-72" />
+        </div>
+        <div class="item object-cover">
+            <img src="https://b.zmtcdn.com/web_assets/0e000a058ca6e5b84d5e6b486cfd00651563875325.jpeg?output-format=webp"
+                class="h-[110vh] rounded-2xl xs:h-72" />
+        </div>
+        <div class="item object-cover">
+            <img src="https://b.zmtcdn.com/web_assets/4c4754484b185afd6d88e357de72f7de1563874934.jpeg?output-format=webp"
+                class="h-[110vh] rounded-2xl xs:h-72" />
+        </div>
+    </div>
+    <div class="mx-[6%] xs:mx-[5%]">
+        <button class="bg-rose-500 py-1.5 px-6 rounded-3xl mx-1 text-white font-medium xs:py-1 xs:px-3">Assortment</button>
+        <button class="py-1.5 px-6 border-solid border-[1px] border-black rounded-full mx-1 font-medium xs:py-1 xs:px-3">A</button>
+        <button class="py-1.5 px-6 border-solid border-[1px] border-black rounded-full mx-1  font-medium xs:py-1 xs:px-3">A</button>
+        <button class="py-1.5 px-6 border-solid border-[1px] border-black rounded-full mx-1  font-medium xs:py-1 xs:px-3">Q</button>
+        <h2 class="text-3xl font-medium pt-4 pb-3 xs:text-2xl">Driving the force of <span class="text-rose-500">assortment</span>
+        </h2>
+        <p class="xs:text-[14px] xs:leading-6">For over a decade now, we’ve been empowering our customers in discovering new tastes and experiences across
+            countries. By putting together meticulous information for our customers, we enable them to make an informed
+            choice</p>
+    </div>
+    <div class=" mx-[6%] mt-[5%] xs:mx-[5%]">
+        <div>
+            <h2 class="text-[2.6rem] font-semibold pb-6 xs:text-[1.9rem]"><span class="border-b-4 border-rose-500 pb-2 xs:border-transparent">Who</span> are
+                we?
+            </h2>
+        </div>
+        <div class=" flex gap-14 xs:flex-col-reverse">
+            <p class="leading-6 text-[15px] w-[88%] tracking-tight xs:mt-[-30px]">Launched in 2010, Our technology platform connects
+                customers,
+                restaurant partners and delivery partners, serving their multiple needs. Customers use our platform to
+                search and discover restaurants, read and write customer generated reviews and view and upload photos,
+                order food delivery, book a table and make payments while dining-out at restaurants. On the other hand,
+                we provide restaurant partners with industry-specific marketing tools which enable them to engage and
+                acquire customers to grow their business while also providing a reliable and efficient last mile
+                delivery service. We also operate a one-stop procurement solution, Hyperpure, which supplies high
+                quality ingredients and kitchen products to restaurant partners. We also provide our delivery partners
+                with transparent and flexible earning opportunities.</p>
+            <img src="https://b.zmtcdn.com/web/about/a7b0a36d5107f3590895981dab2eeac31563208212.jpeg?output-format=webp"
+            class="h-[360px] w-[900px]  rounded-lg mt-[-60px] xs:mt-0 xs:h-[210px]" alt="who">
+        </div>
+    </div>
+    <div class=" mx-[6%] mt-[8%] xs:mx-[5%]">
+        <div>
+            <h2 class="text-[2.6rem] font-semibold xs:text-[1.9rem]">From our blog</h2>
+            <p xs:leading-3>Explore our blog for insightful articles, personal reflections, impactful resources, and ideas that
+                inspire us at Zomato</p>
+        </div>
+        <div class="mt-5 flex flex-wrap cursor-pointer  justify-evenly tracking-tight xs:flex-col">
+            <!-- --first card-- -->
+            <div class="w-[30%] xs:w-[100%] ">
+                <div>
+                    <a href="https://blog.zomato.com/introducing-tips-for-the-kitchen-staff">
+                        <img src="https://zomatoblog.com/wp-content/uploads/2023/09/blog-header.png" alt="kitchen staff"
+                            class="rounded-md h-[214px]">
+                    </a>
+                    <div class="h-7 w-28 bg-black opacity-70 text-center rounded mt-[-10%]  ml-[13.5rem]">
+                        <a href="https://blog.zomato.com/introducing-tips-for-the-kitchen-staff"
+                            class="text-white  text-base ">Community</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="https://blog.zomato.com/introducing-tips-for-the-kitchen-staff">
+                        <p class="text-[13px] mb-3 mt-6 text-stone-400">Jahnvi Goyal | 21 september 2023</p>
+                        <h4 class="text-lg my-2.5 font-medium">Introducing Tips For The Kitchen st...</h4>
+                        <p class="text-[15px]">Share your love and gratitude with the kitchen staff of your favorite
+                            restaurants you order
+                            from with ‘Tips for the kitchen staff’.</p>
+                    </a>
+                </div>
+            </div>
+            <!-- --second card-- -->
+            <div class="w-[30%] xs:w-[100%] xs:mt-10">
+                <div>
+                    <a href="https://blog.zomato.com/introducing-vinifera">
+                        <img src="https://zomatoblog.com/wp-content/uploads/2023/09/image7.jpg" alt="techno"
+                            class="h-[214px] rounded-md w-30%">
+                    </a>
+                    <div class="h-7 w-28 bg-black opacity-70 text-center rounded mt-[-10%]  ml-[13.5rem]">
+                        <a href="https://blog.zomato.com/introducing-vinifera"
+                            class="text-white  text-base">Technology</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="https://blog.zomato.com/introducing-vinifera">
+                        <p class="text-[13px] mb-3 mt-5 text-stone-400">Security Team | 13 September 2023</p>
+                        <h4 class="text-lg my-2.5 font-medium">Introducing Vinifera: A guide on h...</h4>
+                        <p class="text-[15px]">Vinifera is an open-source in-house monitoring tool for enhancing digital
+                            security. This blog covers its development journey, architectural foundations and challenges
+                            it has encountered and overcome along the way.</p>
+                    </a>
+                </div>
+            </div>
+            <!-- --third card-- -->
+            <div class="w-[30%] xs:w-[100%] xs:mt-10">
+                <div>
+                    <a href="https://blog.zomato.com/introducing-zomato-ai-your-foodie-buddy">
+                        <img src="https://zomatoblog.com/wp-content/uploads/2023/08/1-2.png" alt="zomato"
+                            class="rounded-md h-[214px]">
+                    </a>
+                    <div class="h-7 w-28 bg-black opacity-70 text-center rounded mt-[-10%] ml-[13.5rem]">
+                        <a href="https://blog.zomato.com/introducing-zomato-ai-your-foodie-buddy"
+                            class="text-white  text-base">Community</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="https://blog.zomato.com/introducing-zomato-ai-your-foodie-buddy">
+                        <p class="text-[13px] mb-3 mt-5 text-stone-400">Vaibhav Bhutani | 1 September 2023</p>
+                        <h4 class="text-lg my-2.5 font-medium">Introducing Zomato AI: Your Foodie...</h4>
+                        <p class="text-[15px]">Experience the future of food ordering with Zomato AI, an intelligent
+                            assistant that caters to your many moods and diverse dietary needs.</p>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class=" mx-[6%] mt-[9%] xs:mx-[5%] ">
+        <div>
+            <h2 class="text-[2rem] font-medium mb-[3%]">Glimpses of life at Zomato</h2>
+        </div>
+    </div>
+    <!-- --images-- -->
+    <div class="flex gap-2 mx-[6%] h-[390px] xs:h-[250px] xs:mx-[5%]">
+        <img src="https://b.zmtcdn.com/web/about/945996bdd3db3d99d80a2112cea29d371563210246.png?output-format=webp"
+            alt="image" width="1000px" class="object-cover rounded-md ">
+        <div class="flex flex-col gap-2">
+            <img src="https://b.zmtcdn.com/web/about/assets/1279699be7bf8786fda44f92afc9c3511563126954.png?output-format=webp"
+                alt="image" width="550px" class="object-cover h-48 rounded-md">
+            <img src="https://b.zmtcdn.com/web/about/ff03481fd5bab46412231b3d9de45cd21563211547.jpeg?output-format=webp"
+                alt="image" width="550px" class="object-cover h-48 rounded-md">
+        </div>
+    </div>
+    <div class="flex gap-2 mx-[6%] h-[390px] mt-2 xs:mx-[5%] xs:h-[250px]">
+        <div class="flex flex-col gap-2">
+            <img src="https://b.zmtcdn.com/web/9f3cfb04b9084ef3a1b6bb6097af0d1f1562688573.png?output-format=webp"
+                alt="image" width="550px" class="object-cover h-48 rounded-md xs:w-[200px]">
+            <img src="https://b.zmtcdn.com/web/about/2164bf45244e5c8444183e44500bbce01563210961.png?output-format=webp"
+                alt="image" width="550px" class="object-cover h-48 rounded-md xs:w-[200px]">
+        </div>
+        <img src="https://b.zmtcdn.com/web/702308c792047b99932a07c7b0d7473c1562688860.png?output-format=webp"
+            alt="image" width="1000px" class="object-cover rounded-md xs:w-[170px] ">
+    </div>
+    <!-- footer  -->
+    <div class="bg-slate-50 ">
+        <footer class="mt-20 max-w-[95%] lg:max-w-[1125px] mx-auto bg-slate-50 pt-10">
+            <div class="flex flex-col sm:flex-row h-max mx-3 gap-y-5">
+                <div class="mr-auto my-auto mx-auto sm:mx-0">
+                    <img class="w-28 md:w-36" src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png?fit=around|198:42&crop=198:42;*,*" alt="zomato img">
+                </div>
+                <div class="flex gap-x-5 items-center mx-auto sm:mr-0 text-sm sm:text-md">
+                    <div class="flex items-center gap-x-[10px] border border-slate-400 px-2 py-2 rounded">
+                        <div class="flex items-center gap-[10px] mr-auto"><img class="w-6" src="https://b.zmtcdn.com/images/flags_z10/in.png?output-format=webp" alt="indian flag"> India</div>
+                        <i class="fa-solid fa-angle-down fa-xs mt-[2px]"></i>
+                    </div>
+                    <div class="flex items-center gap-x-[10px] border border-slate-400 px-2 py-2 rounded">
+                        <div class="flex items-center gap-[10px] mr-auto"><i class="fa-solid fa-globe fa-lg"></i> English</div>
+                        <i class="fa-solid fa-angle-down fa-xs mt-[2px]"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="my-[50px] flex gap-y-10 justify-between flex-wrap px-3 mx-auto">
+                <div class=" text-sm flex flex-col gap-[5px] text-slate-500 min-w-[200px]">
+                    <h3 class="uppercase tracking-[0.2rem] font-[500] mb-2 text-black">About Zomato</h3>
+                    <a href="#">Who We Are</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Work With Us</a>
+                    <a href="#">Investor Relations</a>
+                    <a href="#">Report Fraud</a>
+                    <a href="#">Press Kit</a>
+                    <a href="#">Contact Us</a>
+                </div>
+                <div class=" text-sm flex flex-col gap-[5px] text-slate-500 w-[200px]">
+                    <h3 class="uppercase tracking-[0.2rem] font-[500] mb-2 text-black">ZOMAVERSE</h3>
+                    <a href="#">Zomato</a>
+                    <a href="#">Blinkit</a>
+                    <a href="#">Feeding India</a>
+                    <a href="#">Hyperpure</a>
+                    <a href="#">Zomaland</a>
+                </div>
+                <div class="flex flex-col gap-y-[30px]">
+                    <div class=" text-sm flex flex-col gap-[5px] text-slate-500 w-[200px]">
+                        <h3 class="uppercase tracking-[0.2rem] font-[500] mb-2 text-black">FOR RESTAURANTS</h3>
+                        <a href="#">Partner With Us</a>
+                        <a href="#">App For You</a>
+                    </div>
+                    <div class=" text-sm flex flex-col gap-[5px] text-slate-500 w-[200px]">
+                        <h3 class="uppercase tracking-[0.2rem] font-[500] mb-2 text-black">FOR ENTERPRISES</h3>
+                        <a href="#">Zomato For Enterprise</a>
+                    </div>
+                </div>
+                <div class=" text-sm flex flex-col gap-[5px] text-slate-500 w-[200px]">
+                    <h3 class="uppercase tracking-[0.2rem] font-[500] mb-2 text-black">LEARN MORE</h3>
+                    <a href="#">Privacy</a>
+                    <a href="#">Security</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Sitemap</a>
+                </div>
+                <div class=" text-sm flex flex-col gap-[5px] text-slate-500 w-[200px]">
+                    <h3 class="uppercase tracking-[0.2rem] font-[500] mb-2 text-black">Social Links</h3>
+                    <div class="flex gap-x-[10px]">
+                        <div class="rounded-full bg-black w-6 h-6 flex justify-center items-center">
+                            <i class="fa-brands fa-linkedin-in fa-md mt-[1px]" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="rounded-full bg-black w-6 h-6 flex justify-center items-center">
+                            <i class="fa-brands fa-instagram fa-md mt-[1px]" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="rounded-full bg-black w-6 h-6 flex justify-center items-center">
+                            <i class="fa-brands fa-twitter fa-md mt-[2px]" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="rounded-full bg-black w-6 h-6 flex justify-center items-center">
+                            <i class="fa-brands fa-youtube fa-md mt-[2px]" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="rounded-full bg-black w-6 h-6 flex justify-center items-center">
+                            <i class="fa-brands fa-facebook-f fa-md mt-[2px]" style="color: #ffffff;"></i>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-y-[15px] mt-5">
+                        <img class="w-36" src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png" alt="Apple store img">
+                        <img class="w-36" src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png" alt="google play store img">
+                    </div>
+                </div>
+            </div>
+            <hr class="border-[1px] mx-3">
+            <p class="text-[0.8rem] text-slate-500 my-5 mb-8 mx-3">By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2023 © Zomato™ Ltd. All rights reserved.</p>
+        </footer>
+    
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
