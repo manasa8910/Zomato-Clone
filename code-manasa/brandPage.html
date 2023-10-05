@@ -17,7 +17,7 @@
   </head>
   <body>
     <header
-      class="text-lg max-w-[70rem] text-gray-500 flex m-auto h-20 justify-between items-center"
+      class="text-lg max-w-[67rem] text-gray-500 flex m-auto h-20 justify-between items-center"
     >
       <div
         class="flex justify-between items-center w-full md:w-auto md:justify-start"
@@ -54,14 +54,18 @@
       </div>
 
       <div class="hidden md:flex items-center justify-end gap-10 ml-3">
-        <button>Log in</button>
-        <button>Sign up</button>
+        <a href="../code-rahul/html-files/Login.html">
+          <button>Log in</button>
+        </a>
+        <a href="../code-rahul/html-files/Signup.html">
+          <button>Sign up</button>
+        </a>
       </div>
     </header>
 
     <div class="border-t-2 border-gray-100"></div>
 
-    <main class="max-w-[70rem] m-auto">
+    <main class="max-w-[67rem] md:m-w-[100%] m-auto">
       <!--Address-->
       <section
         class="px-2 md:px-0 flex flex-col md:flex-row md:items-center md:gap-2 text-xs text-gray-500"
@@ -307,8 +311,8 @@
         <section id="tab1">
           <section class="flex">
             <!--Overview Tab-->
-            <section class="mt-2 max-w-[96%] mx-auto">
-              <section class="md:w-7/12 sm:w-full lg:visible">
+            <section class="mt-2 mx-w-[96%] mx-auto w-full md:max-w-[66%]">
+              <section class="lg:visible">
                 <section>
                   <!--About this place-->
                   <div class="text-2xl">About this place</div>
@@ -686,9 +690,9 @@
                   <!--Similar restaurants-->
                   <div class="mt-7">
                     <h3 class="text-xl">Similar restaurants</h3>
-                    <div class="flex gap-2">
+                    <div class="flex flex-col md:flex-row gap-2">
                       <div class="flex-1">
-                        <div class="h-52 w-auto relative">
+                        <div class="h-72 md:h-52 w-auto relative">
                           <img
                             src="https://b.zmtcdn.com/data/pictures/7/19996287/23dc64a50a879fa6dda84aa93ae20510_featured_v2.jpg?output-format=webp"
                             class="absolute w-full h-full object-cover rounded-md"
@@ -760,7 +764,7 @@
                       </div>
 
                       <div class="flex-1">
-                        <div class="h-52 w-auto relative">
+                        <div class="h-72 md:h-52 w-auto relative">
                           <img
                             src="https://b.zmtcdn.com/data/pictures/8/19678858/c4b5fb99dce3be596303e27bedee2d84_featured_v2.jpg?output-format=webp"
                             class="absolute w-full h-full object-cover rounded-md"
@@ -832,7 +836,7 @@
                       </div>
 
                       <div class="flex-1">
-                        <div class="h-52 w-auto relative">
+                        <div class="h-72 md:h-52 w-auto relative">
                           <img
                             src="https://b.zmtcdn.com/data/pictures/chains/1/61111/baa95e4da6beb6907a72be5550a7ec9a_featured_v2.jpg?output-format=webp"
                             class="absolute w-full h-full object-cover rounded-md"
@@ -1757,7 +1761,7 @@
               </section>
 
               <!--coupons-->
-              <section class="flex gap-2">
+              <section class="flex gap-2 cursor-pointer">
                 <section class="bg-blue-700 p-2 shrink-0 rounded-md">
                   <p class="text-white font-bold text-xs">
                     50% OFF up to &#8377;100
@@ -1765,21 +1769,21 @@
                   <p class="text-white text-xs">use code MUNCH50</p>
                 </section>
 
-                <section class="bg-blue-700 p-2 shrink-0">
+                <section class="bg-blue-700 p-2 shrink-0 rounded-md">
                   <p class="text-white font-bold text-xs">
                     Get 25% OFF up to &#8377;100
                   </p>
                   <p class="text-white text-xs">use code IDBIFEAST</p>
                 </section>
 
-                <section class="bg-blue-700 p-2 shrink-0">
+                <section class="bg-blue-700 p-2 shrink-0 rounded-md">
                   <p class="text-white font-bold text-xs">
                     Up to &#8377;150 cashback
                   </p>
                   <p class="text-white text-xs">use code AMAZONPA...</p>
                 </section>
 
-                <section class="bg-blue-700 p-2 shrink-0">
+                <section class="bg-blue-700 p-2 shrink-0 rounded-md">
                   <p class="text-white font-bold text-xs">Flat &#8377;75 OFF</p>
                   <p class="text-white text-xs">use code HSBCDELI...</p>
                 </section>
@@ -1788,7 +1792,7 @@
               <!--veg only-->
               <section class="flex gap-2 items-center">
                 <div
-                  class="h-[18px] w-[18px] rounded-sm border-gray-400 border-2"
+                  class="h-[18px] w-[18px] rounded-sm border-gray-400 hover:border-green-500 border-2"
                 ></div>
                 <p>veg only</p>
               </section>
@@ -1796,7 +1800,7 @@
               <!--section1-->
               <section
                 id="section1"
-                class="flex flex-col w-full gap-5 mb-5 scroll-mt-[200px]"
+                class="flex flex-col w-full gap-5 mb-5 scroll-mt-[180px]"
               >
                 <p class="text-2xl">Signature Garlic Breads</p>
                 <p class="text-sm text-gray-500">
@@ -2385,7 +2389,7 @@
               <!--section2-->
               <section
                 id="section2"
-                class="flex flex-col w-full gap-5 mb-5 scroll-mt-[200px]"
+                class="flex flex-col w-full gap-5 mb-5 scroll-mt-[180px]"
               >
                 <p class="text-2xl">Garlic Aioli Dip!</p>
 
@@ -2422,7 +2426,7 @@
               <!--section3-->
               <section
                 id="section3"
-                class="flex flex-col w-full gap-5 mb-5 scroll-mt-[200px]"
+                class="flex flex-col w-full gap-5 mb-5 scroll-mt-[180px]"
               >
                 <p class="text-2xl">Sourdough Pizza, Wood-fired</p>
 
@@ -3071,17 +3075,17 @@
               <!--section4-->
               <section
                 id="section4"
-                class="flex flex-col w-full gap-5 mb-5 scroll-mt-[200px]"
+                class="flex flex-col w-full gap-5 mb-5 scroll-mt-[180px]"
               >
                 <p class="text-2xl">Pasta, Mac & Cheese</p>
 
-                <p class="text-sm text-gray-500">VEGETARIAN PIZZA</p>
+                <p class="text-sm text-gray-500">VEG PASTAS</p>
 
                 <div class="flex">
                   <div class="h-[130px] w-[130px] shrink-0 relative">
                     <img
                       class="rounded-lg"
-                      src="sources/menu_images/3_1.avif"
+                      src="sources/menu_images/4_1.avif"
                       alt=""
                     />
                     <img
@@ -3090,16 +3094,17 @@
                       alt=""
                     />
                   </div>
+
                   <div class="flex flex-col px-3 gap-1">
-                    <p class="text-lg">Italian Margherita Pizza</p>
+                    <p class="text-lg">Wild Mushroom Penne Pasta - Veg</p>
                     <div class="flex">
                       <img class="h-5" src="sources/ratingpng.png" alt="" />
-                      <p class="text-sm text-gray-400">89 votes</p>
+                      <p class="text-sm text-gray-400">8 votes</p>
                     </div>
-                    <p class="text-sm text-gray-500">₹320</p>
+                    <p class="text-sm text-gray-500">₹428</p>
                     <p class="text-sm text-gray-500 max-w-lg">
-                      Fior di latte mozzarella, san marzano tomato sauce &
-                      basil. Experience authentic Italian flavours ...<span
+                      Mushroom cream sauce with sun-dried tomatoes, button
+                      mushrooms & parmesan ...<span
                         class="cursor-pointer text-gray-700"
                         >read more</span
                       >
@@ -3111,7 +3116,7 @@
                   <div class="h-[130px] w-[130px] shrink-0 relative">
                     <img
                       class="rounded-lg"
-                      src="sources/menu_images/3_2.avif"
+                      src="sources/menu_images/4_2.avif"
                       alt=""
                     />
                     <img
@@ -3120,378 +3125,17 @@
                       alt=""
                     />
                   </div>
+
                   <div class="flex flex-col px-3 gap-1">
-                    <p class="text-lg">Four Cheese Pizza</p>
-                    <div class="flex">
-                      <img class="h-5" src="sources/ratingpng.png" alt="" />
-                      <p class="text-sm text-gray-400">30 votes</p>
-                    </div>
-                    <p class="text-sm text-gray-500">₹390</p>
-                    <p class="text-sm text-gray-500 max-w-lg">
-                      fior di latte mozzarella, blue cheese splash, jalapeno,
-                      feta, parmesan. Experience authentic Italian flavours
-                      ...<span class="cursor-pointer text-gray-700"
-                        >read more</span
-                      >
-                    </p>
-                  </div>
-                </div>
-
-                <div class="flex">
-                  <div class="h-[130px] w-[130px] shrink-0 relative">
-                    <img
-                      class="rounded-lg"
-                      src="sources/menu_images/3_3.avif"
-                      alt=""
-                    />
-                    <img
-                      class="absolute top-1 right-1 z-10 h-2 bg-white"
-                      src="sources/veg.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="flex flex-col px-3 gap-1">
-                    <p class="text-lg">Popo's Veggie Delight Pizza</p>
-                    <div class="flex">
-                      <img class="h-5" src="sources/ratingpng.png" alt="" />
-                      <p class="text-sm text-gray-400">118 votes</p>
-                    </div>
-                    <p class="text-sm text-gray-500">₹390</p>
-                    <p class="text-sm text-gray-500 max-w-lg">
-                      Bell peppers, sun-dried tomato, black olive, zucchini,
-                      jalapeno, feta, micro greens, mozzarella. Experience
-                      authentic ...<span class="cursor-pointer text-gray-700"
-                        >read more</span
-                      >
-                    </p>
-                  </div>
-                </div>
-
-                <div class="flex">
-                  <div class="h-[130px] w-[130px] shrink-0 relative">
-                    <img
-                      class="rounded-lg"
-                      src="sources/menu_images/3_4.avif"
-                      alt=""
-                    />
-                    <img
-                      class="absolute top-1 right-1 z-10 h-2 bg-white"
-                      src="sources/veg.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="flex flex-col px-3 gap-1">
-                    <p class="text-lg">Chilli Pomodoro Pizza</p>
-                    <div class="flex">
-                      <img class="h-5" src="sources/ratingpng.png" alt="" />
-                      <p class="text-sm text-gray-400">15 votes</p>
-                    </div>
-                    <p class="text-sm text-gray-500">₹390</p>
-                    <p class="text-sm text-gray-500 max-w-lg">
-                      (Spicy) chilli peppers, red paprika, black olive,
-                      sun-dried tomato, mozzarella, feta. Experience authentic
-                      Italian ...<span class="cursor-pointer text-gray-700"
-                        >read more</span
-                      >
-                    </p>
-                  </div>
-                </div>
-
-                <div class="flex">
-                  <div class="h-[130px] w-[130px] shrink-0 relative">
-                    <img
-                      class="rounded-lg"
-                      src="sources/menu_images/3_5.avif"
-                      alt=""
-                    />
-                    <img
-                      class="absolute top-1 right-1 z-10 h-2 bg-white"
-                      src="sources/veg.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="flex flex-col px-3 gap-1">
-                    <p class="text-lg">The Farmer's Chimichurri Pizza</p>
-
-                    <div class="flex">
-                      <img class="h-5" src="sources/ratingpng.png" alt="" />
-                      <p class="text-sm text-gray-400">73 votes</p>
-                    </div>
-                    <p class="text-sm text-gray-500">₹390</p>
-                    <p class="text-sm text-gray-500 max-w-lg">
-                      Red onion, bell pepper, jalapeno, sun-dried tomato, feta,
-                      mozzarella, chimichurri splash. Experience authentic
-                      Italian ...<span class="cursor-pointer text-gray-700"
-                        >read more</span
-                      >
-                    </p>
-                  </div>
-                </div>
-
-                <div class="flex">
-                  <div class="h-[130px] w-[130px] shrink-0 relative">
-                    <img
-                      class="rounded-lg"
-                      src="sources/menu_images/3_6.avif"
-                      alt=""
-                    />
-                    <img
-                      class="absolute top-1 right-1 z-10 h-2 bg-white"
-                      src="sources/veg.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="flex flex-col px-3 gap-1">
-                    <p class="text-lg">Diavola Veg Pizza</p>
-
-                    <div class="flex">
-                      <img class="h-5" src="sources/ratingpng.png" alt="" />
-                      <p class="text-sm text-gray-400">10 votes</p>
-                    </div>
-                    <p class="text-sm text-gray-500">₹390</p>
-                    <p class="text-sm text-gray-500 max-w-lg">
-                      (Spicy) jalapeno, red onion, birds eye chilli, bell
-                      pepper, roasted oyster mushroom, fermented ...
-                      <span class="cursor-pointer text-gray-700"
-                        >read more</span
-                      >
-                    </p>
-                  </div>
-                </div>
-
-                <div class="flex">
-                  <div class="h-[130px] w-[130px] shrink-0 relative">
-                    <img
-                      class="rounded-lg"
-                      src="sources/menu_images/3_7.avif"
-                      alt=""
-                    />
-                    <img
-                      class="absolute top-1 right-1 z-10 h-2 bg-white"
-                      src="sources/veg.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="flex flex-col px-3 gap-1">
-                    <p class="text-lg">Truffle Funghi Misti Pizza</p>
-
-                    <div class="flex">
-                      <img class="h-5" src="sources/ratingpng.png" alt="" />
-                      <p class="text-sm text-gray-400">51 votes</p>
-                    </div>
-                    <p class="text-sm text-gray-500">₹390</p>
-                    <p class="text-sm text-gray-500 max-w-lg">
-                      Button & oyster mushrooms, caramelized onion, red paprika,
-                      truffle oil, micro greens, mozzarella. Experience ...<span
-                        class="cursor-pointer text-gray-700"
-                        >read more</span
-                      >
-                    </p>
-                  </div>
-                </div>
-
-                <div class="flex">
-                  <div class="h-[130px] w-[130px] shrink-0 relative">
-                    <img
-                      class="rounded-lg"
-                      src="sources/menu_images/3_8.avif"
-                      alt=""
-                    />
-                    <img
-                      class="absolute top-1 right-1 z-10 h-2 bg-white"
-                      src="sources/veg.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="flex flex-col px-3 gap-1">
-                    <p class="text-lg">Quattro Stagioni Pizza</p>
-
-                    <div class="flex">
-                      <img class="h-5" src="sources/ratingpng.png" alt="" />
-                      <p class="text-sm text-gray-400">16 votes</p>
-                    </div>
-                    <p class="text-sm text-gray-500">₹390</p>
-                    <p class="text-sm text-gray-500 max-w-lg">
-                      Broccoli, artichoke, bell pepper, black olive, feta,
-                      mozzarella, micro greens. Experience authentic Italian
-                      flavours ...<span class="cursor-pointer text-gray-700"
-                        >read more</span
-                      >
-                    </p>
-                  </div>
-                </div>
-
-                <div class="flex">
-                  <div class="h-[130px] w-[130px] shrink-0 relative">
-                    <img
-                      class="rounded-lg"
-                      src="sources/menu_images/3_9.avif"
-                      alt=""
-                    />
-                    <img
-                      class="absolute top-1 right-1 z-10 h-2 bg-white"
-                      src="sources/veg.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="flex flex-col px-3 gap-1">
-                    <p class="text-lg">Pizza Verde</p>
-
-                    <div class="flex">
-                      <img class="h-5" src="sources/ratingpng.png" alt="" />
-                      <p class="text-sm text-gray-400">23 votes</p>
-                    </div>
-                    <p class="text-sm text-gray-500">₹390</p>
-                    <p class="text-sm text-gray-500 max-w-lg">
-                      Basil pesto, broccoli, black olive, sun-dried tomato,
-                      zucchini, micro greens, mozzarella. Experience authentic
-                      Italian ...<span class="cursor-pointer text-gray-700"
-                        >read more</span
-                      >
-                    </p>
-                  </div>
-                </div>
-
-                <div class="border-b-2"></div>
-
-                <p class="text-sm text-gray-500">
-                  VEGAN PIZZA (COCONUT CHEESE)
-                </p>
-
-                <div class="flex">
-                  <div class="h-[130px] w-[130px] shrink-0 relative">
-                    <img
-                      class="rounded-lg"
-                      src="sources/menu_images/3_10.avif"
-                      alt=""
-                    />
-                    <img
-                      class="absolute top-1 right-1 z-10 h-2 bg-white"
-                      src="sources/veg.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="flex flex-col px-3 gap-1">
-                    <p class="text-lg">Vegan Sicilia Pizza by Chef Sarah</p>
-                    <div class="flex">
-                      <img class="h-5" src="sources/ratingpng.png" alt="" />
-                      <p class="text-sm text-gray-400">12 votes</p>
-                    </div>
-                    <p class="text-sm text-gray-500">₹385</p>
-                    <p class="text-sm text-gray-500 max-w-lg">
-                      Bell pepper, roasted oyster mushroom & red onion with
-                      vegan basil pesto, sun-dried ...<span
-                        class="cursor-pointer text-gray-700"
-                        >read more</span
-                      >
-                    </p>
-                  </div>
-                </div>
-
-                <div class="flex">
-                  <div class="h-[130px] w-[130px] shrink-0 relative">
-                    <img
-                      class="rounded-lg"
-                      src="sources/menu_images/3_11.avif"
-                      alt=""
-                    />
-                    <img
-                      class="absolute top-1 right-1 z-10 h-2 bg-white"
-                      src="sources/veg.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="flex flex-col px-3 gap-1">
-                    <p class="text-lg">Vegan Chilli Pomodoro Pizza</p>
-
-                    <p class="text-sm text-gray-500">₹385</p>
-                    <p class="text-sm text-gray-500 max-w-lg">
-                      BChilli peppers, red paprika, black olive, sun-dried
-                      tomato, homemade coconut cheese. Experience authentic
-                      Italian ...<span class="cursor-pointer text-gray-700"
-                        >read more</span
-                      >
-                    </p>
-                  </div>
-                </div>
-
-                <div class="flex">
-                  <div class="h-[130px] w-[130px] shrink-0 relative">
-                    <img
-                      class="rounded-lg"
-                      src="sources/menu_images/3_12.avif"
-                      alt=""
-                    />
-                    <img
-                      class="absolute top-1 right-1 z-10 h-2 bg-white"
-                      src="sources/veg.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="flex flex-col px-3 gap-1">
-                    <p class="text-lg">Vegan Popo's Delight Pizza</p>
+                    <p class="text-lg">Spinach & Ricotta Ravioli (7 pieces)</p>
                     <div class="flex">
                       <img class="h-5" src="sources/ratingpng.png" alt="" />
                       <p class="text-sm text-gray-400">14 votes</p>
                     </div>
-                    <p class="text-sm text-gray-500">₹385</p>
+                    <p class="text-sm text-gray-500">₹428</p>
                     <p class="text-sm text-gray-500 max-w-lg">
-                      Bell pepper, sun-dried tomato, zucchini, black olive,
-                      jalapeno, micro greens, homemade coconut cheese.
-                      Experience ...<span class="cursor-pointer text-gray-700"
-                        >read more</span
-                      >
-                    </p>
-                  </div>
-                </div>
-
-                <div class="flex">
-                  <div class="h-[130px] w-[130px] shrink-0 relative">
-                    <img
-                      class="rounded-lg"
-                      src="sources/menu_images/3_13.avif"
-                      alt=""
-                    />
-                    <img
-                      class="absolute top-1 right-1 z-10 h-2 bg-white"
-                      src="sources/veg.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="flex flex-col px-3 gap-1">
-                    <p class="text-lg">Vegan Quattro Stagioni Pizza</p>
-
-                    <p class="text-sm text-gray-500">₹385</p>
-                    <p class="text-sm text-gray-500 max-w-lg">
-                      Broccoli, artichoke, bell pepper, black olive, micro
-                      greens, homemade coconut cheese. Experience authentic
-                      Italian ...<span class="cursor-pointer text-gray-700"
-                        >read more</span
-                      >
-                    </p>
-                  </div>
-                </div>
-
-                <div class="flex">
-                  <div class="h-[130px] w-[130px] shrink-0 relative">
-                    <img
-                      class="rounded-lg"
-                      src="sources/menu_images/3_14.avif"
-                      alt=""
-                    />
-                    <img
-                      class="absolute top-1 right-1 z-10 h-2 bg-white"
-                      src="sources/veg.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="flex flex-col px-3 gap-1">
-                    <p class="text-lg">Vegan Margherita Pizza</p>
-
-                    <p class="text-sm text-gray-500">₹325</p>
-                    <p class="text-sm text-gray-500 max-w-lg">
-                      Homemade coconut cheese & basil. Experience authentic
-                      Italian flavours with our San Marzano tomato ...<span
+                      hand-made pasta with activated charcoal, stuffed with
+                      spinach & ricotta. Served in a ...<span
                         class="cursor-pointer text-gray-700"
                         >read more</span
                       >
@@ -3503,7 +3147,7 @@
                   <div class="h-[130px] w-[130px] shrink-0 relative">
                     <img
                       class="rounded-lg"
-                      src="sources/menu_images/3_15.avif"
+                      src="sources/menu_images/4_3.avif"
                       alt=""
                     />
                     <img
@@ -3512,81 +3156,17 @@
                       alt=""
                     />
                   </div>
+
                   <div class="flex flex-col px-3 gap-1">
-                    <p class="text-lg">Vegan Truffle Funghi Pizza</p>
+                    <p class="text-lg">Fettuccine Aglio Olio Pasta - Veg</p>
                     <div class="flex">
                       <img class="h-5" src="sources/ratingpng.png" alt="" />
-                      <p class="text-sm text-gray-400">15 votes</p>
+                      <p class="text-sm text-gray-400">26 votes</p>
                     </div>
-                    <p class="text-sm text-gray-500">₹385</p>
+                    <p class="text-sm text-gray-500">₹378</p>
                     <p class="text-sm text-gray-500 max-w-lg">
-                      Roasted button & oyster mushrooms, red paprika, truffle
-                      oil, micro greens & homemade ...<span
-                        class="cursor-pointer text-gray-700"
-                        >read more</span
-                      >
-                    </p>
-                  </div>
-                </div>
-
-                <div class="border-b-2"></div>
-
-                <p class="text-sm text-gray-500">CHICKEN, LAMB PIZZA</p>
-
-                <div class="flex">
-                  <div class="h-[130px] w-[130px] shrink-0 relative">
-                    <img
-                      class="rounded-lg"
-                      src="sources/menu_images/3_16.avif"
-                      alt=""
-                    />
-                    <img
-                      class="absolute top-1 right-1 z-10 h-2 bg-white"
-                      src="sources/non-veg.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="flex flex-col px-3 gap-1">
-                    <p class="text-lg">Chicken Pizzaiola</p>
-                    <div class="flex">
-                      <img class="h-5" src="sources/ratingpng.png" alt="" />
-                      <p class="text-sm text-gray-400">66 votes</p>
-                    </div>
-                    <p class="text-sm text-gray-500">₹395</p>
-                    <p class="text-sm text-gray-500 max-w-lg">
-                      Grilled chicken, black olive, sun-dried tomatoes, red
-                      paprika, sriracha aioli, mozzarella, parmesan. Experience
-                      authentic ...<span class="cursor-pointer text-gray-700"
-                        >read more</span
-                      >
-                    </p>
-                  </div>
-                </div>
-
-                <div class="flex">
-                  <div class="h-[130px] w-[130px] shrink-0 relative">
-                    <img
-                      class="rounded-lg"
-                      src="sources/menu_images/3_17.avif"
-                      alt=""
-                    />
-                    <img
-                      class="absolute top-1 right-1 z-10 h-2 bg-white"
-                      src="sources/non-veg.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="flex flex-col px-3 gap-1">
-                    <p class="text-lg">Chicken Fungo Pizza</p>
-                    <div class="flex">
-                      <img class="h-5" src="sources/ratingpng.png" alt="" />
-                      <p class="text-sm text-gray-400">13 votes</p>
-                    </div>
-                    <p class="text-sm text-gray-500">₹395</p>
-                    <p class="text-sm text-gray-500 max-w-lg">
-                      Grilled chicken, mushroom, red onion, jalapeno,
-                      mozzarella, chimichurri splash. Experience authentic
-                      Italian flavours ...<span
+                      With garlic, extra virgin olive oil, sun-dried tomatoes,
+                      black olives, bell pepper & ...<span
                         class="cursor-pointer text-gray-700"
                         >read more</span
                       >
@@ -3598,118 +3178,26 @@
                   <div class="h-[130px] w-[130px] shrink-0 relative">
                     <img
                       class="rounded-lg"
-                      src="sources/menu_images/3_18.avif"
+                      src="sources/menu_images/4_4.avif"
                       alt=""
                     />
                     <img
                       class="absolute top-1 right-1 z-10 h-2 bg-white"
-                      src="sources/non-veg.png"
+                      src="sources/veg.png"
                       alt=""
                     />
                   </div>
-                  <div class="flex flex-col px-3 gap-1">
-                    <p class="text-lg">Peri Peri Chicken Pizza</p>
-                    <div class="flex">
-                      <img class="h-5" src="sources/ratingpng.png" alt="" />
-                      <p class="text-sm text-gray-400">36 votes</p>
-                    </div>
-                    <p class="text-sm text-gray-500">₹395</p>
-                    <p class="text-sm text-gray-500 max-w-lg">
-                      Peri peri chicken, red onion, jalapeno, mozzarella.
-                      Experience authentic Italian flavours with our San
-                      ...<span class="cursor-pointer text-gray-700"
-                        >read more</span
-                      >
-                    </p>
-                  </div>
-                </div>
 
-                <div class="flex">
-                  <div class="h-[130px] w-[130px] shrink-0 relative">
-                    <img
-                      class="rounded-lg"
-                      src="sources/menu_images/3_19.avif"
-                      alt=""
-                    />
-                    <img
-                      class="absolute top-1 right-1 z-10 h-2 bg-white"
-                      src="sources/non-veg.png"
-                      alt=""
-                    />
-                  </div>
                   <div class="flex flex-col px-3 gap-1">
-                    <p class="text-lg">Bbq Chicken Pizza</p>
-                    <div class="flex">
-                      <img class="h-5" src="sources/ratingpng.png" alt="" />
-                      <p class="text-sm text-gray-400">41 votes</p>
-                    </div>
-                    <p class="text-sm text-gray-500">₹395</p>
-                    <p class="text-sm text-gray-500 max-w-lg">
-                      Bbq chicken, onion, jalapeno, barbeque sauce, mozzarella.
-                      Experience authentic Italian flavours with our San
-                      ...<span class="cursor-pointer text-gray-700"
-                        >read more</span
-                      >
-                    </p>
-                  </div>
-                </div>
-
-                <div class="flex">
-                  <div class="h-[130px] w-[130px] shrink-0 relative">
-                    <img
-                      class="rounded-lg"
-                      src="sources/menu_images/3_20.avif"
-                      alt=""
-                    />
-                    <img
-                      class="absolute top-1 right-1 z-10 h-2 bg-white"
-                      src="sources/non-veg.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="flex flex-col px-3 gap-1">
-                    <p class="text-lg">Pesto Chicken Pizza</p>
+                    <p class="text-lg">Penne Arrabbiata Pasta - Veg</p>
                     <div class="flex">
                       <img class="h-5" src="sources/ratingpng.png" alt="" />
                       <p class="text-sm text-gray-400">16 votes</p>
                     </div>
-                    <p class="text-sm text-gray-500">₹395</p>
+                    <p class="text-sm text-gray-500">₹388</p>
                     <p class="text-sm text-gray-500 max-w-lg">
-                      Grilled chicken, jalapeno, sun-dried tomatoes, basil
-                      pesto, mozzarella. Experience authentic Italian flavours
-                      with our ...<span class="cursor-pointer text-gray-700"
-                        >read more</span
-                      >
-                    </p>
-                  </div>
-                </div>
-
-                <div class="flex">
-                  <div class="h-[130px] w-[130px] shrink-0 relative">
-                    <img
-                      class="rounded-lg"
-                      src="sources/menu_images/3_21.avif"
-                      alt=""
-                    />
-                    <img
-                      class="absolute top-1 right-1 z-10 h-2 bg-white"
-                      src="sources/non-veg.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="flex flex-col px-3 gap-1">
-                    <p class="text-lg">Lamb Chimichurri Pizza</p>
-                    <div class="flex">
-                      <img class="h-5" src="sources/ratingpng.png" alt="" />
-                      <p class="text-sm text-gray-400">10 votes</p>
-                    </div>
-                    <p class="text-sm text-gray-500">₹440</p>
-                    <p class="text-sm text-gray-500 max-w-lg">
-                      Crumbled lamb, red onion, red paprika, chimichurri splash,
-                      mozzarella. Experience authentic Italian flavours with
-                      ...<span class="cursor-pointer text-gray-700"
-                        >read more</span
-                      >
+                      Spicy tomato sauce with grilled vegetables, olives & torn
+                      basil
                     </p>
                   </div>
                 </div>
@@ -3720,17 +3208,17 @@
               <!--section5-->
               <section
                 id="section5"
-                class="flex flex-col w-full gap-5 mb-5 scroll-mt-[200px]"
+                class="flex flex-col w-full gap-5 mb-5 scroll-mt-[180px]"
               >
                 <p class="text-2xl">Soup & Salad</p>
 
-                <p class="text-sm text-gray-500">VEGETARIAN PIZZA</p>
+                <p class="text-sm text-gray-500">SOUP</p>
 
                 <div class="flex">
                   <div class="h-[130px] w-[130px] shrink-0 relative">
                     <img
                       class="rounded-lg"
-                      src="sources/menu_images/3_1.avif"
+                      src="sources/menu_images/5_1.avif"
                       alt=""
                     />
                     <img
@@ -3739,140 +3227,17 @@
                       alt=""
                     />
                   </div>
-                  <div class="flex flex-col px-3 gap-1">
-                    <p class="text-lg">Italian Margherita Pizza</p>
-                    <div class="flex">
-                      <img class="h-5" src="sources/ratingpng.png" alt="" />
-                      <p class="text-sm text-gray-400">89 votes</p>
-                    </div>
-                    <p class="text-sm text-gray-500">₹320</p>
-                    <p class="text-sm text-gray-500 max-w-lg">
-                      Fior di latte mozzarella, san marzano tomato sauce &
-                      basil. Experience authentic Italian flavours ...<span
-                        class="cursor-pointer text-gray-700"
-                        >read more</span
-                      >
-                    </p>
-                  </div>
-                </div>
 
-                <div class="flex">
-                  <div class="h-[130px] w-[130px] shrink-0 relative">
-                    <img
-                      class="rounded-lg"
-                      src="sources/menu_images/3_2.avif"
-                      alt=""
-                    />
-                    <img
-                      class="absolute top-1 right-1 z-10 h-2 bg-white"
-                      src="sources/veg.png"
-                      alt=""
-                    />
-                  </div>
                   <div class="flex flex-col px-3 gap-1">
-                    <p class="text-lg">Four Cheese Pizza</p>
-                    <div class="flex">
-                      <img class="h-5" src="sources/ratingpng.png" alt="" />
-                      <p class="text-sm text-gray-400">30 votes</p>
-                    </div>
-                    <p class="text-sm text-gray-500">₹390</p>
-                    <p class="text-sm text-gray-500 max-w-lg">
-                      fior di latte mozzarella, blue cheese splash, jalapeno,
-                      feta, parmesan. Experience authentic Italian flavours
-                      ...<span class="cursor-pointer text-gray-700"
-                        >read more</span
-                      >
-                    </p>
-                  </div>
-                </div>
-
-                <div class="flex">
-                  <div class="h-[130px] w-[130px] shrink-0 relative">
-                    <img
-                      class="rounded-lg"
-                      src="sources/menu_images/3_3.avif"
-                      alt=""
-                    />
-                    <img
-                      class="absolute top-1 right-1 z-10 h-2 bg-white"
-                      src="sources/veg.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="flex flex-col px-3 gap-1">
-                    <p class="text-lg">Popo's Veggie Delight Pizza</p>
-                    <div class="flex">
-                      <img class="h-5" src="sources/ratingpng.png" alt="" />
-                      <p class="text-sm text-gray-400">118 votes</p>
-                    </div>
-                    <p class="text-sm text-gray-500">₹390</p>
-                    <p class="text-sm text-gray-500 max-w-lg">
-                      Bell peppers, sun-dried tomato, black olive, zucchini,
-                      jalapeno, feta, micro greens, mozzarella. Experience
-                      authentic ...<span class="cursor-pointer text-gray-700"
-                        >read more</span
-                      >
-                    </p>
-                  </div>
-                </div>
-
-                <div class="flex">
-                  <div class="h-[130px] w-[130px] shrink-0 relative">
-                    <img
-                      class="rounded-lg"
-                      src="sources/menu_images/3_4.avif"
-                      alt=""
-                    />
-                    <img
-                      class="absolute top-1 right-1 z-10 h-2 bg-white"
-                      src="sources/veg.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="flex flex-col px-3 gap-1">
-                    <p class="text-lg">Chilli Pomodoro Pizza</p>
-                    <div class="flex">
-                      <img class="h-5" src="sources/ratingpng.png" alt="" />
-                      <p class="text-sm text-gray-400">15 votes</p>
-                    </div>
-                    <p class="text-sm text-gray-500">₹390</p>
-                    <p class="text-sm text-gray-500 max-w-lg">
-                      (Spicy) chilli peppers, red paprika, black olive,
-                      sun-dried tomato, mozzarella, feta. Experience authentic
-                      Italian ...<span class="cursor-pointer text-gray-700"
-                        >read more</span
-                      >
-                    </p>
-                  </div>
-                </div>
-
-                <div class="flex">
-                  <div class="h-[130px] w-[130px] shrink-0 relative">
-                    <img
-                      class="rounded-lg"
-                      src="sources/menu_images/3_5.avif"
-                      alt=""
-                    />
-                    <img
-                      class="absolute top-1 right-1 z-10 h-2 bg-white"
-                      src="sources/veg.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="flex flex-col px-3 gap-1">
-                    <p class="text-lg">The Farmer's Chimichurri Pizza</p>
+                    <p class="text-lg">Hearty Minestrone Soup</p>
 
                     <div class="flex">
                       <img class="h-5" src="sources/ratingpng.png" alt="" />
-                      <p class="text-sm text-gray-400">73 votes</p>
+                      <p class="text-sm text-gray-400">8 votes</p>
                     </div>
-                    <p class="text-sm text-gray-500">₹390</p>
+                    <p class="text-sm text-gray-500">₹295</p>
                     <p class="text-sm text-gray-500 max-w-lg">
-                      Red onion, bell pepper, jalapeno, sun-dried tomato, feta,
-                      mozzarella, chimichurri splash. Experience authentic
-                      Italian ...<span class="cursor-pointer text-gray-700"
-                        >read more</span
-                      >
+                      Wholesome tomato soup with roasted veggies & macaroni
                     </p>
                   </div>
                 </div>
@@ -3881,7 +3246,7 @@
                   <div class="h-[130px] w-[130px] shrink-0 relative">
                     <img
                       class="rounded-lg"
-                      src="sources/menu_images/3_6.avif"
+                      src="sources/menu_images/5_2.avif"
                       alt=""
                     />
                     <img
@@ -3890,257 +3255,17 @@
                       alt=""
                     />
                   </div>
+
                   <div class="flex flex-col px-3 gap-1">
-                    <p class="text-lg">Diavola Veg Pizza</p>
-
-                    <div class="flex">
-                      <img class="h-5" src="sources/ratingpng.png" alt="" />
-                      <p class="text-sm text-gray-400">10 votes</p>
-                    </div>
-                    <p class="text-sm text-gray-500">₹390</p>
-                    <p class="text-sm text-gray-500 max-w-lg">
-                      (Spicy) jalapeno, red onion, birds eye chilli, bell
-                      pepper, roasted oyster mushroom, fermented ...
-                      <span class="cursor-pointer text-gray-700"
-                        >read more</span
-                      >
-                    </p>
-                  </div>
-                </div>
-
-                <div class="flex">
-                  <div class="h-[130px] w-[130px] shrink-0 relative">
-                    <img
-                      class="rounded-lg"
-                      src="sources/menu_images/3_7.avif"
-                      alt=""
-                    />
-                    <img
-                      class="absolute top-1 right-1 z-10 h-2 bg-white"
-                      src="sources/veg.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="flex flex-col px-3 gap-1">
-                    <p class="text-lg">Truffle Funghi Misti Pizza</p>
-
-                    <div class="flex">
-                      <img class="h-5" src="sources/ratingpng.png" alt="" />
-                      <p class="text-sm text-gray-400">51 votes</p>
-                    </div>
-                    <p class="text-sm text-gray-500">₹390</p>
-                    <p class="text-sm text-gray-500 max-w-lg">
-                      Button & oyster mushrooms, caramelized onion, red paprika,
-                      truffle oil, micro greens, mozzarella. Experience ...<span
-                        class="cursor-pointer text-gray-700"
-                        >read more</span
-                      >
-                    </p>
-                  </div>
-                </div>
-
-                <div class="flex">
-                  <div class="h-[130px] w-[130px] shrink-0 relative">
-                    <img
-                      class="rounded-lg"
-                      src="sources/menu_images/3_8.avif"
-                      alt=""
-                    />
-                    <img
-                      class="absolute top-1 right-1 z-10 h-2 bg-white"
-                      src="sources/veg.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="flex flex-col px-3 gap-1">
-                    <p class="text-lg">Quattro Stagioni Pizza</p>
-
-                    <div class="flex">
-                      <img class="h-5" src="sources/ratingpng.png" alt="" />
-                      <p class="text-sm text-gray-400">16 votes</p>
-                    </div>
-                    <p class="text-sm text-gray-500">₹390</p>
-                    <p class="text-sm text-gray-500 max-w-lg">
-                      Broccoli, artichoke, bell pepper, black olive, feta,
-                      mozzarella, micro greens. Experience authentic Italian
-                      flavours ...<span class="cursor-pointer text-gray-700"
-                        >read more</span
-                      >
-                    </p>
-                  </div>
-                </div>
-
-                <div class="flex">
-                  <div class="h-[130px] w-[130px] shrink-0 relative">
-                    <img
-                      class="rounded-lg"
-                      src="sources/menu_images/3_9.avif"
-                      alt=""
-                    />
-                    <img
-                      class="absolute top-1 right-1 z-10 h-2 bg-white"
-                      src="sources/veg.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="flex flex-col px-3 gap-1">
-                    <p class="text-lg">Pizza Verde</p>
-
-                    <div class="flex">
-                      <img class="h-5" src="sources/ratingpng.png" alt="" />
-                      <p class="text-sm text-gray-400">23 votes</p>
-                    </div>
-                    <p class="text-sm text-gray-500">₹390</p>
-                    <p class="text-sm text-gray-500 max-w-lg">
-                      Basil pesto, broccoli, black olive, sun-dried tomato,
-                      zucchini, micro greens, mozzarella. Experience authentic
-                      Italian ...<span class="cursor-pointer text-gray-700"
-                        >read more</span
-                      >
-                    </p>
-                  </div>
-                </div>
-
-                <div class="border-b-2"></div>
-
-                <p class="text-sm text-gray-500">
-                  VEGAN PIZZA (COCONUT CHEESE)
-                </p>
-
-                <div class="flex">
-                  <div class="h-[130px] w-[130px] shrink-0 relative">
-                    <img
-                      class="rounded-lg"
-                      src="sources/menu_images/3_10.avif"
-                      alt=""
-                    />
-                    <img
-                      class="absolute top-1 right-1 z-10 h-2 bg-white"
-                      src="sources/veg.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="flex flex-col px-3 gap-1">
-                    <p class="text-lg">Vegan Sicilia Pizza by Chef Sarah</p>
-                    <div class="flex">
-                      <img class="h-5" src="sources/ratingpng.png" alt="" />
-                      <p class="text-sm text-gray-400">12 votes</p>
-                    </div>
-                    <p class="text-sm text-gray-500">₹385</p>
-                    <p class="text-sm text-gray-500 max-w-lg">
-                      Bell pepper, roasted oyster mushroom & red onion with
-                      vegan basil pesto, sun-dried ...<span
-                        class="cursor-pointer text-gray-700"
-                        >read more</span
-                      >
-                    </p>
-                  </div>
-                </div>
-
-                <div class="flex">
-                  <div class="h-[130px] w-[130px] shrink-0 relative">
-                    <img
-                      class="rounded-lg"
-                      src="sources/menu_images/3_11.avif"
-                      alt=""
-                    />
-                    <img
-                      class="absolute top-1 right-1 z-10 h-2 bg-white"
-                      src="sources/veg.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="flex flex-col px-3 gap-1">
-                    <p class="text-lg">Vegan Chilli Pomodoro Pizza</p>
-
-                    <p class="text-sm text-gray-500">₹385</p>
-                    <p class="text-sm text-gray-500 max-w-lg">
-                      BChilli peppers, red paprika, black olive, sun-dried
-                      tomato, homemade coconut cheese. Experience authentic
-                      Italian ...<span class="cursor-pointer text-gray-700"
-                        >read more</span
-                      >
-                    </p>
-                  </div>
-                </div>
-
-                <div class="flex">
-                  <div class="h-[130px] w-[130px] shrink-0 relative">
-                    <img
-                      class="rounded-lg"
-                      src="sources/menu_images/3_12.avif"
-                      alt=""
-                    />
-                    <img
-                      class="absolute top-1 right-1 z-10 h-2 bg-white"
-                      src="sources/veg.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="flex flex-col px-3 gap-1">
-                    <p class="text-lg">Vegan Popo's Delight Pizza</p>
+                    <p class="text-lg">Truffled Mushroom Soup</p>
                     <div class="flex">
                       <img class="h-5" src="sources/ratingpng.png" alt="" />
                       <p class="text-sm text-gray-400">14 votes</p>
                     </div>
-                    <p class="text-sm text-gray-500">₹385</p>
+                    <p class="text-sm text-gray-500">₹428</p>
                     <p class="text-sm text-gray-500 max-w-lg">
-                      Bell pepper, sun-dried tomato, zucchini, black olive,
-                      jalapeno, micro greens, homemade coconut cheese.
-                      Experience ...<span class="cursor-pointer text-gray-700"
-                        >read more</span
-                      >
-                    </p>
-                  </div>
-                </div>
-
-                <div class="flex">
-                  <div class="h-[130px] w-[130px] shrink-0 relative">
-                    <img
-                      class="rounded-lg"
-                      src="sources/menu_images/3_13.avif"
-                      alt=""
-                    />
-                    <img
-                      class="absolute top-1 right-1 z-10 h-2 bg-white"
-                      src="sources/veg.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="flex flex-col px-3 gap-1">
-                    <p class="text-lg">Vegan Quattro Stagioni Pizza</p>
-
-                    <p class="text-sm text-gray-500">₹385</p>
-                    <p class="text-sm text-gray-500 max-w-lg">
-                      Broccoli, artichoke, bell pepper, black olive, micro
-                      greens, homemade coconut cheese. Experience authentic
-                      Italian ...<span class="cursor-pointer text-gray-700"
-                        >read more</span
-                      >
-                    </p>
-                  </div>
-                </div>
-
-                <div class="flex">
-                  <div class="h-[130px] w-[130px] shrink-0 relative">
-                    <img
-                      class="rounded-lg"
-                      src="sources/menu_images/3_14.avif"
-                      alt=""
-                    />
-                    <img
-                      class="absolute top-1 right-1 z-10 h-2 bg-white"
-                      src="sources/veg.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="flex flex-col px-3 gap-1">
-                    <p class="text-lg">Vegan Margherita Pizza</p>
-
-                    <p class="text-sm text-gray-500">₹325</p>
-                    <p class="text-sm text-gray-500 max-w-lg">
-                      Homemade coconut cheese & basil. Experience authentic
-                      Italian flavours with our San Marzano tomato ...<span
+                      Creamy blend of three types of mushroom - shiitake, button
+                      & oyster mushrooms ...<span
                         class="cursor-pointer text-gray-700"
                         >read more</span
                       >
@@ -4152,41 +3277,7 @@
                   <div class="h-[130px] w-[130px] shrink-0 relative">
                     <img
                       class="rounded-lg"
-                      src="sources/menu_images/3_15.avif"
-                      alt=""
-                    />
-                    <img
-                      class="absolute top-1 right-1 z-10 h-2 bg-white"
-                      src="sources/veg.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="flex flex-col px-3 gap-1">
-                    <p class="text-lg">Vegan Truffle Funghi Pizza</p>
-                    <div class="flex">
-                      <img class="h-5" src="sources/ratingpng.png" alt="" />
-                      <p class="text-sm text-gray-400">15 votes</p>
-                    </div>
-                    <p class="text-sm text-gray-500">₹385</p>
-                    <p class="text-sm text-gray-500 max-w-lg">
-                      Roasted button & oyster mushrooms, red paprika, truffle
-                      oil, micro greens & homemade ...<span
-                        class="cursor-pointer text-gray-700"
-                        >read more</span
-                      >
-                    </p>
-                  </div>
-                </div>
-
-                <div class="border-b-2"></div>
-
-                <p class="text-sm text-gray-500">CHICKEN, LAMB PIZZA</p>
-
-                <div class="flex">
-                  <div class="h-[130px] w-[130px] shrink-0 relative">
-                    <img
-                      class="rounded-lg"
-                      src="sources/menu_images/3_16.avif"
+                      src="sources/menu_images/5_3.avif"
                       alt=""
                     />
                     <img
@@ -4195,19 +3286,16 @@
                       alt=""
                     />
                   </div>
+
                   <div class="flex flex-col px-3 gap-1">
-                    <p class="text-lg">Chicken Pizzaiola</p>
+                    <p class="text-lg">Hearty Minestrone Soup - Chicken</p>
                     <div class="flex">
                       <img class="h-5" src="sources/ratingpng.png" alt="" />
-                      <p class="text-sm text-gray-400">66 votes</p>
+                      <p class="text-sm text-gray-400">26 votes</p>
                     </div>
-                    <p class="text-sm text-gray-500">₹395</p>
+                    <p class="text-sm text-gray-500">₹378</p>
                     <p class="text-sm text-gray-500 max-w-lg">
-                      Grilled chicken, black olive, sun-dried tomatoes, red
-                      paprika, sriracha aioli, mozzarella, parmesan. Experience
-                      authentic ...<span class="cursor-pointer text-gray-700"
-                        >read more</span
-                      >
+                      Wholesome tomato soup with roasted veggies & macaroni
                     </p>
                   </div>
                 </div>
@@ -4216,7 +3304,7 @@
                   <div class="h-[130px] w-[130px] shrink-0 relative">
                     <img
                       class="rounded-lg"
-                      src="sources/menu_images/3_17.avif"
+                      src="sources/menu_images/5_4.avif"
                       alt=""
                     />
                     <img
@@ -4225,140 +3313,17 @@
                       alt=""
                     />
                   </div>
-                  <div class="flex flex-col px-3 gap-1">
-                    <p class="text-lg">Chicken Fungo Pizza</p>
-                    <div class="flex">
-                      <img class="h-5" src="sources/ratingpng.png" alt="" />
-                      <p class="text-sm text-gray-400">13 votes</p>
-                    </div>
-                    <p class="text-sm text-gray-500">₹395</p>
-                    <p class="text-sm text-gray-500 max-w-lg">
-                      Grilled chicken, mushroom, red onion, jalapeno,
-                      mozzarella, chimichurri splash. Experience authentic
-                      Italian flavours ...<span
-                        class="cursor-pointer text-gray-700"
-                        >read more</span
-                      >
-                    </p>
-                  </div>
-                </div>
 
-                <div class="flex">
-                  <div class="h-[130px] w-[130px] shrink-0 relative">
-                    <img
-                      class="rounded-lg"
-                      src="sources/menu_images/3_18.avif"
-                      alt=""
-                    />
-                    <img
-                      class="absolute top-1 right-1 z-10 h-2 bg-white"
-                      src="sources/non-veg.png"
-                      alt=""
-                    />
-                  </div>
                   <div class="flex flex-col px-3 gap-1">
-                    <p class="text-lg">Peri Peri Chicken Pizza</p>
-                    <div class="flex">
-                      <img class="h-5" src="sources/ratingpng.png" alt="" />
-                      <p class="text-sm text-gray-400">36 votes</p>
-                    </div>
-                    <p class="text-sm text-gray-500">₹395</p>
-                    <p class="text-sm text-gray-500 max-w-lg">
-                      Peri peri chicken, red onion, jalapeno, mozzarella.
-                      Experience authentic Italian flavours with our San
-                      ...<span class="cursor-pointer text-gray-700"
-                        >read more</span
-                      >
-                    </p>
-                  </div>
-                </div>
-
-                <div class="flex">
-                  <div class="h-[130px] w-[130px] shrink-0 relative">
-                    <img
-                      class="rounded-lg"
-                      src="sources/menu_images/3_19.avif"
-                      alt=""
-                    />
-                    <img
-                      class="absolute top-1 right-1 z-10 h-2 bg-white"
-                      src="sources/non-veg.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="flex flex-col px-3 gap-1">
-                    <p class="text-lg">Bbq Chicken Pizza</p>
-                    <div class="flex">
-                      <img class="h-5" src="sources/ratingpng.png" alt="" />
-                      <p class="text-sm text-gray-400">41 votes</p>
-                    </div>
-                    <p class="text-sm text-gray-500">₹395</p>
-                    <p class="text-sm text-gray-500 max-w-lg">
-                      Bbq chicken, onion, jalapeno, barbeque sauce, mozzarella.
-                      Experience authentic Italian flavours with our San
-                      ...<span class="cursor-pointer text-gray-700"
-                        >read more</span
-                      >
-                    </p>
-                  </div>
-                </div>
-
-                <div class="flex">
-                  <div class="h-[130px] w-[130px] shrink-0 relative">
-                    <img
-                      class="rounded-lg"
-                      src="sources/menu_images/3_20.avif"
-                      alt=""
-                    />
-                    <img
-                      class="absolute top-1 right-1 z-10 h-2 bg-white"
-                      src="sources/non-veg.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="flex flex-col px-3 gap-1">
-                    <p class="text-lg">Pesto Chicken Pizza</p>
+                    <p class="text-lg">Truffled Mushroom Soup - Chicken</p>
                     <div class="flex">
                       <img class="h-5" src="sources/ratingpng.png" alt="" />
                       <p class="text-sm text-gray-400">16 votes</p>
                     </div>
-                    <p class="text-sm text-gray-500">₹395</p>
+                    <p class="text-sm text-gray-500">₹388</p>
                     <p class="text-sm text-gray-500 max-w-lg">
-                      Grilled chicken, jalapeno, sun-dried tomatoes, basil
-                      pesto, mozzarella. Experience authentic Italian flavours
-                      with our ...<span class="cursor-pointer text-gray-700"
-                        >read more</span
-                      >
-                    </p>
-                  </div>
-                </div>
-
-                <div class="flex">
-                  <div class="h-[130px] w-[130px] shrink-0 relative">
-                    <img
-                      class="rounded-lg"
-                      src="sources/menu_images/3_21.avif"
-                      alt=""
-                    />
-                    <img
-                      class="absolute top-1 right-1 z-10 h-2 bg-white"
-                      src="sources/non-veg.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="flex flex-col px-3 gap-1">
-                    <p class="text-lg">Lamb Chimichurri Pizza</p>
-                    <div class="flex">
-                      <img class="h-5" src="sources/ratingpng.png" alt="" />
-                      <p class="text-sm text-gray-400">10 votes</p>
-                    </div>
-                    <p class="text-sm text-gray-500">₹440</p>
-                    <p class="text-sm text-gray-500 max-w-lg">
-                      Crumbled lamb, red onion, red paprika, chimichurri splash,
-                      mozzarella. Experience authentic Italian flavours with
-                      ...<span class="cursor-pointer text-gray-700"
-                        >read more</span
-                      >
+                      Creamy blend of three types of mushroom - shiitake, button
+                      & oyster mushrooms
                     </p>
                   </div>
                 </div>
@@ -4369,7 +3334,7 @@
               <!--section6-->
               <section
                 id="section6"
-                class="flex flex-col w-full gap-5 mb-5 scroll-mt-[200px]scroll-mt-[200px]"
+                class="flex flex-col w-full gap-5 mb-5 scroll-mt-[180px]"
               >
                 <p class="text-2xl">Appetizers</p>
                 <p class="text-sm text-gray-500">
@@ -4958,7 +3923,7 @@
               <!--section7-->
               <section
                 id="section7"
-                class="flex flex-col w-full gap-5 mb-5 scroll-mt-[200px]"
+                class="flex flex-col w-full gap-5 mb-5 scroll-mt-[180px]"
               >
                 <p class="text-2xl">Desserts</p>
 
@@ -4995,7 +3960,7 @@
               <!--section8-->
               <section
                 id="section8"
-                class="flex flex-col w-full gap-5 mb-5 scroll-mt-[200px]"
+                class="flex flex-col w-full gap-5 mb-5 scroll-mt-[180px]"
               >
                 <p class="text-2xl">Hot Chocolate</p>
 
@@ -5032,7 +3997,7 @@
               <!--section9-->
               <section
                 id="section9"
-                class="flex flex-col w-full gap-5 mb-5 scroll-mt-[200px]"
+                class="flex flex-col w-full gap-5 mb-5 scroll-mt-[180px]"
               >
                 <p class="text-2xl">Beverages and Shakes</p>
                 <p class="text-sm text-gray-500">
@@ -5621,7 +4586,7 @@
               <!--section10-->
               <section
                 id="section10"
-                class="flex flex-col w-full gap-5 scroll-mt-[200px]"
+                class="flex flex-col w-full gap-5 scroll-mt-[180px]"
               >
                 <p class="text-2xl">Retail Range (for home)</p>
 
@@ -6407,7 +5372,7 @@
 
             <!--photo Grid-->
             <section
-              class="grid place-items-center sm:grid-cols-3 gap-5 md:grid-row-6 md:grid-cols-5 md:gap-2 py-4"
+              class="grid place-items-center sm:grid-cols-3 gap-5 md:grid-row-6 md:grid-cols-5 md:gap-3 py-4"
             >
               <img
                 class="rounded-md hover:scale-[105%] hover:brightness-[120%] ease-in-out duration-300"
@@ -6570,7 +5535,7 @@
 
         <!--Restaurant menu tab-->
         <section id="tab5" class="hidden">
-          <section class="mt-7 max-w-[96%] mx-auto">
+          <section class="mt-7 max-w-[96%] mx-auto mb-3">
             <div class="text-2xl">The pizza Bakery Menu</div>
 
             <div>
@@ -6712,7 +5677,7 @@
             </section>
             <!--Banner-->
             <section
-              class="hidden md:block drop-shadow-[2px_2px_20px_rgba(0,0,0,0.1)] rounded-lg bg-white max-w-[33%] p-5 h-min sticky top-[220px] right-0"
+              class="hidden md:block drop-shadow-[0px_2px_8px_rgba(28,28,28,0.08)] rounded-lg bg-white max-w-[33%] p-5 h-min sticky top-[220px] right-0"
             >
               <p class="font-semibold text-2xl">Get the App!</p>
               <p class="my-3">
@@ -6728,7 +5693,7 @@
 
     <footer class="">
       <!--Restaurant Footer-->
-      <section class="max-w-[70rem] m-auto">
+      <section class="max-w-[67rem] m-auto">
         <section class="flex flex-col gap-2 mx-2 my-7">
           <p class="text-sm font-medium tracking-[2px]">
             RELATED TO THE PIZZA BAKERY, SANJAY NAGAR
@@ -6817,13 +5782,13 @@
               >
                 About Zomato
               </h3>
-              <a href="../code-tanishka/who we are.html">Who We Are</a>
+              <a href="#">Who We Are</a>
               <a href="#">Blog</a>
-              <a href="../code-tanishka/work.html">Work With Us</a>
+              <a href="#">Work With Us</a>
               <a href="#">Investor Relations</a>
               <a href="#">Report Fraud</a>
               <a href="#">Press Kit</a>
-              <a href="../code-rahul/html-files/contact-us.html">Contact Us</a>
+              <a href="#">Contact Us</a>
             </div>
             <div
               class="text-sm flex flex-col gap-[5px] text-slate-500 w-[200px]"
