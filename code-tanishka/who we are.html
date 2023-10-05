@@ -38,6 +38,7 @@
                     screens: {
                         'xs': { 'min': '320px', 'max': '630px' },
                         // => @media (min-width: 992px) { ... }
+                        
                     },
                     colors: {
                         clifford: '#da373d',
@@ -50,7 +51,7 @@
 
 <body>
     <div class="landing-page max-w-full  xs:h-screen">
-        <div class="flex sm:justify-around  max-w-full   xs:gap-28 xs:ml-[16px]">
+        <div class="flex sm:justify-around  max-w-full  xs:gap-28 xs:ml-[16px]">
             <div class="pt-6 sm:hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" height="1.5em"
                     viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
@@ -101,24 +102,32 @@
         </div>
     </div>
     <div class="mx-[6%] xs:mx-[5%]">
-        <button class="bg-rose-500 py-1.5 px-6 rounded-3xl mx-1 text-white font-medium xs:py-1 xs:px-3">Assortment</button>
-        <button class="py-1.5 px-6 border-solid border-[1px] border-black rounded-full mx-1 font-medium xs:py-1 xs:px-3">A</button>
-        <button class="py-1.5 px-6 border-solid border-[1px] border-black rounded-full mx-1  font-medium xs:py-1 xs:px-3">A</button>
-        <button class="py-1.5 px-6 border-solid border-[1px] border-black rounded-full mx-1  font-medium xs:py-1 xs:px-3">Q</button>
-        <h2 class="text-3xl font-medium pt-4 pb-3 xs:text-2xl">Driving the force of <span class="text-rose-500">assortment</span>
+        <button
+            class="bg-rose-500 py-1.5 px-6 rounded-3xl mx-1 text-white font-medium xs:py-1 xs:px-3">Assortment</button>
+        <button
+            class="py-1.5 px-6 border-solid border-[1px] border-black rounded-full mx-1 font-medium xs:py-1 xs:px-3">A</button>
+        <button
+            class="py-1.5 px-6 border-solid border-[1px] border-black rounded-full mx-1  font-medium xs:py-1 xs:px-3">A</button>
+        <button
+            class="py-1.5 px-6 border-solid border-[1px] border-black rounded-full mx-1  font-medium xs:py-1 xs:px-3">Q</button>
+        <h2 class="text-3xl font-medium pt-4 pb-3 xs:text-2xl">Driving the force of <span
+                class="text-rose-500">assortment</span>
         </h2>
-        <p class="xs:text-[14px] xs:leading-6">For over a decade now, we’ve been empowering our customers in discovering new tastes and experiences across
+        <p class="xs:text-[14px] xs:leading-6">For over a decade now, we’ve been empowering our customers in discovering
+            new tastes and experiences across
             countries. By putting together meticulous information for our customers, we enable them to make an informed
             choice</p>
     </div>
     <div class=" mx-[6%] mt-[5%] xs:mx-[5%]">
         <div>
-            <h2 class="text-[2.6rem] font-semibold pb-6 xs:text-[1.9rem]"><span class="border-b-4 border-rose-500 pb-2 xs:border-transparent">Who</span> are
+            <h2 class="text-[2.6rem] font-semibold pb-6 xs:text-[1.9rem]"><span
+                    class="border-b-4 border-rose-500 pb-2 xs:border-transparent">Who</span> are
                 we?
             </h2>
         </div>
         <div class=" flex gap-14 xs:flex-col-reverse">
-            <p class="leading-6 text-[15px] w-[88%] tracking-tight xs:mt-[-30px]">Launched in 2010, Our technology platform connects
+            <p class="leading-6 text-[15px] w-[88%] tracking-tight xs:mt-[-30px]">Launched in 2010, Our technology
+                platform connects
                 customers,
                 restaurant partners and delivery partners, serving their multiple needs. Customers use our platform to
                 search and discover restaurants, read and write customer generated reviews and view and upload photos,
@@ -129,27 +138,30 @@
                 quality ingredients and kitchen products to restaurant partners. We also provide our delivery partners
                 with transparent and flexible earning opportunities.</p>
             <img src="https://b.zmtcdn.com/web/about/a7b0a36d5107f3590895981dab2eeac31563208212.jpeg?output-format=webp"
-            class="h-[360px] w-[900px]  rounded-lg mt-[-60px] xs:mt-0 xs:h-[210px]" alt="who">
+                class="h-[360px] w-[900px]  rounded-lg mt-[-60px] xs:mt-0 xs:h-[210px]" alt="who">
         </div>
     </div>
     <div class=" mx-[6%] mt-[8%] xs:mx-[5%]">
         <div>
             <h2 class="text-[2.6rem] font-semibold xs:text-[1.9rem]">From our blog</h2>
-            <p xs:leading-3>Explore our blog for insightful articles, personal reflections, impactful resources, and ideas that
+            <p xs:leading-3>Explore our blog for insightful articles, personal reflections, impactful resources, and
+                ideas that
                 inspire us at Zomato</p>
         </div>
         <div class="mt-5 flex flex-wrap cursor-pointer  justify-evenly tracking-tight xs:flex-col">
             <!-- --first card-- -->
-            <div class="w-[30%] xs:w-[100%] ">
+            <div class="w-[30%] xs:w-[100%] relative">
                 <div>
                     <a href="https://blog.zomato.com/introducing-tips-for-the-kitchen-staff">
                         <img src="https://zomatoblog.com/wp-content/uploads/2023/09/blog-header.png" alt="kitchen staff"
                             class="rounded-md h-[214px]">
                     </a>
-                    <div class="h-7 w-28 bg-black opacity-70 text-center rounded mt-[-10%]  ml-[13.5rem]">
+                    <a href="https://blog.zomato.com/introducing-tips-for-the-kitchen-staff"
+                        class="text-white  text-base absolute bg-black opacity-70 mt-[-14%] ml-[66%] p-1 rounded ">Community</a>
+                    <!-- <div class="h-7 w-28 bg-black opacity-70 text-center rounded mt-[-10%]  ">
                         <a href="https://blog.zomato.com/introducing-tips-for-the-kitchen-staff"
-                            class="text-white  text-base ">Community</a>
-                    </div>
+                            class="text-white  text-base absolute">Community</a>
+                    </div> -->
                 </div>
                 <div>
                     <a href="https://blog.zomato.com/introducing-tips-for-the-kitchen-staff">
@@ -162,16 +174,18 @@
                 </div>
             </div>
             <!-- --second card-- -->
-            <div class="w-[30%] xs:w-[100%] xs:mt-10">
+            <div class="w-[30%] xs:w-[100%] xs:mt-10 relative">
                 <div>
                     <a href="https://blog.zomato.com/introducing-vinifera">
                         <img src="https://zomatoblog.com/wp-content/uploads/2023/09/image7.jpg" alt="techno"
                             class="h-[214px] rounded-md w-30%">
                     </a>
-                    <div class="h-7 w-28 bg-black opacity-70 text-center rounded mt-[-10%]  ml-[13.5rem]">
+                    <a href="https://blog.zomato.com/introducing-vinifera"
+                        class="text-white  text-base absolute bg-black opacity-70 mt-[-14%] ml-[66%] p-1 rounded">Technology</a>
+                    <!-- <div class="h-7 w-28 bg-black opacity-70 text-center rounded mt-[-10%]  ml-[13.5rem]">
                         <a href="https://blog.zomato.com/introducing-vinifera"
                             class="text-white  text-base">Technology</a>
-                    </div>
+                    </div> -->
                 </div>
                 <div>
                     <a href="https://blog.zomato.com/introducing-vinifera">
@@ -184,16 +198,18 @@
                 </div>
             </div>
             <!-- --third card-- -->
-            <div class="w-[30%] xs:w-[100%] xs:mt-10">
+            <div class="w-[30%] xs:w-[100%] xs:mt-10 relative">
                 <div>
                     <a href="https://blog.zomato.com/introducing-zomato-ai-your-foodie-buddy">
                         <img src="https://zomatoblog.com/wp-content/uploads/2023/08/1-2.png" alt="zomato"
                             class="rounded-md h-[214px]">
                     </a>
-                    <div class="h-7 w-28 bg-black opacity-70 text-center rounded mt-[-10%] ml-[13.5rem]">
+                    <a href="https://blog.zomato.com/introducing-tips-for-the-kitchen-staff"
+                        class="text-white  text-base absolute bg-black opacity-70 mt-[-14%] ml-[66%] p-1 rounded">Community</a>
+                    <!-- <div class="h-7 w-28 bg-black opacity-70 text-center rounded mt-[-10%] ml-[13.5rem]">
                         <a href="https://blog.zomato.com/introducing-zomato-ai-your-foodie-buddy"
                             class="text-white  text-base">Community</a>
-                    </div>
+                    </div> -->
                 </div>
                 <div>
                     <a href="https://blog.zomato.com/introducing-zomato-ai-your-foodie-buddy">
@@ -239,15 +255,20 @@
         <footer class="mt-20 max-w-[95%] lg:max-w-[1125px] mx-auto bg-slate-50 pt-10">
             <div class="flex flex-col sm:flex-row h-max mx-3 gap-y-5">
                 <div class="mr-auto my-auto mx-auto sm:mx-0">
-                    <img class="w-28 md:w-36" src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png?fit=around|198:42&crop=198:42;*,*" alt="zomato img">
+                    <img class="w-28 md:w-36"
+                        src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png?fit=around|198:42&crop=198:42;*,*"
+                        alt="zomato img">
                 </div>
                 <div class="flex gap-x-5 items-center mx-auto sm:mr-0 text-sm sm:text-md">
                     <div class="flex items-center gap-x-[10px] border border-slate-400 px-2 py-2 rounded">
-                        <div class="flex items-center gap-[10px] mr-auto"><img class="w-6" src="https://b.zmtcdn.com/images/flags_z10/in.png?output-format=webp" alt="indian flag"> India</div>
+                        <div class="flex items-center gap-[10px] mr-auto"><img class="w-6"
+                                src="https://b.zmtcdn.com/images/flags_z10/in.png?output-format=webp" alt="indian flag">
+                            India</div>
                         <i class="fa-solid fa-angle-down fa-xs mt-[2px]"></i>
                     </div>
                     <div class="flex items-center gap-x-[10px] border border-slate-400 px-2 py-2 rounded">
-                        <div class="flex items-center gap-[10px] mr-auto"><i class="fa-solid fa-globe fa-lg"></i> English</div>
+                        <div class="flex items-center gap-[10px] mr-auto"><i class="fa-solid fa-globe fa-lg"></i>
+                            English</div>
                         <i class="fa-solid fa-angle-down fa-xs mt-[2px]"></i>
                     </div>
                 </div>
@@ -255,9 +276,9 @@
             <div class="my-[50px] flex gap-y-10 justify-between flex-wrap px-3 mx-auto">
                 <div class=" text-sm flex flex-col gap-[5px] text-slate-500 min-w-[200px]">
                     <h3 class="uppercase tracking-[0.2rem] font-[500] mb-2 text-black">About Zomato</h3>
-                    <a href="#">Who We Are</a>
+                    <a href="./who we are.html">Who We Are</a>
                     <a href="#">Blog</a>
-                    <a href="#">Work With Us</a>
+                    <a href="./work.html">Work With Us</a>
                     <a href="#">Investor Relations</a>
                     <a href="#">Report Fraud</a>
                     <a href="#">Press Kit</a>
@@ -309,15 +330,21 @@
                         </div>
                     </div>
                     <div class="flex flex-col gap-y-[15px] mt-5">
-                        <img class="w-36" src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png" alt="Apple store img">
-                        <img class="w-36" src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png" alt="google play store img">
+                        <img class="w-36"
+                            src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png"
+                            alt="Apple store img">
+                        <img class="w-36"
+                            src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png"
+                            alt="google play store img">
                     </div>
                 </div>
             </div>
             <hr class="border-[1px] mx-3">
-            <p class="text-[0.8rem] text-slate-500 my-5 mb-8 mx-3">By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2023 © Zomato™ Ltd. All rights reserved.</p>
+            <p class="text-[0.8rem] text-slate-500 my-5 mb-8 mx-3">By continuing past this page, you agree to our Terms
+                of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their
+                respective owners. 2008-2023 © Zomato™ Ltd. All rights reserved.</p>
         </footer>
-    
+
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
