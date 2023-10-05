@@ -38,6 +38,109 @@ These features collectively contribute to the successful creation of a Zomato cl
 
 ## This project is majorly focused on cloning the UI of Zomato using HTML and CSS. JavaScript click event is also used at some places to create a visually appealing and interactive user interface. The website allows users to find restaurants, browse menus, and read reviews.
 
+## Code overview
+
+To give you an overview here is an descriptions for common HTML tags and some commonly used Tailwind CSS classes used in this project:
+
+**HTML Tags:**
+
+`<html>`: Defines the root element of an HTML document.
+
+`<head>:` Contains metadata about the HTML document.
+
+`<meta>:` Specifies metadata such as character encoding, viewport settings, and theme color.
+
+`<link>:` Links external resources like stylesheets and icons.
+
+`<title>:` Sets the title of the webpage.
+
+`<body>:` Defines the main content area of the webpage.
+
+`<div>:` A generic container used for structuring content.
+
+`<header>:` Typically used for the top section of a webpage, which may include a navigation menu or a logo.
+
+`<nav>:` Represents a section of navigation links.
+
+`<a>:` Creates hyperlinks to other webpages or resources.
+
+`<button>:` Represents a clickable button.
+
+`<img>:` Embeds images in the webpage.
+
+`<ul>` and `<ol>:` Create unordered and ordered lists, respectively.
+
+`<li>:` Represents list items within `<ul>` or `<ol>`.
+
+`<p>:` Defines a paragraph of text.
+
+`<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`: Headings with varying levels of importance.
+
+`<span>:` Inline element often used for applying styles or scripting.
+
+`<form>:` Contains form elements for user input.
+
+`<input>:` Allows users to input data (e.g., text, checkboxes).
+
+`<label>:` Provides a label for form elements.
+
+`<textarea>:` Creates a multiline text input field.
+
+`<select>:` Represents a dropdown menu of options.
+
+`<section>:` Represents a thematic grouping of content.
+
+`<footer>:` Typically used for the bottom section of a webpage, which may include copyright information.
+
+**Common Tailwind CSS Classes:**
+
+**Layout Classes:**
+- `container:` Creates a centered container with max-width.
+- `mx-auto:` Centers an element horizontally.
+- `flex, grid:` Used for creating layouts.
+
+**Typography Classes:**
+- `text-*:` Sets text color, size, and styles.
+- `font-*:` Defines font families and weights.
+- `leading-*:` Sets line height.
+- `italic`, `uppercase`, `lowercase:` Text styling.
+
+**Background and Border Classes:**
+- `bg-*:` Sets background color.
+- `border`, `border-*:` Adds borders.
+- `rounded, rounded-*:` Applies rounded corners.
+
+**Spacing Classes:**
+- `m-*`, `mt-*`, `mb-*`, `ml-*`, `mr-*:` Defines margins.
+- `p-*`, `pt-*`, `pb-*`, `pl-*`, `pr-*:` Defines padding.
+- `w-*`, `h-*:` Sets width and height.
+- `min-w-*`, `min-h-*`, `max-w-*`, `max-h-*`: Sets min and max dimensions.
+
+**Flexbox and Grid Classes:**
+
+- `flex`, `flex-row`, `flex-col`, `justify-*`, `items-*:` Used for flexbox layouts.
+- `grid`, `grid-cols-*`, `gap-*:` Used for grid layouts.
+
+**Utility Classes:**
+- `hidden:` Hides an element.
+- `hover:*:` Applies styles on hover.
+- `animate-*:` Adds animations.
+
+**Responsive Classes:**
+- `sm:`, `md:`, `lg:`, `xl:` Apply styles based on screen size.
+
+**Component Classes:**
+- Classes like `button``, `card`, `navbar`, etc., define specific component styles.
+
+**Form and Input Classes:**
+- Classes like form-input, input, textarea, select style form elements.
+
+**Transition and Animation Classes:**
+- `transition-*:` Defines transition properties.
+- `animate-*:` Adds animations to elements.
+
+**These HTML tags and Tailwind CSS classes is used extensively and combined to create the desired user interface, including navigation menus, restaurant listings, user profiles, reviews, and more.**
+
 ### UI of Zomato Clone
 
 #### Page 1: Zomato Landing Page
