@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trending dining restaurants in Tajganj</title>
+    <link href="./style.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            screens: {
+              'mobileScreen':'0px',
+              'notMobileScreen': '380px',
+            },
+          },
+        },
+      }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  </head>
+
+  <body class="mobileScreen:ml-4 mobileScreen:scale-70 notMobileScreen: notMobileScreen:scale-100">
+    <div class="cursor-pointer my-[1.2rem] max-w-[1100px] m-auto flex items-center justify-between mobileScreen:shadow-md notMobileScreen:shadow-none ">
+      <div class="mr-[20px]">
+        <img
+          src="./images/zomatoLogo.avif"
+          alt=""
+          style="max-width: 127px; max-height: 72px"
+        />
+      </div>
+
+      <div class="mobileScreen:hidden notMobileScreen:flex items-center justify-between">
+        <div class="flex items-center applyBorder">
+          <div class="max-w-[243px] flex items-center w-[64%]">
+            <i class="sc-rbbb40-1 iFnyeo" color="#FF7E8B" size="20"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#FF7E8B"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                aria-labelledby="icon-svg-title- icon-svg-desc-"
+                role="img"
+                class="sc-rbbb40-0 iRDDBk"
+              >
+                <title>location-fill</title>
+                <path
+                  d="M10.2 0.42c-4.5 0-8.2 3.7-8.2 8.3 0 6.2 7.5 11.3 7.8 11.6 0.2 0.1 0.3 0.1 0.4 0.1s0.3 0 0.4-0.1c0.3-0.2 7.8-5.3 7.8-11.6 0.1-4.6-3.6-8.3-8.2-8.3zM10.2 11.42c-1.7 0-3-1.3-3-3s1.3-3 3-3c1.7 0 3 1.3 3 3s-1.3 3-3 3z"
+                ></path></svg      ></i>
+            <input placeholder="Agra" />
+            <i
+              class="cursor-pointer sc-rbbb40-1 iFnyeo sc-kKBQAD cjFsxK"
+              color="#4F4F4F"
+              size="12"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#4F4F4F"
+                width="12"
+                height="12"
+                viewBox="0 0 20 20"
+                aria-labelledby="icon-svg-title- icon-svg-desc-"
+                role="img"
+                class="sc-rbbb40-0 ezrcri"
+              >
+                <title>down-triangle</title>
+                <path d="M20 5.42l-10 10-10-10h20z"></path></svg            ></i>
+            &nbsp;&nbsp;
+            <div class="lineInMiddleOfSearchBar"></div>
+            &nbsp;&nbsp;
+          </div>
+
+          <div class="flex items-center mr-[5%]">
+            &nbsp;
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#828282"
+              width="18"
+              height="18"
+              viewBox="0 0 20 20"
+              aria-labelledby="icon-svg-title- icon-svg-desc-"
+              role="img"
+              class="sc-rbbb40-0 iwHbVQ"
+            >
+              <title>Search</title>
+              <path
+                d="M19.78 19.12l-3.88-3.9c1.28-1.6 2.080-3.6 2.080-5.8 0-5-3.98-9-8.98-9s-9 4-9 9c0 5 4 9 9 9 2.2 0 4.2-0.8 5.8-2.1l3.88 3.9c0.1 0.1 0.3 0.2 0.5 0.2s0.4-0.1 0.5-0.2c0.4-0.3 0.4-0.8 0.1-1.1zM1.5 9.42c0-4.1 3.4-7.5 7.5-7.5s7.48 3.4 7.48 7.5-3.38 7.5-7.48 7.5c-4.1 0-7.5-3.4-7.5-7.5z"
+              ></path>
+            </svg>
+            &nbsp;&nbsp;
+            <input
+              placeholder="Search for restaurant, cuisine or a dish"
+              size="45"
+            />
+          </div>
+        </div>
+        
+        <a href="../code-rahul/html-files/Login.html"><button class="cursor-pointer w-[150px] text-[#696969] text-[18px]">Log in</button></a>
+        <a href="../code-rahul/html-files/Signup.html"><button class="cursor-pointer w-[150px] text-[#696969] text-[18px]">Sign up </button></a>
+        
+        
+        
+        
+      </div>
+
+      <div class="mobileScreen:flex notMobileScreen:hidden  account" >
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#EF4F5F" width="18" height="18" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 iwHbVQ"><circle cx="10" cy="4.5" r="4.5"></circle><path d="M18.18,14.73c-2.35-4.6-6.49-4.48-8.15-4.48s-5.86-.12-8.21,4.48C.59,17.14,1.29,20,4.54,20H15.46C18.71,20,19.41,17.14,18.18,14.73Z"></path></svg>
+      </div>
+    </div>
+
+    <div class="mt-[1.2rem] max-w-[1100px] m-auto flex items-center mobileScreen:hidden notMobileScreen:flex ">
+      <div><p class="text-neutral-500 text-sm">Home / India / Agra /<span class="text-neutral-300">Tajganj Restaurants </span></p></div>
+    </div>
+    
+    
+    <div class="mt-[1.2rem] max-w-[1100px] m-auto flex items-center mobileScreen:hidden notMobileScreen:flex ">
+      <div class="flex items-center ">
+        <div class="bg-[#F8F8F8] w-[60px] h-[60px] rounded-full">
+          <img
+            src="./images/delivery.webp"
+            class="w-[30px] m-auto items-center pt-[30%]"
+          />
+        </div>
+        <div class="cursor-pointer text-[#696969]" style="font-size: 1.3rem">
+          <a href="../delivery-easwaran/index.html"><p>&nbsp;Delivery</p></a>
+        </div>
+      </div>
+
+      <div class="flex items-center ml-[5%] pb-4 border-b-2 border-[#FF7E8B]">
+        <div class="bg-[#E5F3F3] w-[60px] h-[60px] rounded-full">
+          <img
+            src="./images/plate.avif"
+            class="w-[30px] m-auto items-center pt-[30%]"
+          />
+        </div>
+        <div class="cursor-pointer text-[#696969]" style="font-size: 1.3rem">
+          <p>&nbsp;Dining Out</p>
+        </div>
+      </div>
+
+      <div class="flex items-center ml-[5%]">
+        <div class="bg-[#F8F8F8] w-[60px] h-[60px] rounded-full">
+          <img
+            src="./images/bottle.webp"
+            class="w-[30px] m-auto items-center pt-[30%]"
+          />
+        </div>
+        <div class="cursor-pointer text-[#696969]" style="font-size: 1.3rem">
+          <p>&nbsp;Nightlife</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- location and search bar for mobile screen only -->
+    <div class="flex h-[3.5rem] border-b border-stone-200 justify-between items-center mobileScreen:flex notMobileScreen:hidden ">
+      <div class="flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#EF4F5F" width="15" height="15" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 jKmKoK"><title>location-fill</title><path d="M10.2 0.42c-4.5 0-8.2 3.7-8.2 8.3 0 6.2 7.5 11.3 7.8 11.6 0.2 0.1 0.3 0.1 0.4 0.1s0.3 0 0.4-0.1c0.3-0.2 7.8-5.3 7.8-11.6 0.1-4.6-3.6-8.3-8.2-8.3zM10.2 11.42c-1.7 0-3-1.3-3-3s1.3-3 3-3c1.7 0 3 1.3 3 3s-1.3 3-3 3z"></path></svg>
+        <p>Taj Nagari, Basai K...</p>
+      </div>
+      <div class="circleOnMagnifingGlass">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#363636" width="17" height="17" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 fajqkJ"><title>Search</title><path d="M19.78 19.12l-3.88-3.9c1.28-1.6 2.080-3.6 2.080-5.8 0-5-3.98-9-8.98-9s-9 4-9 9c0 5 4 9 9 9 2.2 0 4.2-0.8 5.8-2.1l3.88 3.9c0.1 0.1 0.3 0.2 0.5 0.2s0.4-0.1 0.5-0.2c0.4-0.3 0.4-0.8 0.1-1.1zM1.5 9.42c0-4.1 3.4-7.5 7.5-7.5s7.48 3.4 7.48 7.5-3.38 7.5-7.48 7.5c-4.1 0-7.5-3.4-7.5-7.5z"></path></svg>
+      </div>
+    </div>
+
+    <!-- for a ash color line only  -->
+    <div class="border-t-2 border-[#F8F8F8] mobileScreen:hidden notMobileScreen:flex "></div>
+
+
+    <!-- entire collections page  -->
+    <div class="bg-[#F8F8F8]">
+  <div class="pb-[3rem] mb-[1.2rem] max-w-[1100px] m-auto bg-[#F8F8F8]">
+      
+    <div class="mobileScreen:text-[18px] notMobileScreen:text-[36px] text-[#1C1C1C] mb-[4px] font-semibold"><h2>Collections</h2></div>
+    
+    <div class="flex justify-between">
+      <div><p class="mobileScreen:text-[14px] notMobileScreen:text-[18px] text-slate-600">Explore curated lists of top restaurants, cafes, pubs, and bars in Agra, based on trends</p></div>
+      <div class="mobileScreen:hidden notMobileScreen:flex items-center">
+        <p class="cursor-pointer text-[#ff7e8b] text-[18px]">All collections in Agra</p>&nbsp;
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#FF7E8B" width="12" height="12" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 ezrcri"><title>right-triangle</title><path d="M5 0.42l10 10-10 10v-20z"></path></svg>
+      </div>
+    </div>
+    <!-- div with 4 card images -->
+    <div class="mt-[35px] flex notMobileScreen:flex-nowrap mobileScreen:gap-5 mobileScreen:flex-wrap ">
+      <!-- one card -->
+      <div class="cursor-pointer relative mobileScreen:w-[158px] mobileScreen:h-[177px] notMobileScreen:w-[270px] notMobileScreen:h-[320px] overflow-hidden">
+        <img src="./images/collections1.avif" class="w-[100%] h-[100%] rounded-md object-cover">
+        <P class="absolute bottom-7 left-3 text-white text-xl">6 Taj View Restaurant</P>
+        <div class="absolute bottom-0 left-3 text-white flex items-center">
+          <p class="mb-[4px]">5 Places</p>&nbsp;
+          <i class="sc-rbbb40-1 iFnyeo" size="10" color="#FFFFFF"><svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" width="10" height="10" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 gvsUip"><title>right-triangle</title><path d="M5 0.42l10 10-10 10v-20z"></path></svg></i>
+        </div>
+      </div>
+
+      <div class="cursor-pointer relative mobileScreen:w-[158px] mobileScreen:h-[177px] notMobileScreen:w-[270px] notMobileScreen:h-[320px] overflow-hidden">
+        <img src="./images/collections2.avif" class="w-[100%] h-[100%] rounded-md object-cover">
+        <P class="absolute bottom-7 left-3 text-white text-xl">14 Local Favourite Places</P>
+        <div class="absolute bottom-0 left-3 text-white flex items-center">
+          <p class="mb-[4px]">14 Places</p>&nbsp;
+          <i class="sc-rbbb40-1 iFnyeo" size="10" color="#FFFFFF"><svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" width="10" height="10" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 gvsUip"><title>right-triangle</title><path d="M5 0.42l10 10-10 10v-20z"></path></svg></i>
+        </div>
+      </div>
+
+
+      <div class="cursor-pointer relative mobileScreen:w-[158px] mobileScreen:h-[177px] notMobileScreen:w-[270px] notMobileScreen:h-[320px] overflow-hidden">
+        <img src="./images/collections3.jpg" class="w-[100%] h-[100%] rounded-md object-cover">
+        <P class="absolute bottom-7 left-3 text-white text-xl">18 Best Luxury Dining Plac..</P>
+        <div class="absolute bottom-0 left-3 text-white flex items-center">
+          <p class="mb-[4px]">18 Places</p>&nbsp;
+          <i class="sc-rbbb40-1 iFnyeo" size="10" color="#FFFFFF"><svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" width="10" height="10" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 gvsUip"><title>right-triangle</title><path d="M5 0.42l10 10-10 10v-20z"></path></svg></i>
+        </div>
+      </div>
+
+
+      <div class="cursor-pointer relative mobileScreen:w-[158px] mobileScreen:h-[177px] notMobileScreen:w-[270px] notMobileScreen:h-[320px] overflow-hidden">
+        <img src="./images/collections4.avif" class="w-[100%] h-[100%] rounded-md object-cover">
+        <P class="absolute bottom-7 left-3 text-white text-xl">6 Best Mughlai Places</P>
+        <div class="absolute bottom-0 left-3 text-white flex items-center">
+          <p class="mb-[4px]">6 Places</p>&nbsp;
+          <i class="sc-rbbb40-1 iFnyeo" size="10" color="#FFFFFF"><svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" width="10" height="10" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 gvsUip"><title>right-triangle</title><path d="M5 0.42l10 10-10 10v-20z"></path></svg></i>
+        </div>
+      </div>
+
+
+    </div>
+  </div>  
+    </div>
+
+
+    <div class="bg-white z-10 sticky top-0 flex-wrap">
+      <div class="py-[1.2rem] mb-[1.2rem] max-w-[1100px] m-auto flex items-center">
+        <div class="text-[#9C9C9C] flex items-center border border-[#dfdfdf] px-[8px] py-[6px] rounded-lg text-[14px]">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="#9C9C9C"
+          width="18"
+          height="18"
+          viewBox="0 0 20 20"
+          aria-labelledby="icon-svg-title- icon-svg-desc-"
+          role="img"
+          class="sc-rbbb40-0 iwHbVQ"
+        >
+          <title>filter</title>
+          <path
+            d="M2.14 6.42h7.26c0.353 1.207 1.45 2.074 2.75 2.074s2.397-0.867 2.745-2.054l0.005-0.020h2.96c0.343-0.059 0.6-0.355 0.6-0.71s-0.258-0.651-0.596-0.709l-0.004-0.001h-2.94c-0.341-1.226-1.447-2.11-2.76-2.11s-2.419 0.885-2.755 2.090l-0.005 0.020h-7.26c-0.343 0.059-0.6 0.355-0.6 0.71s0.257 0.651 0.596 0.709l0.004 0.001zM12.16 4.28c0.776 0.011 1.4 0.643 1.4 1.42 0 0.784-0.636 1.42-1.42 1.42-0.777 0-1.409-0.624-1.42-1.399l-0-0.001c-0-0.006-0-0.013-0-0.020 0-0.784 0.636-1.42 1.42-1.42 0.007 0 0.014 0 0.021 0l-0.001-0zM17.86 13.58h-7.24c-0.328-1.245-1.443-2.148-2.77-2.148s-2.442 0.903-2.766 2.128l-0.004 0.020h-2.94c-0.036-0.006-0.077-0.010-0.12-0.010-0.398 0-0.72 0.322-0.72 0.72s0.322 0.72 0.72 0.72c0.042 0 0.084-0.004 0.124-0.011l-0.004 0.001h2.96c0.353 1.207 1.45 2.074 2.75 2.074s2.397-0.867 2.745-2.054l0.005-0.020h7.26c0.343-0.059 0.6-0.355 0.6-0.71s-0.258-0.651-0.596-0.709l-0.004-0.001zM7.84 15.72c-0.776-0.011-1.4-0.643-1.4-1.42 0-0.784 0.636-1.42 1.42-1.42 0.777 0 1.409 0.624 1.42 1.399l0 0.001c0 0.006 0 0.013 0 0.020 0 0.784-0.636 1.42-1.42 1.42-0.007 0-0.014-0-0.021-0l0.001 0z"
+          ></path>
+        </svg>
+        &nbsp;
+        <p class="cursor-pointer">Filters</p>
+    </div>
+
+    <div
+      class="text-[#9C9C9C] flex items-center border border-[#dfdfdf] px-[8px] py-[6px] rounded-lg text-[14px] ml-[1%]"
+    >
+      <img src="./images/goldCrown.webp" class="max-w-[20px]" alt="">
+      &nbsp;
+      <p class="cursor-pointer">Filters</p>
+    </div>
+
+    <div class="text-[#9C9C9C] flex items-center border border-[#dfdfdf] px-[8px] py-[6px] rounded-lg text-[14px] ml-[1%]">
+      <p class="cursor-pointer">Rating 4.0+</p>
+    </div>
+
+    <div class="text-[#9C9C9C] flex items-center border border-[#dfdfdf] px-[8px] py-[6px] rounded-lg text-[14px] ml-[1%]">
+      <p class="cursor-pointer">Outdoor Seating</p>
+    </div>
+
+    <div class="text-[#9C9C9C] flex items-center border border-[#dfdfdf] px-[8px] py-[6px] rounded-lg text-[14px] ml-[1%]">
+      <p class="cursor-pointer">Serves Alcohol</p>
+    </div>
+
+    <div class="text-[#9C9C9C] flex items-center border border-[#dfdfdf] px-[8px] py-[6px] rounded-lg text-[14px] ml-[1%]">
+      <p class="cursor-pointer">Open Now</p>
+    </div>
+
+      </div>
+    </div>
+    
+
+    <div class="mt-[1.2rem] mb-[1.2rem] max-w-[1100px] m-auto cursor-pointer">
+      <div><img src="./images/50percentOff.avif" alt=""></div>
+    </div>
+
+
+    <!-- for right bottom arrow (shortcut to take to top of page) -->
+    <div class="cursor-pointer max-w-[68px] max-h-[68px] bg-[#ef4f5f] fix bottom-5 right-5 tester mobileScreen:hidden notMobileScreen:flex items-center justify-center" >
+      <svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" width="32" height="32" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 fgseiv"><title>chevron-up</title><path d="M15.54 13.44c-0.3 0.3-0.78 0.3-1.060 0l-4.48-4.46-4.46 4.46c-0.3 0.3-0.78 0.3-1.060 0s-0.3-0.76 0-1.060l5-5c0.28-0.28 0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060z"></path></svg>
+    </div>
+
+
+
+
+    <!-- best food of a place eg: Best food in Agra - only one text is there -->
+    <div class="mt-[1.2rem] mb-[1.2rem] max-w-[1100px] m-auto">
+      <div class="text-[30px] text-[#454545] mb-[32px]"><h2>Trending dining restaurants in Tajganj</h2></div>
+    </div>
+
+
+    <!-- container for holding all the best food items ie the infinite food menu -->
+    <div class="mt-[1.2rem] mb-[1.2rem] max-w-[1100px] m-auto">
+      <!-- a set of 3 items (picture) is displayed in each row  -->
+      <div style="padding-bottom: 10px;" class="flex justify-between mobileScreen:flex-wrap ">
+
+        <!-- item 1 of line 1 -->
+        <a href="../code-manasa/brandPage.html">
+          <div class="cursor-pointer max-w-[328px] flex flex-col  hover:border hover:border-gray-200 hover:rounded-lg foodCardShadow">
+            <div class="p-2">
+              <!-- image -->
+              <div><img src="./images/bestFood1.avif" alt="" style="width: 328px; height: 248px;" class="h-full rounded-lg bg-cover "></div>
+                <!-- text area -->
+                <div>
+                  <!-- name and rating -->
+                  <div class="flex justify-between max-w-[328px] pt-[8px]">
+                    <div ><p class="text-[#363636] text-[19px] font-medium">Pind Balluchi</p></div>
+                    <div class="flex bg-[#267E3E] text-white px-[0.4rem] max-h-5 items-center rounded-md ">
+                      3.9<img src="./images/rating star.svg" alt="" class="max-w-[10px] object-cover">
+                    </div>
+                  </div>
+    
+                  <!-- category and price   -->
+                  <div class="flex justify-between max-w-[328px] pt-[8px]">
+                    <div class="text-[#696969] text-[16px]">Pizza, Pasta, Italian, F...</div>
+                    <div class="text-[#696969] text-[16px]">₹1,100 for two</div>
+                  </div>
+    
+                  <!-- time taken to deliver items -->
+                  <div class="flex justify-between max-w-[328px] pt-[8px]">
+                    <div class="text-[#696969] text-[14px]">Tajganj, Agra</div>
+                    <div class="text-[#696969] text-[14px]">27 min</div>
+                  </div>
+                </div>
+            </div>
+            <hr>
+            <!-- max safety delivery image + text -->
+            <div class="flex justify-between gap-[8px] pt-[5px]">
+              <div class="h-[34px] items-center max-h-[18px] "><img src="./images/blueMaxSafety.avif" class=" w-[48px] h-[18px] mt-[10px] pl-[4px]"></div>
+              <p class="text-[#696969] text-[12px]">Follows all Max Safety measures for a safe dining experience</p>
+            </div>
+          </div>
+        </a>
+
+        
+        <a href="../code-manasa/brandPage.html">
+          <div class="cursor-pointer max-w-[328px] flex flex-col  hover:border hover:border-gray-200 hover:rounded-lg foodCardShadow">
+            <div class="p-2">
+              <div ><img src="./images/bestFood2.avif" alt="" style="width: 328px; height: 248px;" class="h-full rounded-lg bg-cover"></div>
+                <div>
+                  <div class="flex justify-between max-w-[328px] pt-[8px]">
+                    <div ><p class="text-[#363636] text-[19px] font-medium">Bellevue - The Oberoi</p></div>
+                    <div class="flex bg-[#267E3E] text-white px-[0.4rem] max-h-5 items-center rounded-md">
+                      4.3<img src="./images/rating star.svg" alt="" class="max-w-[10px]">
+                    </div>
+                  </div>
+    
+                  <!-- category and price   -->
+                  <div class="flex justify-between max-w-[328px] pt-[8px]">
+                    <div class="text-[#696969] text-[16px]">North Indian, Continental,...</div>
+                    <div class="text-[#696969] text-[16px]">₹4,500 for t...</div>
+                  </div>
+    
+                  <!-- time taken to deliver items -->
+                  <div class="flex justify-between max-w-[328px] pt-[8px]">
+                    <div class="text-[#696969] text-[14px]">The Oberoi Amarvilas, Tajganj, Agra</div>
+                    <div class="text-[#696969] text-[14px]">900 m</div>
+                  </div>
+                </div>
+            </div>
+            <hr>
+            <!-- max safety delivery image + text -->
+            <div class="flex justify-between gap-[8px] pt-[5px]">
+              <div class="h-[34px] items-center max-h-[18px] "><img src="./images/blueMaxSafety.avif" class=" w-[48px] h-[18px] mt-[10px] pl-[4px]"></div>
+              <p class="text-[#696969] text-[12px]">Follows all Max Safety measures for a safe dining experience</p>
+            </div>
+          </div>
+        </a>
+
+
+        <a href="../code-manasa/brandPage.html">
+          <div class="cursor-pointer max-w-[328px] flex flex-col  hover:border hover:border-gray-200 hover:rounded-lg foodCardShadow">
+            <div class="p-2">
+              <div class="relative">
+                <div><img src="./images/bestFood3.avif" alt="" style="width: 328px; height: 248px;" class="w-[100%] h-[100%] object-cover h-full rounded-lg bg-cover"></div>
+              </div>
+                <div>
+                  <div class="flex justify-between max-w-[328px] pt-[8px]">
+                    <div ><p class="text-[#363636] text-[19px] font-medium">Govardan Bakery</p></div>
+                    <div class="flex bg-[#267E3E] text-white px-[0.4rem] max-h-5 items-center rounded-md">
+                      3.8<img src="./images/rating star.svg" alt="" class="max-w-[10px]">
+                    </div>
+                  </div>
+    
+                  <!-- category and price   -->
+                  <div class="flex justify-between max-w-[328px] pt-[8px]">
+                    <div class="text-[#696969] text-[16px]">Bakery, Fast Food Desser..</div>
+                    <div class="text-[#696969] text-[16px]">₹300 for one</div>
+                  </div>
+    
+                  <!-- time taken to deliver items -->
+                  <div class="flex justify-between max-w-[328px] pt-[8px]">
+                    <div></div>
+                    <div class="text-[#696969] text-[16px]">29 min</div>
+                  </div>
+                </div>
+            </div>
+            <hr>
+            <!-- max safety delivery image + text -->
+            <div class="flex justify-between gap-[8px] pt-[5px]">
+              <div class="h-[34px] items-center max-h-[18px] "><img src="./images/blueMaxSafety.avif" class=" w-[48px] h-[18px] mt-[10px] pl-[4px]"></div>
+              <p class="text-[#696969] text-[12px]">Follows all Max Safety measures to ensure your food is safe</p>
+            </div>
+          </div>
+        </a>
+
+        
+      </div>
+    </div>
+
+    <div class="mt-[1.2rem] mb-[1.2rem] max-w-[1100px] m-auto">
+      <!-- a set of 3 items (picture) is displayed in each row  -->
+      <div style="padding-bottom: 10px;" class="flex justify-between mobileScreen:flex-wrap ">
+
+        <!-- item 1 of line 1 -->
+        <a href="../code-manasa/brandPage.html">
+          <div class="cursor-pointer max-w-[328px] flex flex-col  hover:border hover:border-gray-200 hover:rounded-lg foodCardShadow">
+            <div class="p-2">
+              <!-- image -->
+              <div><img src="./images/bestFood4.avif" alt="" style="width: 328px; height: 248px;" class="h-full rounded-lg bg-cover "></div>
+                <!-- text area -->
+                <div>
+                  <!-- name and rating -->
+                  <div class="flex justify-between max-w-[328px] pt-[8px]">
+                    <div ><p class="text-[#363636] text-[19px] font-medium">Dasaprakash</p></div>
+                    <div class="flex bg-[#267E3E] text-white px-[0.4rem] max-h-5 items-center rounded-md ">
+                      3.8<img src="./images/rating star.svg" alt="" class="max-w-[10px] object-cover">
+                    </div>
+                  </div>
+    
+                  <!-- category and price   -->
+                  <div class="flex justify-between max-w-[328px] pt-[8px]">
+                    <div class="text-[#696969] text-[16px]">South Indian, North Indian,...</div>
+                    <div class="text-[#696969] text-[16px]">₹800 for two</div>
+                  </div>
+    
+                  <!-- time taken to deliver items -->
+                  <div class="flex justify-between max-w-[328px] pt-[8px]">
+                    <div class="text-[#696969] text-[14px]">Tajganj, Agra</div>
+                    <div class="text-[#696969] text-[14px]">883 m</div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </a>
+
+        
+        <a href="../code-manasa/brandPage.html">
+          <div class="cursor-pointer max-w-[328px] flex flex-col  hover:border hover:border-gray-200 hover:rounded-lg foodCardShadow">
+            <div class="p-2">
+              <!-- image -->
+              <div><img src="./images/bestFood5.avif" alt="" style="width: 328px; height: 248px;" class="h-full rounded-lg bg-cover "></div>
+                <!-- text area -->
+                <div>
+                  <!-- name and rating -->
+                  <div class="flex justify-between max-w-[328px] pt-[8px]">
+                    <div ><p class="text-[#363636] text-[19px] font-medium">Starbucks Coffee</p></div>
+                    <div class="flex bg-[#9C9C9C] text-white px-[0.4rem] max-h-5 items-center rounded-md ">
+                      -<img src="./images/rating star.svg" alt="" class="max-w-[10px] object-cover">
+                    </div>
+                  </div>
+    
+                  <!-- category and price   -->
+                  <div class="flex justify-between max-w-[328px] pt-[8px]">
+                    <div class="text-[#696969] text-[16px]">Cafe, Coffee, Fast Food</div>
+                    <div class="text-[#696969] text-[16px]">₹900 for two</div>
+                  </div>
+    
+                  <!-- time taken to deliver items -->
+                  <div class="flex justify-between max-w-[328px] pt-[8px]">
+                    <div class="text-[#696969] text-[14px]">Tajganj, Agra</div>
+                    <div class="text-[#696969] text-[14px]">288 m</div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </a>
+
+
+        <a href="../code-manasa/brandPage.html">
+          <div class="cursor-pointer max-w-[328px] flex flex-col  hover:border hover:border-gray-200 hover:rounded-lg foodCardShadow">
+            <div class="p-2">
+              <div class="relative">
+                <div><img src="./images/bestFood6.avif" alt="" style="width: 328px; height: 248px;" class="w-[100%] h-[100%] object-cover h-full rounded-lg bg-cover"></div>
+              </div>
+                <div>
+                  <div class="flex justify-between max-w-[328px] pt-[8px]">
+                    <div ><p class="text-[#363636] text-[19px] font-medium">Berco's - If You Love Chinese</p></div>
+                    <div class="flex bg-[#267E3E] text-white px-[0.4rem] max-h-5 items-center rounded-md">
+                      4.7<img src="./images/rating star.svg" alt="" class="max-w-[10px]">
+                    </div>
+                  </div>
+    
+                  <!-- category and price   -->
+                  <div class="flex justify-between max-w-[328px] pt-[8px]">
+                    <div class="text-[#696969] text-[16px]">Asian, Thai, Chinese, Mom..</div>
+                    <div class="text-[#696969] text-[16px]">₹1,000 for two</div>
+                  </div>
+    
+                  <!-- time taken to deliver items -->
+                  <div class="flex justify-between max-w-[328px] pt-[8px]">
+                    <div>Tajganj, Agra</div>
+                    <div class="text-[#696969] text-[16px]"></div>
+                  </div>
+                  <div class="flex justify-between max-w-[328px] pt-[8px]">
+                    <div class="text-orange-600 text-[14px]">Currently closed due to relocation</div>
+                    <div class="text-[#696969] text-[16px]">1.9 km</div>
+                  </div>
+                </div>
+            </div>
+            <hr>
+            <!-- max safety delivery image + text -->
+            <div class="flex justify-between gap-[8px] pt-[5px]">
+              <div class="h-[34px] items-center max-h-[18px] "><img src="./images/blueMaxSafety.avif" class=" w-[48px] h-[18px] mt-[10px] pl-[4px]"></div>
+              <p class="text-[#696969] text-[12px]">Follows all Max Safety measures to ensure your food is safe</p>
+            </div>
+          </div>
+        </a>
+  
+      </div>
+    </div>
+
+    <div class="mt-[1.2rem] mb-[1.2rem] max-w-[1100px] m-auto">
+      <!-- a set of 3 items (picture) is displayed in each row  -->
+      <div style="padding-bottom: 10px;" class="flex justify-between mobileScreen:flex-wrap ">
+
+        <!-- item 1 of line 1 -->
+        <a href="../code-manasa/brandPage.html">
+          <div class="cursor-pointer max-w-[328px] flex flex-col  hover:border hover:border-gray-200 hover:rounded-lg foodCardShadow">
+            <div class="p-2">
+              <!-- image -->
+              <div><img src="./images/bestFood7.avif" alt="" style="width: 328px; height: 248px;" class="h-full rounded-lg bg-cover "></div>
+                <!-- text area -->
+                <div>
+                  <!-- name and rating -->
+                  <div class="flex justify-between max-w-[328px] pt-[8px]">
+                    <div ><p class="text-[#363636] text-[19px] font-medium">Agarwal Food Court</p></div>
+                    <div class="flex bg-[#267E3E] text-white px-[0.4rem] max-h-5 items-center rounded-md ">
+                      4.0<img src="./images/rating star.svg" alt="" class="max-w-[10px] object-cover">
+                    </div>
+                  </div>
+    
+                  <!-- category and price   -->
+                  <div class="flex justify-between max-w-[328px] pt-[8px]">
+                    <div class="text-[#696969] text-[16px]">South Indian, Chinese, Fas...</div>
+                    <div class="text-[#696969] text-[16px]">₹600 for two</div>
+                  </div>
+    
+                  <!-- time taken to deliver items -->
+                  <div class="flex justify-between max-w-[328px] pt-[8px]">
+                    <div class="text-[#696969] text-[14px]">Agra Cantt, Agra</div>
+                    <div class="text-[#696969] text-[14px]">4.4 km</div>
+                  </div>
+                </div>
+            </div>
+            <hr>
+            <!-- max safety delivery image + text -->
+            <div class="flex justify-between gap-[8px] pt-[5px]">
+              <div class="h-[34px] items-center max-h-[18px] "><img src="./images/blueMaxSafety.avif" class=" w-[48px] h-[18px] mt-[10px] pl-[4px]"></div>
+              <p class="text-[#696969] text-[12px]">Follows all Max Safety measures for a safe dining experience</p>
+            </div>
+          </div>
+        </a>
+
+        
+        <a href="../code-manasa/brandPage.html">
+          <div class="cursor-pointer max-w-[328px] flex flex-col  hover:border hover:border-gray-200 hover:rounded-lg foodCardShadow">
+            <div class="p-2">
+              <div ><img src="./images/bestFood8.avif" alt="" style="width: 328px; height: 248px;" class="h-full rounded-lg bg-cover"></div>
+                <div>
+                  <div class="flex justify-between max-w-[328px] pt-[8px]">
+                    <div ><p class="text-[#363636] text-[19px] font-medium">Chimmanlal Puri Wale</p></div>
+                    <div class="flex bg-[#267E3E] text-white px-[0.4rem] max-h-5 items-center rounded-md">
+                      3.8<img src="./images/rating star.svg" alt="" class="max-w-[10px]">
+                    </div>
+                  </div>
+    
+                  <!-- category and price   -->
+                  <div class="flex justify-between max-w-[328px] pt-[8px]">
+                    <div class="text-[#696969] text-[16px]">North Indian, Street Food,...</div>
+                    <div class="text-[#696969] text-[16px]">₹300 for two</div>
+                  </div>
+    
+                  <!-- time taken to deliver items -->
+                  <div class="flex justify-between max-w-[328px] pt-[8px]">
+                    <div class="text-[#696969] text-[14px]">Mantola, Agra</div>
+                    <div class="text-[#696969] text-[14px]">4.5 m</div>
+                  </div>
+                </div>
+            </div>
+            <hr>
+            <!-- max safety delivery image + text -->
+            <div class="flex justify-between gap-[8px] pt-[5px]">
+              <div class="h-[34px] items-center max-h-[18px] "><img src="./images/blueMaxSafety.avif" class=" w-[48px] h-[18px] mt-[10px] pl-[4px]"></div>
+              <p class="text-[#696969] text-[12px]">Follows all Max Safety measures for a safe dining experience</p>
+            </div>
+          </div>
+        </a>
+
+
+        <a href="../code-manasa/brandPage.html">
+          <div class="cursor-pointer max-w-[328px] flex flex-col  hover:border hover:border-gray-200 hover:rounded-lg foodCardShadow">
+            <div class="p-2">
+              <div class="relative">
+                <div><img src="./images/bestFood9.avif" alt="" style="width: 328px; height: 248px;" class="w-[100%] h-[100%] object-cover h-full rounded-lg bg-cover"></div>
+              </div>
+                <div>
+                  <div class="flex justify-between max-w-[328px] pt-[8px]">
+                    <div ><p class="text-[#363636] text-[19px] font-medium">Govardan Bakery</p></div>
+                    <div class="flex bg-[#0E5020] text-white px-[0.4rem] max-h-5 items-center rounded-md">
+                      4.9<img src="./images/rating star.svg" alt="" class="max-w-[10px]">
+                    </div>
+                  </div>
+    
+                  <!-- category and price   -->
+                  <div class="flex justify-between max-w-[328px] pt-[8px]">
+                    <div class="text-[#696969] text-[16px]">Costa Coffee</div>
+                    <div class="text-[#696969] text-[16px]">₹800 for two</div>
+                  </div>
+    
+                  <!-- time taken to deliver items -->
+                  <div class="flex justify-between max-w-[328px] pt-[8px]">
+                    <div class="text-[#696969] text-[14px]">Tajganj, Agra</div>
+                    <div class="text-[#696969] text-[16px]">2 km</div>
+                  </div>
+                </div>
+            </div>
+            <hr>
+            <!-- max safety delivery image + text -->
+            <div class="flex justify-between gap-[8px] pt-[5px]">
+              <div class="h-[34px] items-center max-h-[18px] "><img src="./images/blueMaxSafety.avif" class=" w-[48px] h-[18px] mt-[10px] pl-[4px]"></div>
+              <p class="text-[#696969] text-[12px]">Follows all Max Safety measures to ensure your food is safe</p>
+            </div>
+          </div>
+        </a>
+
+        
+      </div>
+    </div>
+
+
+
+    <div class="mt-[6rem] mb-[1.2rem] max-w-[1100px] m-auto">
+      <div><p class="text-[30px] text-[#363636] mb-[20px] font-medium">Popular localities in and around Agra</p></div>
+      <!-- for holding all the nine cards -->
+      <div class="flex justify-between flex-wrap" >
+
+        <!-- one card inner div -->
+        <div class="cursor-pointer border border-stone-200 rounded-lg flex items-center justify-between p-4 mb-5 min-w-[357px] shadow-md hover:shadow-lg">
+          <!-- for both the text -->
+          <div class="flex flex-col gap-1">
+            <p class="text-[20px] text-[1C1C1C]">Tajganj</p>
+            <p class="text-[16px] text-[363636] font-light">445 places</p>
+          </div>
+          <!-- for the symbol -->
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="15" height="15" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 jKmKoK"><title>chevron-right</title><path d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z"></path></svg>
+          </div>
+        </div>
+
+        <div class="cursor-pointer border border-stone-200 rounded-lg flex items-center justify-between p-4 mb-5 min-w-[357px] shadow-md hover:shadow-lg">
+          <!-- for both the text -->
+          <div class="flex flex-col gap-1">
+            <p class="text-[20px] text-[1C1C1C]">Civil Lines</p>
+            <p class="text-[16px] text-[363636] font-light">233 places</p>
+          </div>
+          <!-- for the symbol -->
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="15" height="15" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 jKmKoK"><title>chevron-right</title><path d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z"></path></svg>
+          </div>
+        </div>
+
+        <div class="cursor-pointer border border-stone-200 rounded-lg flex items-center justify-between p-4 mb-5 min-w-[357px] shadow-md hover:shadow-lg">
+          <!-- for both the text -->
+          <div class="flex flex-col gap-1">
+            <p class="text-[20px] text-[1C1C1C]">Vaikundam Nagar</p>
+            <p class="text-[16px] text-[363636] font-light">57 places</p>
+          </div>
+          <!-- for the symbol -->
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="15" height="15" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 jKmKoK"><title>chevron-right</title><path d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z"></path></svg>
+          </div>
+        </div>
+
+        <div class="cursor-pointer border border-stone-200 rounded-lg flex items-center justify-between p-4 mb-5 min-w-[357px] shadow-md hover:shadow-lg">
+          <!-- for both the text -->
+          <div class="flex flex-col gap-1">
+            <p class="text-[20px] text-[1C1C1C]">Rajesh Nagar</p>
+            <p class="text-[16px] text-[363636] font-light">104 places</p>
+          </div>
+          <!-- for the symbol -->
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="15" height="15" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 jKmKoK"><title>chevron-right</title><path d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z"></path></svg>
+          </div>
+        </div>
+
+        <div class="cursor-pointer border border-stone-200 rounded-lg flex items-center justify-between p-4 mb-5 min-w-[357px] shadow-md hover:shadow-lg">
+          <!-- for both the text -->
+          <div class="flex flex-col gap-1">
+            <p class="text-[20px] text-[1C1C1C]">Sreekariyam</p>
+            <p class="text-[16px] text-[363636] font-light">201 places</p>
+          </div>
+          <!-- for the symbol -->
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="15" height="15" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 jKmKoK"><title>chevron-right</title><path d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z"></path></svg>
+          </div>
+        </div>
+
+        <div class="cursor-pointer border border-stone-200 rounded-lg flex items-center justify-between p-4 mb-5 min-w-[357px] shadow-md hover:shadow-lg">
+          <!-- for both the text -->
+          <div class="flex flex-col gap-1">
+            <p class="text-[20px] text-[1C1C1C]">Kalpakkam</p>
+            <p class="text-[16px] text-[363636] font-light">78 places</p>
+          </div>
+          <!-- for the symbol -->
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="15" height="15" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 jKmKoK"><title>chevron-right</title><path d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z"></path></svg>
+          </div>
+        </div>
+
+        <div class="cursor-pointer border border-stone-200 rounded-lg flex items-center justify-between p-4 mb-5 min-w-[357px] shadow-md hover:shadow-lg">
+          <!-- for both the text -->
+          <div class="flex flex-col gap-1">
+            <p class="text-[20px] text-[1C1C1C]">Sree Varaham East Fort</p>
+            <p class="text-[16px] text-[363636] font-light">321 places</p>
+          </div>
+          <!-- for the symbol -->
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="15" height="15" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 jKmKoK"><title>chevron-right</title><path d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z"></path></svg>
+          </div>
+        </div>
+
+        <div class="cursor-pointer border border-stone-200 rounded-lg flex items-center justify-between p-4 mb-5 min-w-[357px] shadow-md hover:shadow-lg">
+          <!-- for both the text -->
+          <div class="flex flex-col gap-1">
+            <p class="text-[20px] text-[1C1C1C]">Kollam Jn</p>
+            <p class="text-[16px] text-[363636] font-light">125 places</p>
+          </div>
+          <!-- for the symbol -->
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="15" height="15" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 jKmKoK"><title>chevron-right</title><path d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z"></path></svg>
+          </div>
+        </div>
+
+        <div class="cursor-pointer border border-stone-200 rounded-lg flex items-center justify-around p-4 mb-5 min-w-[357px] shadow-md hover:shadow-lg">
+          <!-- for both the text & downwards symbol -->
+          <div class="flex items-center">
+            <p class="text-[20px] text-[1C1C1C]">See More</p> &nbsp;
+            <svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="18" height="18" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 iwHbVQ"><title>chevron-down</title><path d="M4.48 7.38c0.28-0.28 0.76-0.28 1.060 0l4.46 4.48 4.48-4.48c0.28-0.28 0.76-0.28 1.060 0s0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0l-5-5c-0.3-0.28-0.3-0.76 0-1.060z"></path></svg>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <!-- 2th last part of the page  -->
+    <div class="bg-[#FCFCFC]">
+      <div class="mt-[3rem] pb-[2.5rem] mb-[1.2rem] max-w-[1100px] m-auto">
+      
+        <div class="pt-[3rem] text-[30px] text-[#363636] mb-[20px] font-medium "><h2>Explore options near me</h2></div>
+  
+        <div class="cursor-pointer w-[100%] flex justify-between align-middle px-[2%] py-[1.5%] mb-[2%] border border-stone-200 rounded-lg text-[20px] text-[1C1C1C]">
+          <p class="mobileScreen:py-[4%] notMobileScreen:py-0 mobileScreen:px-[2%] notMobileScreen:px-0">Popular cuisines near me</p>
+          <div class="mobileScreen:pt-[6%] notMobileScreen:pt-2"><svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="20" height="20" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 iRDDBk"><title>chevron-down</title><path d="M4.48 7.38c0.28-0.28 0.76-0.28 1.060 0l4.46 4.48 4.48-4.48c0.28-0.28 0.76-0.28 1.060 0s0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0l-5-5c-0.3-0.28-0.3-0.76 0-1.060z"></path></svg></div>
+        </div>
+  
+
+        <div class="cursor-pointer w-[100%] flex justify-between align-middle px-[2%] py-[1.5%] mb-[2%] border border-stone-200 rounded-lg text-[20px] text-[1C1C1C]">
+          <p class="mobileScreen:py-[4%] notMobileScreen:py-0 mobileScreen:px-[2%] notMobileScreen:px-0">Popular restaurant types near me</p>
+          <div class="mobileScreen:pt-[6%] notMobileScreen:pt-2"><svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="20" height="20" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 iRDDBk"><title>chevron-down</title><path d="M4.48 7.38c0.28-0.28 0.76-0.28 1.060 0l4.46 4.48 4.48-4.48c0.28-0.28 0.76-0.28 1.060 0s0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0l-5-5c-0.3-0.28-0.3-0.76 0-1.060z"></path></svg></div>
+        </div>
+
+
+        <div class="cursor-pointer w-[100%] flex justify-between align-middle px-[2%] py-[1.5%] mb-[2%] border border-stone-200 rounded-lg text-[20px] text-[1C1C1C]">
+          <p class="mobileScreen:py-[4%] notMobileScreen:py-0 mobileScreen:px-[2%] notMobileScreen:px-0">Top Restaurant Chains</p>
+          <div class="mobileScreen:pt-[6%] notMobileScreen:pt-2"><svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="20" height="20" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 iRDDBk"><title>chevron-down</title><path d="M4.48 7.38c0.28-0.28 0.76-0.28 1.060 0l4.46 4.48 4.48-4.48c0.28-0.28 0.76-0.28 1.060 0s0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0l-5-5c-0.3-0.28-0.3-0.76 0-1.060z"></path></svg></div>
+        </div>
+
+
+        <div class="cursor-pointer w-[100%] flex justify-between align-middle px-[2%] py-[1.5%] mb-[2%] border border-stone-200 rounded-lg text-[20px] text-[1C1C1C]">
+          <p class="mobileScreen:py-[4%] notMobileScreen:py-0 mobileScreen:px-[2%] notMobileScreen:px-0">Cities We Deliver To</p>
+          <div class="mobileScreen:pt-[6%] notMobileScreen:pt-2"><svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="20" height="20" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 iRDDBk"><title>chevron-down</title><path d="M4.48 7.38c0.28-0.28 0.76-0.28 1.060 0l4.46 4.48 4.48-4.48c0.28-0.28 0.76-0.28 1.060 0s0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0l-5-5c-0.3-0.28-0.3-0.76 0-1.060z"></path></svg></div>
+        </div>
+  
+      </div>
+    
+    </div>
+
+    <br><br><br><br>
+    <!-- only for mobile screen - delivery and dining out symbol on bottom -->
+    <div class="mobileScreen:flex notMobileScreen:hidden flex justify-around fixed bottom-0 left-0 bg-white w-[100%]">
+      
+      <div class="flex flex-col items-center py-2">
+        <div><i class="sc-rbbb40-1 iFnyeo" size="24" color="#9C9C9C"><svg xmlns="http://www.w3.org/2000/svg" fill="#9C9C9C" width="24" height="24" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 fmIpur"><path d="M17.3331 5.15C17.3224 4.99454 17.2525 4.84909 17.1378 4.74366C17.023 4.63822 16.8722 4.58083 16.7164 4.58333H13.9914V3.99167C13.9914 2.93301 13.5709 1.91771 12.8223 1.16913C12.0737 0.420549 11.0584 0 9.99975 0C8.94109 0 7.92579 0.420549 7.17721 1.16913C6.42863 1.91771 6.00808 2.93301 6.00808 3.99167V4.58333H3.28308C3.12727 4.58083 2.97645 4.63822 2.86171 4.74366C2.74697 4.84909 2.67707 4.99454 2.66641 5.15L1.46641 18.1167C1.44928 18.3494 1.48122 18.5832 1.56017 18.8028C1.63913 19.0225 1.76333 19.2231 1.92475 19.3917C2.09571 19.5828 2.30504 19.7358 2.53908 19.8406C2.77313 19.9454 3.02663 19.9997 3.28308 20H16.7164C16.9729 19.9997 17.2264 19.9454 17.4604 19.8406C17.6945 19.7358 17.9038 19.5828 18.0747 19.3917C18.2362 19.2231 18.3604 19.0225 18.4393 18.8028C18.5183 18.5832 18.5502 18.3494 18.5331 18.1167L17.3331 5.15ZM7.25808 3.99167C7.25808 3.26453 7.54693 2.56718 8.06109 2.05302C8.57526 1.53885 9.27261 1.25 9.99975 1.25C10.7269 1.25 11.4242 1.53885 11.9384 2.05302C12.4526 2.56718 12.7414 3.26453 12.7414 3.99167V4.58333H7.25808V3.99167ZM3.85808 5.83333H6.00808V7.11667C6.00808 7.28243 6.07393 7.4414 6.19114 7.55861C6.30835 7.67582 6.46732 7.74167 6.63308 7.74167C6.79884 7.74167 6.95781 7.67582 7.07502 7.55861C7.19223 7.4414 7.25808 7.28243 7.25808 7.11667V5.83333H12.7414V7.11667C12.7414 7.28243 12.8073 7.4414 12.9245 7.55861C13.0417 7.67582 13.2007 7.74167 13.3664 7.74167C13.5322 7.74167 13.6911 7.67582 13.8084 7.55861C13.9256 7.4414 13.9914 7.28243 13.9914 7.11667V5.83333H16.1414L16.9747 14.5833H3.04975L3.85808 5.83333ZM17.1914 18.55C17.137 18.6116 17.0704 18.6612 16.9958 18.6956C16.9212 18.7301 16.8402 18.7486 16.7581 18.75H3.28308C3.20092 18.7486 3.11996 18.7301 3.04535 18.6956C2.97074 18.6612 2.90413 18.6116 2.84975 18.55C2.80598 18.5095 2.77087 18.4606 2.74652 18.4062C2.72217 18.3517 2.7091 18.2929 2.70808 18.2333L2.93308 15.8333H17.0997L17.3247 18.2333C17.3196 18.2955 17.3013 18.3558 17.2712 18.4104C17.241 18.465 17.1996 18.5126 17.1497 18.55H17.1914Z"></path></svg></i></div>
+        <p class="text-[#9C9C9C] text-12">Delivery</p>
+      </div>
+
+      <div class=" flex flex-col items-center py-2 border-t-2 border-[#ef4f5f] w-[48%]">
+        <div><i class="sc-rbbb40-1 iFnyeo" size="24" color="#1C1C1C"><svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="24" height="24" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 fmIpur"><title>dinning</title><path d="M17.62 11.9l-5.66-0.7c-0.040 0-0.060 0-0.1 0-0.36 0-0.66 0.28-0.7 0.62v0c-0.060 0.3-0.1 0.64-0.1 0.98 0 0.8 0.18 1.54 0.48 2.24l-0.020-0.040c0.5 0.98 1.48 1.66 2.62 1.74v0c0.080 0.020 0.18 0.020 0.26 0.020s0.18 0 0.28-0.020h-0.020c1.96 0 3.26-1.46 3.58-4.080 0-0.040 0-0.060 0-0.1 0-0.16-0.060-0.32-0.14-0.44v0c-0.12-0.12-0.28-0.2-0.48-0.22v0zM14.28 15.32c-0.66 0-1.22-0.38-1.52-0.94v0c-0.18-0.42-0.28-0.92-0.28-1.44 0-0.080 0-0.14 0-0.22v0l4.18 0.52c-0.46 2.32-1.86 2.16-2.38 2.080zM3.82 15.26l4.9-1.8c0.2-0.080 0.38-0.26 0.44-0.48v0c0.14-0.56 0.22-1.2 0.22-1.86 0-0.92-0.16-1.8-0.44-2.62l0.020 0.060c-1.12-3.060-3.82-4.7-6.2-3.82-1.22 0.48-2.14 1.46-2.5 2.7v0.020c-0.16 0.54-0.26 1.18-0.26 1.82 0 0.86 0.16 1.66 0.46 2.42l-0.020-0.040c0.58 1.42 1.5 2.62 2.68 3.5h0.020c0.1 0.080 0.24 0.14 0.4 0.14 0 0 0 0 0 0v0c0.020 0 0.020 0 0.040 0 0.080 0 0.16-0.020 0.24-0.040v0zM1.82 11.16c-0.24-0.56-0.38-1.22-0.38-1.92 0-0.48 0.060-0.94 0.18-1.38v0.040c0.22-0.84 0.82-1.5 1.6-1.82h0.020c0.24-0.1 0.54-0.14 0.84-0.16v0c1.42 0 2.86 1.2 3.54 3.12 0.2 0.64 0.34 1.36 0.34 2.1 0 0.4-0.040 0.78-0.1 1.16v-0.040l-4.2 1.48c-0.8-0.68-1.44-1.54-1.86-2.52v-0.060zM16.2 0.42c-0.14-0.020-0.3-0.020-0.46-0.020-1.2 0-2.26 0.5-3.020 1.3v0.020c-0.94 1-1.56 2.32-1.72 3.78v0.020c-0.040 0.28-0.060 0.6-0.060 0.92 0 1.28 0.3 2.48 0.84 3.54l-0.020-0.040c0.12 0.2 0.3 0.34 0.54 0.38v0l5.2 0.62h0.1c0.2 0 0.38-0.080 0.52-0.22v0c0.94-1.1 1.6-2.48 1.82-4v-0.040c0.4-3.24-1.24-5.92-3.74-6.26zM18.56 6.46c-0.18 1.14-0.62 2.14-1.24 3v-0.020l-4.42-0.54c-0.34-0.78-0.54-1.7-0.54-2.64 0-0.18 0-0.36 0.020-0.54v0.020c0.12-1.16 0.6-2.2 1.32-3v0c0.5-0.54 1.22-0.88 2.020-0.88 0.080 0 0.18 0 0.26 0v0c1.74 0.22 2.84 2.22 2.54 4.64zM9.26 14.28l-5.38 1.94c-0.16 0.080-0.3 0.2-0.4 0.38v0c-0.020 0.080-0.040 0.18-0.040 0.26s0.020 0.2 0.040 0.28v0c0.76 2.14 2.040 3.28 3.6 3.28 0.46 0 0.9-0.1 1.32-0.26l-0.020 0.020c1.060-0.34 1.88-1.2 2.14-2.28v-0.020c0.060-0.3 0.1-0.64 0.1-1 0-0.78-0.16-1.54-0.46-2.22l0.020 0.040c-0.12-0.28-0.38-0.46-0.68-0.46-0.080 0-0.16 0-0.24 0.040v0zM9.14 17.56c-0.16 0.64-0.64 1.12-1.26 1.3v0c-0.46 0.16-1.76 0.64-2.8-1.52l3.96-1.46c0.1 0.3 0.16 0.64 0.16 1 0 0.24-0.020 0.48-0.060 0.7v-0.020z"></path></svg></i></div>
+        <p>Dining Out</p>
+      </div>
+    </div>  
+
+    <footer class="max-w-[95%] lg:max-w-[1125px] mx-auto">
+      <div class="flex flex-col sm:flex-row h-max mx-3 gap-y-5">
+          <div class="mr-auto my-auto mx-auto sm:mx-0">
+              <img class="w-28 md:w-36" src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png?fit=around|198:42&crop=198:42;*,*" alt="zomato img">
+          </div>
+          <div class="flex gap-x-5 items-center mx-auto sm:mr-0 text-sm sm:text-md">
+              <div class="flex items-center gap-x-[10px] border border-slate-400 px-2 py-2 rounded">
+                  <div class="flex items-center gap-[10px] mr-auto"><img class="w-6" src="https://b.zmtcdn.com/images/flags_z10/in.png?output-format=webp" alt="indian flag"> India</div>
+                  <i class="fa-solid fa-angle-down fa-xs mt-[2px]"></i>
+              </div>
+              <div class="flex items-center gap-x-[10px] border border-slate-400 px-2 py-2 rounded">
+                  <div class="flex items-center gap-[10px] mr-auto"><i class="fa-solid fa-globe fa-lg"></i> English</div>
+                  <i class="fa-solid fa-angle-down fa-xs mt-[2px]"></i>
+              </div>
+          </div>
+      </div>
+      <div class="my-[50px] flex gap-y-10 justify-between flex-wrap px-3 mx-auto">
+          <div class=" text-sm flex flex-col gap-[5px] text-slate-500 min-w-[200px]">
+              <h3 class="uppercase tracking-[0.2rem] font-[500] mb-2 text-black">About Zomato</h3>
+              <a href="../code-tanishka/who we are.html">Who We Are</a>
+              <a href="#">Blog</a>
+              <a href="../code-tanishka/work.html">Work With Us</a>
+              <a href="#">Investor Relations</a>
+              <a href="#">Report Fraud</a>
+              <a href="#">Press Kit</a>
+              <a href="../code-rahul/html-files/contact-us.html">Contact Us</a>
+          </div>
+          <div class=" text-sm flex flex-col gap-[5px] text-slate-500 w-[200px]">
+              <h3 class="uppercase tracking-[0.2rem] font-[500] mb-2 text-black">ZOMAVERSE</h3>
+              <a href="#">Zomato</a>
+              <a href="#">Blinkit</a>
+              <a href="#">Feeding India</a>
+              <a href="#">Hyperpure</a>
+              <a href="#">Zomaland</a>
+          </div>
+          <div class="flex flex-col gap-y-[30px]">
+              <div class=" text-sm flex flex-col gap-[5px] text-slate-500 w-[200px]">
+                  <h3 class="uppercase tracking-[0.2rem] font-[500] mb-2 text-black">FOR RESTAURANTS</h3>
+                  <a href="#">Partner With Us</a>
+                  <a href="#">App For You</a>
+              </div>
+              <div class=" text-sm flex flex-col gap-[5px] text-slate-500 w-[200px]">
+                  <h3 class="uppercase tracking-[0.2rem] font-[500] mb-2 text-black">FOR ENTERPRISES</h3>
+                  <a href="#">Zomato For Enterprise</a>
+              </div>
+          </div>
+          <div class=" text-sm flex flex-col gap-[5px] text-slate-500 w-[200px]">
+              <h3 class="uppercase tracking-[0.2rem] font-[500] mb-2 text-black">LEARN MORE</h3>
+              <a href="#">Privacy</a>
+              <a href="#">Security</a>
+              <a href="#">Terms</a>
+              <a href="#">Sitemap</a>
+          </div>
+          <div class=" text-sm flex flex-col gap-[5px] text-slate-500 w-[200px]">
+              <h3 class="uppercase tracking-[0.2rem] font-[500] mb-2 text-black">Social Links</h3>
+              <div class="flex gap-x-[10px] cursor-pointer">
+                  <div class="rounded-full bg-black w-6 h-6 flex justify-center items-center">
+                      <i class="fa-brands fa-linkedin-in fa-md mt-[1px]" style="color: #ffffff;"></i>
+                  </div>
+                  <div class="rounded-full bg-black w-6 h-6 flex justify-center items-center">
+                      <i class="fa-brands fa-instagram fa-md mt-[1px]" style="color: #ffffff;"></i>
+                  </div>
+                  <div class="rounded-full bg-black w-6 h-6 flex justify-center items-center">
+                      <i class="fa-brands fa-twitter fa-md mt-[2px]" style="color: #ffffff;"></i>
+                  </div>
+                  <div class="rounded-full bg-black w-6 h-6 flex justify-center items-center">
+                      <i class="fa-brands fa-youtube fa-md mt-[2px]" style="color: #ffffff;"></i>
+                  </div>
+                  <div class="rounded-full bg-black w-6 h-6 flex justify-center items-center">
+                      <i class="fa-brands fa-facebook-f fa-md mt-[2px]" style="color: #ffffff;"></i>
+                  </div>
+              </div>
+              <div class="flex flex-col gap-y-[15px] mt-5">
+                  <img class="w-36 cursor-pointer" src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png" alt="Apple store img">
+                  <img class="w-36 cursor-pointer" src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png" alt="google play store img">
+              </div>
+          </div>
+      </div>
+      <hr class="border-[1px] mx-3">
+      <p class="text-[0.8rem] text-slate-500 my-5 mb-8 mx-3">By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2023 © Zomato™ Ltd. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
+
+

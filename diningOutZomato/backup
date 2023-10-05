@@ -1,0 +1,119 @@
+              <div class="flex items-center">
+               
+                <div class="flex flex-col items-center mobileScreen:scale-50 notMobileScreen:scale-100 ">
+  
+                  <div class="w-[150px] mb-[0.6rem]">
+                    <img src="./images/f2.avif" alt="" class="rounded-full">
+                  </div>
+  
+                  <div>
+                    <span class="text-[#363636] text-[20px] font-medium ">Chai</span>
+                  </div>
+  
+                </div>
+              </div>
+
+              <div class="flex items-center">
+               
+                <div class="flex flex-col items-center mobileScreen:scale-50 notMobileScreen:scale-100 ">
+  
+                  <div class="w-[150px] mb-[0.6rem]">
+                    <img src="./images/f3.avif" alt="" class="rounded-full ">
+                  </div>
+  
+                  <div>
+                    <span class="text-[#363636] text-[20px] font-medium ">Poha</span>
+                  </div>
+  
+                </div>
+              </div>
+
+              <div class="flex items-center mobileScreen:scale-50 notMobileScreen:scale-100 ">
+               
+                <div class="flex flex-col items-center">
+  
+                  <div class="w-[150px] mb-[0.6rem]">
+                    <img src="./images/f4.webp" alt="" class="rounded-full">
+                  </div>
+  
+                  <div>
+                    <span class="text-[#363636] text-[20px] font-medium ">Parata</span>
+                  </div>
+  
+                </div>
+              </div>
+
+              <div class="flex items-center">
+               
+                <div class="flex flex-col items-center mobileScreen:scale-50 notMobileScreen:scale-100 ">
+  
+                  <div class="w-[150px] mb-[0.6rem]">
+                    <img src="./images/f5.avif" alt="" class="rounded-full">
+                  </div>
+  
+                  <div>
+                    <span class="text-[#363636] text-[20px] font-medium ">Cake</span>
+                  </div>
+  
+                </div>
+              </div>
+
+              <div class="flex items-center">
+               
+                <div class="flex flex-col items-center mobileScreen:scale-50 notMobileScreen:scale-100 ">
+  
+                  <div class="w-[150px] mb-[0.6rem]">
+                    <img src="./images/f6.avif" alt="" class="rounded-full">
+                  </div>
+  
+                  <div>
+                    <span class="text-[#363636] text-[20px] font-medium ">Paneer</span>
+                  </div>
+  
+                </div>
+              </div>
+
+              <div class="flex items-center">
+               
+                <div class="flex flex-col items-center mobileScreen:scale-50 notMobileScreen:scale-100 ">
+  
+                  <div class="w-[150px] mb-[0.6rem]">
+                    <img src="./images/f7.avif" alt="" class="rounded-full">
+                  </div>
+  
+                  <div>
+                    <span class="text-[#363636] text-[20px] font-medium ">Rolls</span>
+                  </div>
+  
+                </div>
+              </div>
+
+              <div class="flex items-center">
+               
+                <div class="flex flex-col items-center mobileScreen:scale-50 notMobileScreen:scale-100 ">
+  
+                  <div class="w-[150px] mb-[0.6rem]">
+                    <img src="./images/f8.avif" alt="" class="rounded-full">
+                  </div>
+  
+                  <div>
+                    <span class="text-[#363636] text-[20px] font-medium ">North Indian</span>
+                  </div>
+  
+                </div>
+              </div>
+
+              <div class="flex items-center">
+               
+                <div class="flex flex-col items-center mobileScreen:scale-50 notMobileScreen:scale-100 ">
+  
+                  <div class="w-[150px] mb-[0.6rem]">
+                    <img src="./images/f9.avif" alt="" class="rounded-full">
+                  </div>
+  
+                  <div>
+                    <span class="text-[#363636] text-[20px] font-medium ">Dosa</span>
+                  </div>
+  
+                </div>
+              </div>
