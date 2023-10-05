@@ -10,6 +10,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- tailwind cdn  -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              screens: {
+                'mobileScreen':'0px',
+                'notMobileScreen': '380px',
+              },
+            },
+          },
+        }
+      </script>
 </head>
 <body>
     <header class="home-header h-[85vh] w-full flex flex-col">
@@ -29,7 +41,7 @@
     <main class="mt-10 max-w-[1125px] mx-auto px-2">
         <!-- order online cards  -->
         <div class="flex flex-col sm:flex-row justify-between gap-x-3 my-16 md:mb-20">
-            <div class=" overflow-hidden shadow rounded-lg hover:scale-105 ease-in-out duration-300 cursor-pointer">
+            <a href="../../delivery-easwaran/index.html" class=" overflow-hidden shadow rounded-lg hover:scale-105 ease-in-out duration-300 cursor-pointer">
                 <div class="max-h-[170px] overflow-hidden w-full">
                     <img class="h-[200px] w-full object-cover object-top" src="../assets-rahul/food-2.jpg" alt="card image">
                 </div>
@@ -37,9 +49,9 @@
                     <p class="text-[0.9rem] sm:text-[1rem] md:text-[1.1rem] lg:text-[1.2rem] font-medium">Order Online</p>
                     <p class="text-[0.8rem] md:text-[0.95rem] lg:text-[1.05rem] text-gray-600">Stay home and order to your doorstep</p>
                 </div>
-            </div>
+            </a>
 
-            <div class=" overflow-hidden shadow rounded-lg hover:scale-105 ease-in-out duration-300 cursor-pointer">
+            <a href="../../diningOutZomato/index.html" class=" overflow-hidden shadow rounded-lg hover:scale-105 ease-in-out duration-300 cursor-pointer">
                 <div class="max-h-[170px] overflow-hidden w-full">
                     <img class="h-[200px] w-full object-cover" src="../assets-rahul/food-1.jpg" alt="card image">
                 </div>
@@ -47,9 +59,9 @@
                     <p class="text-[0.9rem] sm:text-[1rem] md:text-[1.1rem] lg:text-[1.2rem] font-medium">Dining</p>
                     <p class="text-[0.8rem] md:text-[0.95rem] lg:text-[1.05rem] text-gray-600">View the city's favourite dining venues</p>
                 </div>
-            </div>
+            </a>
 
-            <div class=" overflow-hidden shadow rounded-lg hover:scale-105 ease-in-out duration-300 cursor-pointer">
+            <a href="../../diningOutZomato/index.html" class=" overflow-hidden shadow rounded-lg hover:scale-105 ease-in-out duration-300 cursor-pointer">
                 <div class="max-h-[170px] overflow-hidden w-full">
                     <img class="h-[200px] w-full object-cover" src="../assets-rahul/club.jpg" alt="card image">
                 </div>
@@ -57,10 +69,63 @@
                     <p class="text-[0.9rem] sm:text-[1rem] md:text-[1.1rem] lg:text-[1.2rem] font-medium">Nightlife and Clubs</p>
                     <p class="text-[0.8rem] md:text-[0.95rem] lg:text-[1.05rem] text-gray-600">Explore the city's top nightlife outlets</p>
                 </div>
-            </div>
+            </a>
         </div>
+        <!-- collections page with heading collections and 4 cards with images -->
+        <div class="mt-[1.2rem] mb-[1.2rem] max-w-[1100px] m-auto">
+
+            <div class="text-center sm:text-left text-[1.5rem] sm:text-[1.8rem] md:text-[2rem] lg:text-[2.3rem] text-[#1C1C1C] mb-[4px] font-medium"><h2>Collections</h2></div>
+            <div class="flex justify-between">
+                <div><p class="text-center sm:text-left text-slate-500 max-w-[900px] text-md sm:text-lg md:text-xl text-slate-600">Explore curated lists of top restaurants, cafes, pubs, and bars in Agra, based on trends</p></div>
+                <div class="hidden sm:flex items-center">
+                    <p class="cursor-pointer text-[#ff7e8b] text-[18px]">All collections in Agra</p>&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#FF7E8B" width="12" height="12" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 ezrcri"><title>right-triangle</title><path d="M5 0.42l10 10-10 10v-20z"></path></svg>
+                </div>
+            </div>
+            <!-- div with 4 card images -->
+            <div class="mt-[35px] flex gap-x-3 gap-y-5 flex-wrap sm:flex-nowrap">
+                <!-- one card -->
+                <div class="mx-auto sm:mx-0 cursor-pointer relative mobileScreen:w-[158px] mobileScreen:h-[177px] notMobileScreen:w-[270px] notMobileScreen:h-[320px] overflow-hidden">
+                <img src="../../delivery-easwaran/images/collections1.avif" class="w-[100%] h-[100%] rounded-md object-cover">
+                <P class="absolute bottom-7 left-3 text-white text-xl">6 Taj View Restaurant</P>
+                <div class="absolute bottom-0 left-3 text-white flex items-center">
+                    <p class="mb-[4px]">5 Places</p>&nbsp;
+                    <i class="sc-rbbb40-1 iFnyeo" size="10" color="#FFFFFF"><svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" width="10" height="10" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 gvsUip"><title>right-triangle</title><path d="M5 0.42l10 10-10 10v-20z"></path></svg></i>
+                </div>
+                </div>
+
+                <div class="mx-auto sm:mx-0 cursor-pointer relative mobileScreen:w-[158px] mobileScreen:h-[177px] notMobileScreen:w-[270px] notMobileScreen:h-[320px] overflow-hidden">
+                <img src="../../delivery-easwaran/images/collections2.avif" class="w-[100%] h-[100%] rounded-md object-cover">
+                <P class="absolute bottom-7 left-3 text-white text-xl">14 Local Favourite Places</P>
+                <div class="absolute bottom-0 left-3 text-white flex items-center">
+                    <p class="mb-[4px]">14 Places</p>&nbsp;
+                    <i class="sc-rbbb40-1 iFnyeo" size="10" color="#FFFFFF"><svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" width="10" height="10" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 gvsUip"><title>right-triangle</title><path d="M5 0.42l10 10-10 10v-20z"></path></svg></i>
+                </div>
+                </div>
+
+
+                <div class="mx-auto sm:mx-0 cursor-pointer relative mobileScreen:w-[158px] mobileScreen:h-[177px] notMobileScreen:w-[270px] notMobileScreen:h-[320px] overflow-hidden">
+                <img src="../../delivery-easwaran/images/collections3.jpg" class="w-[100%] h-[100%] rounded-md object-cover">
+                <P class="absolute bottom-7 left-3 text-white text-xl">18 Best Luxury Dining Plac..</P>
+                <div class="absolute bottom-0 left-3 text-white flex items-center">
+                    <p class="mb-[4px]">18 Places</p>&nbsp;
+                    <i class="sc-rbbb40-1 iFnyeo" size="10" color="#FFFFFF"><svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" width="10" height="10" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 gvsUip"><title>right-triangle</title><path d="M5 0.42l10 10-10 10v-20z"></path></svg></i>
+                </div>
+                </div>
+
+
+                <div class="mx-auto sm:mx-0 cursor-pointer relative mobileScreen:w-[158px] mobileScreen:h-[177px] notMobileScreen:w-[270px] notMobileScreen:h-[320px] overflow-hidden">
+                <img src="../../delivery-easwaran/images/collections4.avif" class="w-[100%] h-[100%] rounded-md object-cover">
+                <P class="absolute bottom-7 left-3 text-white text-xl">6 Best Mughlai Places</P>
+                <div class="absolute bottom-0 left-3 text-white flex items-center">
+                    <p class="mb-[4px]">6 Places</p>&nbsp;
+                    <i class="sc-rbbb40-1 iFnyeo" size="10" color="#FFFFFF"><svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" width="10" height="10" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 gvsUip"><title>right-triangle</title><path d="M5 0.42l10 10-10 10v-20z"></path></svg></i>
+                </div>
+                </div>
+            </div>
+      </div>
         <!-- cities heading  -->
-        <div class="flex flex-col sm:flex-row justify-center items-center gap-3 text-xl sm:text-2xl md:text-3xl lg:text-4xl">
+        <div class="mt-36 flex flex-col sm:flex-row justify-center items-center gap-3 text-xl sm:text-2xl md:text-3xl lg:text-4xl">
             <h2 class="items-center text-center">Popular locations in</h2>
             <div class="flex items-center gap-[10px] font-medium"><img class="w-10 sm:w-12 md:w-14" src="https://b.zmtcdn.com/images/flags_z10/in.png?output-format=webp" alt="indian flag"> India</div>
         </div>
